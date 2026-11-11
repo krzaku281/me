@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Wizytówka: edukacja, sport, rozwój i kontakt."
+	},
+	"ui": {
+		"skip": "Przejdź do treści",
+		"mainNav": "Menu główne",
+		"menu": "Menu",
+		"closeMenu": "Zamknij menu",
+		"language": "Język",
+		"home": "Strona startowa"
+	},
+	"nav": {
+		"home": "Start",
+		"about": "O mnie",
+		"education": "Edukacja",
+		"university": "Politechnika",
+		"masters": "Magisterium",
+		"technical": "Technikum",
+		"mensa": "Mensa",
+		"sport": "Sport",
+		"club": "Klub",
+		"running": "Bieganie",
+		"growth": "Rozwój",
+		"journeyman": "Czeladnik",
+		"reiki": "Reiki",
+		"prana": "Prana",
+		"youtube": "YouTube",
+		"contact": "Kontakt"
+	},
+	"page": {
+		"home": {
+			"title": "Start",
+			"lead": "Witaj na mojej stronie."
+		},
+		"about": {
+			"title": "O mnie",
+			"lead": "Kilka słów o mnie."
+		},
+		"university": {
+			"title": "Politechnika",
+			"lead": "Studia inżynierskie."
+		},
+		"masters": {
+			"title": "Magisterium",
+			"lead": "Studia magisterskie."
+		},
+		"technical": {
+			"title": "Technikum",
+			"lead": "Szkoła średnia i pierwszy zawód."
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Członkostwo w stowarzyszeniu Mensa."
+		},
+		"club": {
+			"title": "Klub",
+			"lead": "Mój klub sportowy."
+		},
+		"running": {
+			"title": "Bieganie",
+			"lead": "Treningi, starty i trasy."
+		},
+		"journeyman": {
+			"title": "Czeladnik",
+			"lead": "Tytuł czeladnika w rzemiośle."
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Praktyka reiki."
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Praca z energią prany."
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "Prowadzę kanał na YouTube."
+		},
+		"contact": {
+			"title": "Kontakt",
+			"lead": "Napisz do mnie."
+		}
+	},
+	"placeholder": "Treść w przygotowaniu.",
+	"youtube": {
+		"cta": "Przejdź do kanału"
+	},
+	"contact": {
+		"email": "E-mail",
+		"vcard": "Zapisz kontakt w telefonie",
+		"vcardHint": "Plik vCard (.vcf)"
+	},
+	"photo": {
+		"mensa": "Zdjęcie związane z Mensą"
+	},
+	"error": {
+		"notFound": "Nie ma takiej strony.",
+		"generic": "Coś poszło nie tak.",
+		"back": "Wróć na stronę startową"
+	},
+	"redirect": {
+		"choose": "Wybierz język"
+	},
+	"perf": {
+		"loaded": "Strona załadowała się w {ms} ms · {kb} KB",
+		"prerendered": "Strona była gotowa, zanim kliknięto: 0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "Oś czasu",
+		"sample": "Przykładowe dane"
+	},
+	"notFound": {
+		"title": "Nie ma takiej strony"
+	}
+}

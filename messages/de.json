@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Visitenkarte: Bildung, Sport, persönliche Entwicklung und Kontakt."
+	},
+	"ui": {
+		"skip": "Zum Inhalt springen",
+		"mainNav": "Hauptmenü",
+		"menu": "Menü",
+		"closeMenu": "Menü schließen",
+		"language": "Sprache",
+		"home": "Startseite"
+	},
+	"nav": {
+		"home": "Start",
+		"about": "Über mich",
+		"education": "Bildung",
+		"university": "Hochschule",
+		"masters": "Master",
+		"technical": "Technikum",
+		"mensa": "Mensa",
+		"sport": "Sport",
+		"club": "Verein",
+		"running": "Laufen",
+		"growth": "Entwicklung",
+		"journeyman": "Geselle",
+		"reiki": "Reiki",
+		"prana": "Prana",
+		"youtube": "YouTube",
+		"contact": "Kontakt"
+	},
+	"page": {
+		"home": {
+			"title": "Start",
+			"lead": "Willkommen auf meiner Seite."
+		},
+		"about": {
+			"title": "Über mich",
+			"lead": "Ein paar Worte über mich."
+		},
+		"university": {
+			"title": "Hochschule",
+			"lead": "Ingenieurstudium."
+		},
+		"masters": {
+			"title": "Master",
+			"lead": "Masterstudium."
+		},
+		"technical": {
+			"title": "Technikum",
+			"lead": "Fachschule und erster Beruf."
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Mitgliedschaft bei Mensa."
+		},
+		"club": {
+			"title": "Verein",
+			"lead": "Mein Sportverein."
+		},
+		"running": {
+			"title": "Laufen",
+			"lead": "Training, Wettkämpfe und Strecken."
+		},
+		"journeyman": {
+			"title": "Geselle",
+			"lead": "Gesellenbrief im Handwerk."
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Reiki-Praxis."
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Arbeit mit Prana-Energie."
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "Ich betreibe einen YouTube-Kanal."
+		},
+		"contact": {
+			"title": "Kontakt",
+			"lead": "Schreib mir."
+		}
+	},
+	"placeholder": "Inhalt folgt.",
+	"youtube": {
+		"cta": "Zum Kanal"
+	},
+	"contact": {
+		"email": "E-Mail",
+		"vcard": "Kontakt im Handy speichern",
+		"vcardHint": "vCard-Datei (.vcf)"
+	},
+	"photo": {
+		"mensa": "Foto zum Thema Mensa"
+	},
+	"error": {
+		"notFound": "Diese Seite gibt es nicht.",
+		"generic": "Etwas ist schiefgelaufen.",
+		"back": "Zurück zur Startseite"
+	},
+	"redirect": {
+		"choose": "Sprache wählen"
+	},
+	"perf": {
+		"loaded": "Diese Seite wurde in {ms} ms geladen · {kb} KB",
+		"prerendered": "Die Seite war fertig, bevor du geklickt hast: 0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "Zeitleiste",
+		"sample": "Beispieldaten"
+	},
+	"notFound": {
+		"title": "Seite nicht gefunden"
+	}
+}

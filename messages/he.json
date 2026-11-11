@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "דף אישי: השכלה, ספורט, התפתחות אישית ויצירת קשר."
+	},
+	"ui": {
+		"skip": "דילוג לתוכן",
+		"mainNav": "תפריט ראשי",
+		"menu": "תפריט",
+		"closeMenu": "סגירת התפריט",
+		"language": "שפה",
+		"home": "דף הבית"
+	},
+	"nav": {
+		"home": "התחלה",
+		"about": "עליי",
+		"education": "השכלה",
+		"university": "אוניברסיטה טכנולוגית",
+		"masters": "תואר שני",
+		"technical": "בית ספר טכני",
+		"mensa": "מנסה",
+		"sport": "ספורט",
+		"club": "מועדון",
+		"running": "ריצה",
+		"growth": "התפתחות",
+		"journeyman": "בעל מלאכה מוסמך",
+		"reiki": "רייקי",
+		"prana": "פראנה",
+		"youtube": "יוטיוב",
+		"contact": "צור קשר"
+	},
+	"page": {
+		"home": {
+			"title": "התחלה",
+			"lead": "ברוכים הבאים לדף שלי."
+		},
+		"about": {
+			"title": "עליי",
+			"lead": "כמה מילים עליי."
+		},
+		"university": {
+			"title": "אוניברסיטה טכנולוגית",
+			"lead": "לימודי הנדסה."
+		},
+		"masters": {
+			"title": "תואר שני",
+			"lead": "לימודים מתקדמים."
+		},
+		"technical": {
+			"title": "בית ספר טכני",
+			"lead": "תיכון ומקצוע ראשון."
+		},
+		"mensa": {
+			"title": "מנסה",
+			"lead": "חברות באגודת מנסה."
+		},
+		"club": {
+			"title": "מועדון",
+			"lead": "מועדון הספורט שלי."
+		},
+		"running": {
+			"title": "ריצה",
+			"lead": "אימונים, תחרויות ומסלולים."
+		},
+		"journeyman": {
+			"title": "בעל מלאכה מוסמך",
+			"lead": "תעודת בעל מלאכה במקצוע."
+		},
+		"reiki": {
+			"title": "רייקי",
+			"lead": "תרגול רייקי."
+		},
+		"prana": {
+			"title": "פראנה",
+			"lead": "עבודה עם אנרגיית פראנה."
+		},
+		"youtube": {
+			"title": "יוטיוב",
+			"lead": "אני מנהל ערוץ ביוטיוב."
+		},
+		"contact": {
+			"title": "צור קשר",
+			"lead": "כתבו לי."
+		}
+	},
+	"placeholder": "התוכן בהכנה.",
+	"youtube": {
+		"cta": "מעבר לערוץ"
+	},
+	"contact": {
+		"email": "דוא״ל",
+		"vcard": "שמירת איש הקשר בטלפון",
+		"vcardHint": "קובץ vCard ‏(.vcf)"
+	},
+	"photo": {
+		"mensa": "תמונה הקשורה למנסה"
+	},
+	"error": {
+		"notFound": "הדף הזה לא קיים.",
+		"generic": "משהו השתבש.",
+		"back": "חזרה לדף ההתחלה"
+	},
+	"redirect": {
+		"choose": "בחירת שפה"
+	},
+	"perf": {
+		"loaded": "הדף נטען תוך {ms} ms · {kb} KB",
+		"prerendered": "הדף היה מוכן עוד לפני הלחיצה: 0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "ציר זמן",
+		"sample": "נתונים לדוגמה"
+	},
+	"notFound": {
+		"title": "הדף לא נמצא"
+	}
+}

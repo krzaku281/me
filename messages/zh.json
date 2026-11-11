@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "个人主页：教育、运动、个人成长与联系方式。"
+	},
+	"ui": {
+		"skip": "跳到正文",
+		"mainNav": "主菜单",
+		"menu": "菜单",
+		"closeMenu": "关闭菜单",
+		"language": "语言",
+		"home": "首页"
+	},
+	"nav": {
+		"home": "开始",
+		"about": "关于我",
+		"education": "教育",
+		"university": "理工大学",
+		"masters": "硕士",
+		"technical": "技术学校",
+		"mensa": "门萨",
+		"sport": "运动",
+		"club": "俱乐部",
+		"running": "跑步",
+		"growth": "成长",
+		"journeyman": "工匠",
+		"reiki": "灵气",
+		"prana": "普拉纳",
+		"youtube": "YouTube",
+		"contact": "联系"
+	},
+	"page": {
+		"home": {
+			"title": "开始",
+			"lead": "欢迎来到我的主页。"
+		},
+		"about": {
+			"title": "关于我",
+			"lead": "简单介绍一下我自己。"
+		},
+		"university": {
+			"title": "理工大学",
+			"lead": "工科本科学习。"
+		},
+		"masters": {
+			"title": "硕士",
+			"lead": "研究生学习。"
+		},
+		"technical": {
+			"title": "技术学校",
+			"lead": "中学与第一份职业。"
+		},
+		"mensa": {
+			"title": "门萨",
+			"lead": "门萨会员。"
+		},
+		"club": {
+			"title": "俱乐部",
+			"lead": "我的运动俱乐部。"
+		},
+		"running": {
+			"title": "跑步",
+			"lead": "训练、比赛和路线。"
+		},
+		"journeyman": {
+			"title": "工匠",
+			"lead": "手工艺工匠证书。"
+		},
+		"reiki": {
+			"title": "灵气",
+			"lead": "灵气练习。"
+		},
+		"prana": {
+			"title": "普拉纳",
+			"lead": "与普拉纳能量一起工作。"
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "我在运营一个 YouTube 频道。"
+		},
+		"contact": {
+			"title": "联系",
+			"lead": "给我写信。"
+		}
+	},
+	"placeholder": "内容准备中。",
+	"youtube": {
+		"cta": "前往频道"
+	},
+	"contact": {
+		"email": "电子邮件",
+		"vcard": "将联系人保存到手机",
+		"vcardHint": "vCard 文件（.vcf）"
+	},
+	"photo": {
+		"mensa": "与门萨相关的照片"
+	},
+	"error": {
+		"notFound": "此页面不存在。",
+		"generic": "出了点问题。",
+		"back": "返回开始页"
+	},
+	"redirect": {
+		"choose": "选择语言"
+	},
+	"perf": {
+		"loaded": "本页加载用时 {ms} ms · {kb} KB",
+		"prerendered": "点击之前页面就已准备好：0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "时间线",
+		"sample": "示例数据"
+	},
+	"notFound": {
+		"title": "页面未找到"
+	}
+}

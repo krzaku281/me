@@ -1,0 +1,202 @@
+:root {
+	color-scheme: dark;
+
+	/* Grey scale: the only colours on the site */
+	--g-0: #070707;
+	--g-1: #0c0c0c;
+	--g-2: #121212;
+	--g-3: #1a1a1a;
+	--g-4: #262626;
+	--g-5: #3a3a3a;
+	--g-6: #868686; /* lowest grey for text: 4.8:1 on --g-3, WCAG AA */
+	--g-7: #9a9a9a;
+	--g-8: #c8c8c8;
+	--g-9: #ececec;
+
+	--bg: var(--g-1);
+	--surface: var(--g-2);
+	--line: var(--g-4);
+	--muted: var(--g-7);
+	--text: var(--g-8);
+	--strong: var(--g-9);
+
+	/* System fonts only: nothing to download, no font swap, every script renders.
+	   Safari: SF Mono, Chrome on Mac: Menlo, Windows 11: Cascadia Mono, Windows 10: Consolas,
+	   Linux/Android: the system monospace. Characters a font lacks (e.g. CJK) come from
+	   the system fallback automatically. */
+	--font:
+		ui-monospace, 'SF Mono', 'Cascadia Mono', 'Segoe UI Mono', Menlo, Consolas, 'Liberation Mono',
+		monospace;
+	--measure: 44rem;
+	--gutter: clamp(1.25rem, 4vw, 2.5rem);
+	--radius: 0.5rem;
+	--ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+	--shadow: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 1.5rem 3rem -1rem rgb(0 0 0 / 0.7);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	background: var(--g-0);
+}
+
+body {
+	margin: 0;
+	min-block-size: 100dvh;
+	font-family: var(--font);
+	font-size: clamp(0.9375rem, 0.88rem + 0.25vw, 1.0625rem);
+	line-height: 1.7;
+	font-synthesis: none;
+	color: var(--text);
+	/* Soft light from the top, fading into near-black */
+	background:
+		radial-gradient(120% 60% at 50% -10%, var(--g-3) 0%, transparent 60%),
+		linear-gradient(var(--g-1), var(--g-0)) fixed;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--strong);
+	letter-spacing: -0.02em;
+	text-wrap: balance;
+}
+
+p {
+	margin: 0;
+	text-wrap: pretty;
+}
+
+a {
+	color: var(--strong);
+	text-decoration-line: underline;
+	text-decoration-color: var(--g-5);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25em;
+	transition: text-decoration-color 0.2s var(--ease);
+}
+
+a:hover {
+	text-decoration-color: var(--g-8);
+}
+
+:focus-visible {
+	outline: 1px solid var(--g-8);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+::selection {
+	background: var(--g-8);
+	color: var(--g-0);
+}
+
+/* Arabic, Hebrew etc. have no good monospace fonts: use the system sans-serif there.
+   font-family is repeated so it also applies to RTL snippets inside LTR pages
+   (language names in the menu), not only to whole RTL pages. */
+[dir='rtl'] {
+	--font: system-ui, 'Segoe UI', 'Noto Sans', Tahoma, sans-serif;
+	font-family: var(--font);
+}
+
+/* Chinese: Latin stays monospace, Han characters come from the system's Chinese sans-serif
+   (instead of whatever fallback the browser picks, often a serif). */
+:lang(zh) {
+	--font:
+		ui-monospace, 'SF Mono', 'Cascadia Mono', 'Segoe UI Mono', Menlo, Consolas, 'Liberation Mono',
+		'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Source Han Sans SC',
+		sans-serif;
+	font-family: var(--font);
+}
+
+/* Letter spacing is a Latin habit (uppercase labels). In Arabic it breaks the joined letters
+   apart, in Hebrew it just looks wrong. !important: component styles are more specific. */
+[dir='rtl'],
+[dir='rtl'] *,
+:lang(ar),
+:lang(ar) * {
+	letter-spacing: 0 !important;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+}
+
+img {
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+/* Page-to-page transitions between separate HTML documents (Chrome, Edge, Safari 18.2+).
+   Other browsers just switch pages instantly. */
+@view-transition {
+	navigation: auto;
+}
+
+::view-transition-old(root) {
+	animation: 0.18s var(--ease) both vt-out;
+}
+
+::view-transition-new(root) {
+	animation: 0.28s var(--ease) both vt-in;
+}
+
+/* Header and footer stay put; the page title (view-transition-name: page-title) morphs. */
+::view-transition-group(site-header),
+::view-transition-group(site-footer) {
+	animation: none;
+}
+
+::view-transition-group(page-title) {
+	animation-duration: 0.32s;
+	animation-timing-function: var(--ease);
+}
+
+@keyframes vt-out {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes vt-in {
+	from {
+		opacity: 0;
+		transform: translateY(0.5rem);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	@view-transition {
+		navigation: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+	}
+}

@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Personal page: education, sport, personal growth and contact."
+	},
+	"ui": {
+		"skip": "Skip to content",
+		"mainNav": "Main menu",
+		"menu": "Menu",
+		"closeMenu": "Close menu",
+		"language": "Language",
+		"home": "Home page"
+	},
+	"nav": {
+		"home": "Start",
+		"about": "About me",
+		"education": "Education",
+		"university": "University",
+		"masters": "Master's degree",
+		"technical": "Technical school",
+		"mensa": "Mensa",
+		"sport": "Sport",
+		"club": "Club",
+		"running": "Running",
+		"growth": "Growth",
+		"journeyman": "Journeyman",
+		"reiki": "Reiki",
+		"prana": "Prana",
+		"youtube": "YouTube",
+		"contact": "Contact"
+	},
+	"page": {
+		"home": {
+			"title": "Start",
+			"lead": "Welcome to my page."
+		},
+		"about": {
+			"title": "About me",
+			"lead": "A few words about me."
+		},
+		"university": {
+			"title": "University",
+			"lead": "Engineering studies."
+		},
+		"masters": {
+			"title": "Master's degree",
+			"lead": "Graduate studies."
+		},
+		"technical": {
+			"title": "Technical school",
+			"lead": "Secondary school and a first trade."
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Membership in Mensa."
+		},
+		"club": {
+			"title": "Club",
+			"lead": "My sports club."
+		},
+		"running": {
+			"title": "Running",
+			"lead": "Training, races and routes."
+		},
+		"journeyman": {
+			"title": "Journeyman",
+			"lead": "Journeyman's certificate in a craft."
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Reiki practice."
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Working with prana energy."
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "I run a YouTube channel."
+		},
+		"contact": {
+			"title": "Contact",
+			"lead": "Get in touch."
+		}
+	},
+	"placeholder": "Content coming soon.",
+	"youtube": {
+		"cta": "Go to the channel"
+	},
+	"contact": {
+		"email": "Email",
+		"vcard": "Save contact to your phone",
+		"vcardHint": "vCard file (.vcf)"
+	},
+	"photo": {
+		"mensa": "Photo related to Mensa"
+	},
+	"error": {
+		"notFound": "This page does not exist.",
+		"generic": "Something went wrong.",
+		"back": "Back to the start page"
+	},
+	"redirect": {
+		"choose": "Choose a language"
+	},
+	"perf": {
+		"loaded": "This page loaded in {ms} ms · {kb} KB",
+		"prerendered": "This page was ready before you clicked: 0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "Timeline",
+		"sample": "Sample data"
+	},
+	"notFound": {
+		"title": "Page not found"
+	}
+}
