@@ -58,10 +58,12 @@ jobs:
 
       - id: pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - run: yarn build
         env:
-          # "" for user.github.io or a custom domain, "/<repo>" for project sites
+          # Project sites are published under /<repository>.
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
 
