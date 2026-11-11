@@ -15,17 +15,17 @@
 		"home": "开始",
 		"about": "关于我",
 		"education": "教育",
-		"university": "理工大学",
-		"masters": "硕士",
-		"technical": "技术学校",
+		"technician": "技术员",
+		"engineer": "工程师",
+		"master": "硕士",
 		"mensa": "门萨",
 		"sport": "运动",
 		"club": "俱乐部",
 		"running": "跑步",
 		"growth": "成长",
-		"journeyman": "工匠",
-		"reiki": "灵气",
 		"prana": "普拉纳",
+		"reiki": "灵气",
+		"journeyman": "工匠",
 		"youtube": "YouTube",
 		"contact": "联系"
 	},
@@ -38,17 +38,17 @@
 			"title": "关于我",
 			"lead": "简单介绍一下我自己。"
 		},
-		"university": {
-			"title": "理工大学",
-			"lead": "工科本科学习。"
+		"technician": {
+			"title": "技术员",
+			"lead": "技术员资格：中等教育与第一份职业。"
 		},
-		"masters": {
+		"engineer": {
+			"title": "工程师",
+			"lead": "工学学士：本科阶段学习。"
+		},
+		"master": {
 			"title": "硕士",
-			"lead": "研究生学习。"
-		},
-		"technical": {
-			"title": "技术学校",
-			"lead": "中学与第一份职业。"
+			"lead": "硕士学位：研究生阶段学习。"
 		},
 		"mensa": {
 			"title": "门萨",
@@ -62,17 +62,17 @@
 			"title": "跑步",
 			"lead": "训练、比赛和路线。"
 		},
-		"journeyman": {
-			"title": "工匠",
-			"lead": "手工艺工匠证书。"
+		"prana": {
+			"title": "普拉纳",
+			"lead": "与普拉纳能量一起工作。"
 		},
 		"reiki": {
 			"title": "灵气",
 			"lead": "灵气练习。"
 		},
-		"prana": {
-			"title": "普拉纳",
-			"lead": "与普拉纳能量一起工作。"
+		"journeyman": {
+			"title": "工匠",
+			"lead": "手工艺工匠证书。"
 		},
 		"youtube": {
 			"title": "YouTube",

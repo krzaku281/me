@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Página personal: educación, deporte, desarrollo personal y contacto."
+	},
+	"ui": {
+		"skip": "Saltar al contenido",
+		"mainNav": "Menú principal",
+		"menu": "Menú",
+		"closeMenu": "Cerrar menú",
+		"language": "Idioma",
+		"home": "Página de inicio"
+	},
+	"nav": {
+		"home": "Inicio",
+		"about": "Sobre mí",
+		"education": "Educación",
+		"technician": "Técnico",
+		"engineer": "Ingeniero",
+		"master": "Máster",
+		"mensa": "Mensa",
+		"sport": "Deporte",
+		"club": "Club",
+		"running": "Correr",
+		"growth": "Desarrollo",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"journeyman": "Oficial",
+		"youtube": "YouTube",
+		"contact": "Contacto"
+	},
+	"page": {
+		"home": {
+			"title": "Inicio",
+			"lead": "Bienvenido a mi página."
+		},
+		"about": {
+			"title": "Sobre mí",
+			"lead": "Unas palabras sobre mí."
+		},
+		"technician": {
+			"title": "Técnico",
+			"lead": "Título de técnico: secundaria y un primer oficio."
+		},
+		"engineer": {
+			"title": "Ingeniero",
+			"lead": "Título de ingeniero: estudios de grado."
+		},
+		"master": {
+			"title": "Máster",
+			"lead": "Título de máster: estudios de posgrado."
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Miembro de Mensa."
+		},
+		"club": {
+			"title": "Club",
+			"lead": "Mi club deportivo."
+		},
+		"running": {
+			"title": "Correr",
+			"lead": "Entrenamientos, carreras y rutas."
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Trabajo con la energía prana."
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Práctica de reiki."
+		},
+		"journeyman": {
+			"title": "Oficial",
+			"lead": "Título de oficial en un oficio artesanal."
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "Tengo un canal de YouTube."
+		},
+		"contact": {
+			"title": "Contacto",
+			"lead": "Ponte en contacto conmigo."
+		}
+	},
+	"placeholder": "Contenido próximamente.",
+	"youtube": {
+		"cta": "Ir al canal"
+	},
+	"contact": {
+		"email": "Correo electrónico",
+		"vcard": "Guardar el contacto en el teléfono",
+		"vcardHint": "Archivo vCard (.vcf)"
+	},
+	"photo": {
+		"mensa": "Foto relacionada con Mensa"
+	},
+	"error": {
+		"notFound": "Esta página no existe.",
+		"generic": "Algo salió mal.",
+		"back": "Volver a la página de inicio"
+	},
+	"redirect": {
+		"choose": "Elige un idioma"
+	},
+	"perf": {
+		"loaded": "Esta página se cargó en {ms} ms · {kb} KB",
+		"prerendered": "Esta página estaba lista antes de que hicieras clic: 0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "Cronología",
+		"sample": "Datos de ejemplo"
+	},
+	"notFound": {
+		"title": "Página no encontrada"
+	}
+}

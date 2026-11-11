@@ -7,7 +7,7 @@ test.describe('desktop menu', () => {
 	test('mouse can travel from a group to an item and click it', async ({ page }) => {
 		await page.goto(url('/en/'));
 		const summary = page.locator('summary', { hasText: 'Education' });
-		const link = page.locator('.sub a', { hasText: 'Technical school' });
+		const link = page.locator('.sub a', { hasText: 'Technician' });
 
 		const from = (await summary.boundingBox())!;
 		await page.mouse.move(from.x + from.width / 2, from.y + from.height / 2);
@@ -19,10 +19,10 @@ test.describe('desktop menu', () => {
 		await page.mouse.down();
 		await page.mouse.up();
 
-		await expect(page).toHaveURL(url('/en/education/technical-school/'));
-		await expect(h1(page)).toHaveText('Technical school');
+		await expect(page).toHaveURL(url('/en/education/technician/'));
+		await expect(h1(page)).toHaveText('Technician');
 		// On the new page the current item and its group are marked
-		await expect(page.locator('.sub a[aria-current="page"]')).toHaveText('Technical school');
+		await expect(page.locator('.sub a[aria-current="page"]')).toHaveText('Technician');
 		await expect(page.locator('summary.active')).toContainText('Education');
 	});
 
@@ -77,7 +77,7 @@ test.describe('without JavaScript', () => {
 		await expect(h1(page)).toHaveText('Bieganie');
 
 		await page.locator('summary', { hasText: 'Edukacja' }).click();
-		await expect(page.getByRole('link', { name: 'Politechnika' })).toBeVisible();
+		await expect(page.getByRole('link', { name: 'Inżynier' })).toBeVisible();
 
 		await page.locator('details.lang > summary').click();
 		await page.locator('details.lang a[data-lang="he"]').click();
@@ -92,7 +92,16 @@ test.describe('without JavaScript', () => {
 			'Deutsch',
 			'العربية',
 			'עברית',
-			'中文'
+			'中文',
+			'हिन्दी',
+			'Español',
+			'বাংলা',
+			'Русский',
+			'Português',
+			'Français',
+			'Bahasa Indonesia',
+			'اردو',
+			'日本語'
 		]);
 		await page.goto(url('/de/nope/'));
 		await expect(page.locator('main.error h1').first()).toBeVisible();

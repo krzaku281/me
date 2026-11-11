@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Page personnelle : formation, sport, développement personnel et contact."
+	},
+	"ui": {
+		"skip": "Aller au contenu",
+		"mainNav": "Menu principal",
+		"menu": "Menu",
+		"closeMenu": "Fermer le menu",
+		"language": "Langue",
+		"home": "Page d’accueil"
+	},
+	"nav": {
+		"home": "Accueil",
+		"about": "À propos",
+		"education": "Formation",
+		"technician": "Technicien",
+		"engineer": "Ingénieur",
+		"master": "Master",
+		"mensa": "Mensa",
+		"sport": "Sport",
+		"club": "Club",
+		"running": "Course à pied",
+		"growth": "Développement",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"journeyman": "Compagnon",
+		"youtube": "YouTube",
+		"contact": "Contact"
+	},
+	"page": {
+		"home": {
+			"title": "Accueil",
+			"lead": "Bienvenue sur ma page."
+		},
+		"about": {
+			"title": "À propos",
+			"lead": "Quelques mots sur moi."
+		},
+		"technician": {
+			"title": "Technicien",
+			"lead": "Diplôme de technicien : lycée et un premier métier."
+		},
+		"engineer": {
+			"title": "Ingénieur",
+			"lead": "Diplôme d’ingénieur : études supérieures en ingénierie."
+		},
+		"master": {
+			"title": "Master",
+			"lead": "Diplôme de master : deuxième cycle universitaire."
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Membre de Mensa."
+		},
+		"club": {
+			"title": "Club",
+			"lead": "Mon club de sport."
+		},
+		"running": {
+			"title": "Course à pied",
+			"lead": "Entraînements, courses et parcours."
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Travail avec l’énergie du prana."
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Pratique du reiki."
+		},
+		"journeyman": {
+			"title": "Compagnon",
+			"lead": "Titre de compagnon dans un métier artisanal."
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "J’anime une chaîne YouTube."
+		},
+		"contact": {
+			"title": "Contact",
+			"lead": "Écrivez-moi."
+		}
+	},
+	"placeholder": "Contenu à venir.",
+	"youtube": {
+		"cta": "Voir la chaîne"
+	},
+	"contact": {
+		"email": "E-mail",
+		"vcard": "Enregistrer le contact sur votre téléphone",
+		"vcardHint": "Fichier vCard (.vcf)"
+	},
+	"photo": {
+		"mensa": "Photo liée à Mensa"
+	},
+	"error": {
+		"notFound": "Cette page n’existe pas.",
+		"generic": "Une erreur s’est produite.",
+		"back": "Retour à la page d’accueil"
+	},
+	"redirect": {
+		"choose": "Choisissez une langue"
+	},
+	"perf": {
+		"loaded": "Cette page s’est chargée en {ms} ms · {kb} Ko",
+		"prerendered": "Cette page était prête avant votre clic : 0 ms · {kb} Ko"
+	},
+	"timeline": {
+		"label": "Chronologie",
+		"sample": "Données d’exemple"
+	},
+	"notFound": {
+		"title": "Page introuvable"
+	}
+}

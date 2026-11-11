@@ -28,9 +28,9 @@ test('no horizontal scrolling on any page type', async ({ page }) => {
 	for (const path of [
 		'/pl/',
 		'/pl/edukacja/mensa/',
-		'/pl/edukacja/politechnika/',
+		'/pl/edukacja/inzynier/',
 		'/pl/kontakt/',
-		'/ar/education/university/'
+		'/ar/education/engineer/'
 	]) {
 		await page.goto(url(path));
 		const overflow = await page.evaluate(

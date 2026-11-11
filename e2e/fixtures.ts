@@ -9,7 +9,7 @@ export const ORIGIN = 'https://example.test';
 export const url = (path: string) => BASE + path;
 export const pagePath = (id: PageId, locale: Locale) => url(localizedPath(id, locale));
 
-/** Every public page in every language, e.g. '/me/pl/edukacja/politechnika/'. */
+/** Every public page in every language, e.g. '/me/pl/edukacja/inzynier/'. */
 export const ALL_PAGES = allPaths().map(url);
 export { LOCALES };
 
@@ -19,7 +19,7 @@ export { LOCALES };
  * Other languages render the same templates with different text.
  */
 export const SAMPLE_PAGES = (['pl', 'ar', 'zh'] as const).flatMap((locale) =>
-	(['home', 'about', 'university', 'mensa', 'youtube', 'contact'] as const).map((id) =>
+	(['home', 'about', 'engineer', 'mensa', 'youtube', 'contact'] as const).map((id) =>
 		pagePath(id, locale)
 	)
 );

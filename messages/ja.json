@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "個人ページ：学歴、スポーツ、自己成長、連絡先。"
+	},
+	"ui": {
+		"skip": "本文へスキップ",
+		"mainNav": "メインメニュー",
+		"menu": "メニュー",
+		"closeMenu": "メニューを閉じる",
+		"language": "言語",
+		"home": "ホーム"
+	},
+	"nav": {
+		"home": "ホーム",
+		"about": "自己紹介",
+		"education": "学歴",
+		"technician": "技術者",
+		"engineer": "学士（工学）",
+		"master": "修士（工学）",
+		"mensa": "メンサ",
+		"sport": "スポーツ",
+		"club": "クラブ",
+		"running": "ランニング",
+		"growth": "自己成長",
+		"prana": "プラーナ",
+		"reiki": "レイキ",
+		"journeyman": "職人資格",
+		"youtube": "YouTube",
+		"contact": "連絡先"
+	},
+	"page": {
+		"home": {
+			"title": "ホーム",
+			"lead": "ページへようこそ。"
+		},
+		"about": {
+			"title": "自己紹介",
+			"lead": "私について少し。"
+		},
+		"technician": {
+			"title": "技術者",
+			"lead": "技術者資格：中等教育と最初の職業。"
+		},
+		"engineer": {
+			"title": "学士（工学）",
+			"lead": "工学の学士課程。"
+		},
+		"master": {
+			"title": "修士（工学）",
+			"lead": "工学の修士課程。"
+		},
+		"mensa": {
+			"title": "メンサ",
+			"lead": "メンサの会員です。"
+		},
+		"club": {
+			"title": "クラブ",
+			"lead": "所属するスポーツクラブ。"
+		},
+		"running": {
+			"title": "ランニング",
+			"lead": "練習、レース、コース。"
+		},
+		"prana": {
+			"title": "プラーナ",
+			"lead": "プラーナのエネルギーワーク。"
+		},
+		"reiki": {
+			"title": "レイキ",
+			"lead": "レイキの実践。"
+		},
+		"journeyman": {
+			"title": "職人資格",
+			"lead": "手工業の職人資格。"
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "YouTubeチャンネルを運営しています。"
+		},
+		"contact": {
+			"title": "連絡先",
+			"lead": "お気軽にご連絡ください。"
+		}
+	},
+	"placeholder": "準備中です。",
+	"youtube": {
+		"cta": "チャンネルを見る"
+	},
+	"contact": {
+		"email": "メール",
+		"vcard": "連絡先をスマートフォンに保存",
+		"vcardHint": "vCardファイル（.vcf）"
+	},
+	"photo": {
+		"mensa": "メンサに関する写真"
+	},
+	"error": {
+		"notFound": "このページは存在しません。",
+		"generic": "問題が発生しました。",
+		"back": "ホームに戻る"
+	},
+	"redirect": {
+		"choose": "言語を選択"
+	},
+	"perf": {
+		"loaded": "このページの読み込み時間：{ms} ms · {kb} KB",
+		"prerendered": "クリックする前に準備完了：0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "年表",
+		"sample": "サンプルデータ"
+	},
+	"notFound": {
+		"title": "ページが見つかりません"
+	}
+}

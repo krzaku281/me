@@ -14,13 +14,23 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Locale } from '#lib/i18n/config.ts';
 
-type Family = 'Fira Mono' | 'Noto Sans Arabic' | 'Noto Sans Hebrew' | 'Noto Sans SC';
+type Family =
+	| 'Fira Mono'
+	| 'Noto Sans Arabic'
+	| 'Noto Sans Hebrew'
+	| 'Noto Sans SC'
+	| 'Noto Sans JP'
+	| 'Noto Sans Devanagari'
+	| 'Noto Sans Bengali';
 
 const PACKAGES: Record<Family, string> = {
 	'Fira Mono': 'fira-mono',
 	'Noto Sans Arabic': 'noto-sans-arabic',
 	'Noto Sans Hebrew': 'noto-sans-hebrew',
-	'Noto Sans SC': 'noto-sans-sc'
+	'Noto Sans SC': 'noto-sans-sc',
+	'Noto Sans JP': 'noto-sans-jp',
+	'Noto Sans Devanagari': 'noto-sans-devanagari',
+	'Noto Sans Bengali': 'noto-sans-bengali'
 };
 
 /** Main font per language. Latin-only bits (name, URL) always use Fira Mono. */
@@ -30,7 +40,16 @@ const PRIMARY: Record<Locale, Family> = {
 	de: 'Fira Mono',
 	ar: 'Noto Sans Arabic',
 	he: 'Noto Sans Hebrew',
-	zh: 'Noto Sans SC'
+	zh: 'Noto Sans SC',
+	hi: 'Noto Sans Devanagari',
+	es: 'Fira Mono',
+	bn: 'Noto Sans Bengali',
+	ru: 'Fira Mono',
+	pt: 'Fira Mono',
+	fr: 'Fira Mono',
+	id: 'Fira Mono',
+	ur: 'Noto Sans Arabic',
+	ja: 'Noto Sans JP'
 };
 
 interface Face {

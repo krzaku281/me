@@ -15,17 +15,17 @@
 		"home": "Start",
 		"about": "About me",
 		"education": "Education",
-		"university": "University",
-		"masters": "Master's degree",
-		"technical": "Technical school",
+		"technician": "Technician",
+		"engineer": "Engineer",
+		"master": "Master",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Club",
 		"running": "Running",
 		"growth": "Growth",
-		"journeyman": "Journeyman",
-		"reiki": "Reiki",
 		"prana": "Prana",
+		"reiki": "Reiki",
+		"journeyman": "Journeyman",
 		"youtube": "YouTube",
 		"contact": "Contact"
 	},
@@ -38,17 +38,17 @@
 			"title": "About me",
 			"lead": "A few words about me."
 		},
-		"university": {
-			"title": "University",
-			"lead": "Engineering studies."
+		"technician": {
+			"title": "Technician",
+			"lead": "Technician diploma: secondary school and a first trade."
 		},
-		"masters": {
-			"title": "Master's degree",
-			"lead": "Graduate studies."
+		"engineer": {
+			"title": "Engineer",
+			"lead": "Engineering degree: first-cycle studies."
 		},
-		"technical": {
-			"title": "Technical school",
-			"lead": "Secondary school and a first trade."
+		"master": {
+			"title": "Master",
+			"lead": "Master’s degree: second-cycle studies."
 		},
 		"mensa": {
 			"title": "Mensa",
@@ -62,17 +62,17 @@
 			"title": "Running",
 			"lead": "Training, races and routes."
 		},
-		"journeyman": {
-			"title": "Journeyman",
-			"lead": "Journeyman's certificate in a craft."
+		"prana": {
+			"title": "Prana",
+			"lead": "Working with prana energy."
 		},
 		"reiki": {
 			"title": "Reiki",
 			"lead": "Reiki practice."
 		},
-		"prana": {
-			"title": "Prana",
-			"lead": "Working with prana energy."
+		"journeyman": {
+			"title": "Journeyman",
+			"lead": "Journeyman's certificate in a craft."
 		},
 		"youtube": {
 			"title": "YouTube",

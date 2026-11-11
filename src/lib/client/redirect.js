@@ -15,6 +15,7 @@
 		for (var i = 0; i < prefs.length; i++) {
 			var code = String(prefs[i]).toLowerCase().split('-')[0];
 			if (code === 'iw') code = 'he'; // old code for Hebrew, still sent by some systems
+			if (code === 'in') code = 'id'; // old code for Indonesian (e.g. older Android)
 			if (locales.indexOf(code) >= 0) {
 				lang = code;
 				break;

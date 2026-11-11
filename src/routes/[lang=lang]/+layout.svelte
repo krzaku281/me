@@ -112,7 +112,11 @@
 			data-loaded={m['perf.loaded']({ ms: '{ms}', kb: '{kb}' })}
 			data-prerendered={m['perf.prerendered']({ kb: '{kb}' })}
 			hidden
-		></span>
+		>
+			<!-- Short form for the eye; the full sentence for screen readers and as a tooltip -->
+			<span data-perf-short aria-hidden="true" dir="ltr"></span>
+			<span data-perf-full class="visually-hidden"></span>
+		</span>
 	</footer>
 </div>
 

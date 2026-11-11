@@ -2,4 +2,4 @@
 	import Page from '#lib/components/Page.svelte';
 </script>
 
-<Page id="masters" />
+<Page id="master" />

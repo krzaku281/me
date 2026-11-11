@@ -1,10 +1,10 @@
 import { expect, h1, test, url } from './fixtures.ts';
 
 test('RTL: Arabic page is mirrored, sans-serif, without letter spacing', async ({ page }) => {
-	await page.goto(url('/ar/education/university/'));
+	await page.goto(url('/ar/education/engineer/'));
 	await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
 	await expect(page.locator('html')).toHaveAttribute('lang', 'ar');
-	await expect(h1(page)).toHaveText('الجامعة التقنية');
+	await expect(h1(page)).toHaveText('مهندس');
 
 	// Mirrored layout: brand on the right of the menu, timeline along the right edge
 	const brand = (await page.locator('a.brand').boundingBox())!;
@@ -44,12 +44,61 @@ test('Chinese text gets a Chinese sans-serif after the monospace fonts', async (
 	);
 });
 
+test('Urdu is right-to-left without letter spacing', async ({ page }) => {
+	await page.goto(url('/ur/'));
+	await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
+	await expect(h1(page)).toHaveText('سرورق');
+});
+
+test('Japanese text gets a Japanese sans-serif after the monospace fonts', async ({ page }) => {
+	await page.goto(url('/ja/'));
+	await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
+	expect(await page.evaluate(() => getComputedStyle(document.body).fontFamily)).toMatch(
+		/^ui-monospace.*Hiragino Sans.*Yu Gothic/
+	);
+});
+
+for (const { locale, font } of [
+	{ locale: 'hi', font: /^ui-monospace.*Noto Sans Devanagari/ },
+	{ locale: 'bn', font: /^ui-monospace.*Noto Sans Bengali/ }
+]) {
+	test(`${locale}: Indic script gets its own sans-serif, no letter spacing`, async ({ page }) => {
+		await page.goto(url(`/${locale}/`));
+		await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
+		expect(await page.evaluate(() => getComputedStyle(document.body).fontFamily)).toMatch(font);
+		// Letter spacing would break the headstroke line joining the letters
+		const spaced = await page.evaluate(
+			() =>
+				[...document.querySelectorAll('main *')].filter(
+					(el) => !['normal', '0px'].includes(getComputedStyle(el).letterSpacing)
+				).length
+		);
+		expect(spaced).toBe(0);
+	});
+}
+
 test.describe('language menu', () => {
 	test('lists every language in its own script, direction and font', async ({ page }) => {
 		await page.goto(url('/en/'));
 		await page.locator('details.lang > summary').click();
 		const names = page.locator('details.lang a span[lang]');
-		await expect(names).toHaveText(['Polski', 'English', 'Deutsch', 'العربية', 'עברית', '中文']);
+		await expect(names).toHaveText([
+			'Polski',
+			'English',
+			'Deutsch',
+			'العربية',
+			'עברית',
+			'中文',
+			'हिन्दी',
+			'Español',
+			'বাংলা',
+			'Русский',
+			'Português',
+			'Français',
+			'Bahasa Indonesia',
+			'اردو',
+			'日本語'
+		]);
 		await expect(page.locator('details.lang a[aria-current="true"]')).toHaveAttribute(
 			'data-lang',
 			'en'

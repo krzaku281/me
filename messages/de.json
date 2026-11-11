@@ -15,17 +15,17 @@
 		"home": "Start",
 		"about": "Über mich",
 		"education": "Bildung",
-		"university": "Hochschule",
-		"masters": "Master",
-		"technical": "Technikum",
+		"technician": "Techniker",
+		"engineer": "Ingenieur",
+		"master": "Master",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Verein",
 		"running": "Laufen",
 		"growth": "Entwicklung",
-		"journeyman": "Geselle",
-		"reiki": "Reiki",
 		"prana": "Prana",
+		"reiki": "Reiki",
+		"journeyman": "Geselle",
 		"youtube": "YouTube",
 		"contact": "Kontakt"
 	},
@@ -38,17 +38,17 @@
 			"title": "Über mich",
 			"lead": "Ein paar Worte über mich."
 		},
-		"university": {
-			"title": "Hochschule",
-			"lead": "Ingenieurstudium."
+		"technician": {
+			"title": "Techniker",
+			"lead": "Technikerabschluss: Schule und ein erster Beruf."
 		},
-		"masters": {
+		"engineer": {
+			"title": "Ingenieur",
+			"lead": "Ingenieurabschluss: Bachelorstudium."
+		},
+		"master": {
 			"title": "Master",
-			"lead": "Masterstudium."
-		},
-		"technical": {
-			"title": "Technikum",
-			"lead": "Fachschule und erster Beruf."
+			"lead": "Masterabschluss: Masterstudium."
 		},
 		"mensa": {
 			"title": "Mensa",
@@ -62,17 +62,17 @@
 			"title": "Laufen",
 			"lead": "Training, Wettkämpfe und Strecken."
 		},
-		"journeyman": {
-			"title": "Geselle",
-			"lead": "Gesellenbrief im Handwerk."
+		"prana": {
+			"title": "Prana",
+			"lead": "Arbeit mit Prana-Energie."
 		},
 		"reiki": {
 			"title": "Reiki",
 			"lead": "Reiki-Praxis."
 		},
-		"prana": {
-			"title": "Prana",
-			"lead": "Arbeit mit Prana-Energie."
+		"journeyman": {
+			"title": "Geselle",
+			"lead": "Gesellenbrief im Handwerk."
 		},
 		"youtube": {
 			"title": "YouTube",

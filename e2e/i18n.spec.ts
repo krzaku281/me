@@ -5,9 +5,10 @@ test.describe('language detection on "/"', () => {
 	for (const { name, languages, expected } of [
 		{ name: 'region is ignored', languages: ['de-AT'], expected: 'de' },
 		{ name: 'any Chinese goes to zh', languages: ['zh-TW'], expected: 'zh' },
-		{ name: 'later preferences count', languages: ['fr-FR', 'he-IL'], expected: 'he' },
+		{ name: 'later preferences count', languages: ['ko-KR', 'he-IL'], expected: 'he' },
 		{ name: 'old Hebrew code "iw"', languages: ['iw'], expected: 'he' },
-		{ name: 'unsupported falls back to en', languages: ['fr-FR', 'ja'], expected: 'en' }
+		{ name: 'old Indonesian code "in"', languages: ['in-ID'], expected: 'id' },
+		{ name: 'unsupported falls back to en', languages: ['ko-KR', 'th'], expected: 'en' }
 	]) {
 		test(`${name}: [${languages}] -> /${expected}/`, async ({ page }) => {
 			await page.addInitScript((langs) => {
@@ -27,19 +28,19 @@ test.describe('manual language choice', () => {
 	test('keeps the page, translates the URL, flips direction and is remembered', async ({
 		page
 	}) => {
-		await page.goto(url('/de/bildung/hochschule/'));
+		await page.goto(url('/de/bildung/ingenieur/'));
 
 		// German slug -> English slug fallback, LTR -> RTL
 		await chooseLanguage(page, 'ar');
-		await expect(page).toHaveURL(url('/ar/education/university/'));
+		await expect(page).toHaveURL(url('/ar/education/engineer/'));
 		await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
-		await expect(h1(page)).toHaveText('الجامعة التقنية');
+		await expect(h1(page)).toHaveText('مهندس');
 
 		// ...and back to a translated slug, RTL -> LTR
 		await chooseLanguage(page, 'pl');
-		await expect(page).toHaveURL(url('/pl/edukacja/politechnika/'));
+		await expect(page).toHaveURL(url('/pl/edukacja/inzynier/'));
 		await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
-		await expect(page).toHaveTitle('Politechnika · Marek Krzak');
+		await expect(page).toHaveTitle('Inżynier · Marek Krzak');
 		expect(await page.evaluate(() => localStorage.getItem('lang'))).toBe('pl');
 
 		// Next visit: the saved choice wins over the browser language (de)

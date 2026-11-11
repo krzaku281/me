@@ -1,0 +1,117 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Halaman pribadi: pendidikan, olahraga, pengembangan diri, dan kontak."
+	},
+	"ui": {
+		"skip": "Langsung ke konten",
+		"mainNav": "Menu utama",
+		"menu": "Menu",
+		"closeMenu": "Tutup menu",
+		"language": "Bahasa",
+		"home": "Beranda"
+	},
+	"nav": {
+		"home": "Beranda",
+		"about": "Tentang saya",
+		"education": "Pendidikan",
+		"technician": "Teknisi",
+		"engineer": "Insinyur",
+		"master": "Magister",
+		"mensa": "Mensa",
+		"sport": "Olahraga",
+		"club": "Klub",
+		"running": "Lari",
+		"growth": "Pengembangan diri",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"journeyman": "Tukang ahli",
+		"youtube": "YouTube",
+		"contact": "Kontak"
+	},
+	"page": {
+		"home": {
+			"title": "Beranda",
+			"lead": "Selamat datang di halaman saya."
+		},
+		"about": {
+			"title": "Tentang saya",
+			"lead": "Sedikit tentang saya."
+		},
+		"technician": {
+			"title": "Teknisi",
+			"lead": "Sertifikat teknisi: sekolah menengah dan profesi pertama."
+		},
+		"engineer": {
+			"title": "Insinyur",
+			"lead": "Gelar insinyur: studi sarjana."
+		},
+		"master": {
+			"title": "Magister",
+			"lead": "Gelar magister: studi pascasarjana."
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Keanggotaan di Mensa."
+		},
+		"club": {
+			"title": "Klub",
+			"lead": "Klub olahraga saya."
+		},
+		"running": {
+			"title": "Lari",
+			"lead": "Latihan, lomba, dan rute."
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Bekerja dengan energi prana."
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Praktik reiki."
+		},
+		"journeyman": {
+			"title": "Tukang ahli",
+			"lead": "Sertifikat tukang ahli dalam suatu kerajinan."
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "Saya mengelola kanal YouTube."
+		},
+		"contact": {
+			"title": "Kontak",
+			"lead": "Hubungi saya."
+		}
+	},
+	"placeholder": "Konten segera hadir.",
+	"youtube": {
+		"cta": "Kunjungi kanal"
+	},
+	"contact": {
+		"email": "Email",
+		"vcard": "Simpan kontak di ponsel",
+		"vcardHint": "Berkas vCard (.vcf)"
+	},
+	"photo": {
+		"mensa": "Foto terkait Mensa"
+	},
+	"error": {
+		"notFound": "Halaman ini tidak ada.",
+		"generic": "Terjadi kesalahan.",
+		"back": "Kembali ke beranda"
+	},
+	"redirect": {
+		"choose": "Pilih bahasa"
+	},
+	"perf": {
+		"loaded": "Halaman ini dimuat dalam {ms} ms · {kb} KB",
+		"prerendered": "Halaman ini sudah siap sebelum Anda mengklik: 0 ms · {kb} KB"
+	},
+	"timeline": {
+		"label": "Lini masa",
+		"sample": "Data contoh"
+	},
+	"notFound": {
+		"title": "Halaman tidak ditemukan"
+	}
+}

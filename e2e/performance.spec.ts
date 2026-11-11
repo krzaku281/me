@@ -4,7 +4,7 @@ import { ALL_PAGES, BASE, expect, test, url } from './fixtures.ts';
 /** Budgets. Raising one should be a conscious decision. */
 const BUDGET = {
 	/** gzip size of any page's HTML, including inlined CSS and script */
-	htmlGzip: 8 * 1024,
+	htmlGzip: 9 * 1024,
 	/** inline JavaScript per page (minified, uncompressed) */
 	inlineJs: 4 * 1024
 };
@@ -52,9 +52,14 @@ test('a page loads only its HTML and images: no JS, CSS, fonts or third parties'
 
 test('footer shows the measured load time', async ({ page }) => {
 	await page.goto(url('/pl/'));
-	await expect(page.locator('[data-perf]')).toHaveText(
-		/^Strona załadowała się w \d+ ms · \d+\.\d KB$/
-	);
+	const perf = page.locator('[data-perf]');
+	// Short form on screen, emoji hidden from screen readers
+	await expect(perf.locator('[data-perf-short]')).toHaveText(/^🔥 \d+ ms · \d+\.\d KB$/);
+	await expect(perf.locator('[data-perf-short]')).toHaveAttribute('aria-hidden', 'true');
+	// Full translated sentence for screen readers and as the tooltip
+	const full = /^Strona załadowała się w \d+ ms · \d+\.\d KB$/;
+	await expect(perf.locator('[data-perf-full]')).toHaveText(full);
+	await expect(perf).toHaveAttribute('title', full);
 });
 
 test('Speculation Rules prerender on hover; view transitions respect reduced motion', async ({

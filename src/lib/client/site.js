@@ -105,7 +105,8 @@
 			);
 	}
 
-	// 4. "This page loaded in N ms" in the footer, from the Navigation Timing API.
+	// 4. "🔥 N ms · N KB" in the footer, from the Navigation Timing API. The full translated
+	//    sentence goes to screen readers and the tooltip.
 	var perf = d.querySelector('[data-perf]');
 	if (perf && window.performance && performance.getEntriesByType) {
 		afterLoad(function () {
@@ -119,11 +120,15 @@
 				var kb = (bytes / 1024).toFixed(1);
 				var start = nav.activationStart || 0;
 				var ms = Math.round(nav.loadEventEnd - start);
-				var text =
-					start > 0 && ms <= 0
-						? perf.dataset.prerendered
-						: perf.dataset.loaded.replace('{ms}', String(Math.max(ms, 1)));
-				perf.textContent = text.replace('{kb}', kb);
+				var ready = start > 0 && ms <= 0; // prerendered and done before the click
+				var shown = ready ? 0 : Math.max(ms, 1);
+				var full = (ready ? perf.dataset.prerendered : perf.dataset.loaded)
+					.replace('{ms}', String(shown))
+					.replace('{kb}', kb);
+				perf.querySelector('[data-perf-short]').textContent =
+					'\uD83D\uDD25 ' + shown + ' ms \u00B7 ' + kb + ' KB';
+				perf.querySelector('[data-perf-full]').textContent = full;
+				perf.title = full;
 				perf.hidden = false;
 			});
 		});

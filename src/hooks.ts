@@ -6,8 +6,8 @@ const base = __BASE_PATH__;
 /** Matches no route, so SvelteKit answers with 404. */
 const NOT_FOUND = '/__not-found__';
 
-// /pl/edukacja/politechnika/ -> /pl/education/university
-// Internal paths typed directly (e.g. /pl/education/university/) give 404, so each page has one URL.
+// /pl/edukacja/inzynier/ -> /pl/education/engineer
+// Internal paths typed directly (e.g. /pl/education/engineer/) give 404, so each page has one URL.
 export const reroute: Reroute = ({ url }) => {
 	if (base && !url.pathname.startsWith(base)) return;
 

@@ -15,17 +15,17 @@
 		"home": "Start",
 		"about": "O mnie",
 		"education": "Edukacja",
-		"university": "Politechnika",
-		"masters": "Magisterium",
-		"technical": "Technikum",
+		"technician": "Technik",
+		"engineer": "Inżynier",
+		"master": "Magister",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Klub",
 		"running": "Bieganie",
 		"growth": "Rozwój",
-		"journeyman": "Czeladnik",
-		"reiki": "Reiki",
 		"prana": "Prana",
+		"reiki": "Reiki",
+		"journeyman": "Czeladnik",
 		"youtube": "YouTube",
 		"contact": "Kontakt"
 	},
@@ -38,17 +38,17 @@
 			"title": "O mnie",
 			"lead": "Kilka słów o mnie."
 		},
-		"university": {
-			"title": "Politechnika",
-			"lead": "Studia inżynierskie."
+		"technician": {
+			"title": "Technik",
+			"lead": "Tytuł technika: szkoła średnia i pierwszy zawód."
 		},
-		"masters": {
-			"title": "Magisterium",
-			"lead": "Studia magisterskie."
+		"engineer": {
+			"title": "Inżynier",
+			"lead": "Tytuł inżyniera: studia pierwszego stopnia."
 		},
-		"technical": {
-			"title": "Technikum",
-			"lead": "Szkoła średnia i pierwszy zawód."
+		"master": {
+			"title": "Magister",
+			"lead": "Tytuł magistra: studia drugiego stopnia."
 		},
 		"mensa": {
 			"title": "Mensa",
@@ -62,17 +62,17 @@
 			"title": "Bieganie",
 			"lead": "Treningi, starty i trasy."
 		},
-		"journeyman": {
-			"title": "Czeladnik",
-			"lead": "Tytuł czeladnika w rzemiośle."
+		"prana": {
+			"title": "Prana",
+			"lead": "Praca z energią prany."
 		},
 		"reiki": {
 			"title": "Reiki",
 			"lead": "Praktyka reiki."
 		},
-		"prana": {
-			"title": "Prana",
-			"lead": "Praca z energią prany."
+		"journeyman": {
+			"title": "Czeladnik",
+			"lead": "Tytuł czeladnika w rzemiośle."
 		},
 		"youtube": {
 			"title": "YouTube",

@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import type { Page } from '@playwright/test';
-import { SAMPLE_PAGES, expect, test, url } from './fixtures.ts';
+import { LOCALES, SAMPLE_PAGES, expect, test, url } from './fixtures.ts';
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'];
 
@@ -67,7 +67,7 @@ test.describe('accessibility (axe, WCAG 2.2 AA)', () => {
 			});
 		});
 		await page.goto(url('/'));
-		await expect(page.locator('main.choose a')).toHaveCount(6);
+		await expect(page.locator('main.choose a')).toHaveCount(LOCALES.length);
 		await audit(page);
 	});
 });

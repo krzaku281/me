@@ -20,6 +20,15 @@ test('page meta: title, description, canonical, hreflang', async ({ page }) => {
 		`ar ${ORIGIN}/me/ar/education/mensa/`,
 		`he ${ORIGIN}/me/he/education/mensa/`,
 		`zh ${ORIGIN}/me/zh/education/mensa/`,
+		`hi ${ORIGIN}/me/hi/education/mensa/`,
+		`es ${ORIGIN}/me/es/educacion/mensa/`,
+		`bn ${ORIGIN}/me/bn/education/mensa/`,
+		`ru ${ORIGIN}/me/ru/education/mensa/`,
+		`pt ${ORIGIN}/me/pt/educacao/mensa/`,
+		`fr ${ORIGIN}/me/fr/formation/mensa/`,
+		`id ${ORIGIN}/me/id/pendidikan/mensa/`,
+		`ur ${ORIGIN}/me/ur/education/mensa/`,
+		`ja ${ORIGIN}/me/ja/education/mensa/`,
 		`x-default ${ORIGIN}/me/en/education/mensa/`
 	]);
 });
@@ -102,7 +111,7 @@ test('404 page is served in the language of the URL', async ({ page }) => {
 		['/ar/nope/', 'هذه الصفحة غير موجودة.', 'ar'],
 		['/zh/nope/', '此页面不存在。', 'zh'],
 		// Internal, untranslated paths are 404 too, so each page has exactly one URL
-		['/pl/education/university/', 'Nie ma takiej strony.', 'pl']
+		['/pl/education/engineer/', 'Nie ma takiej strony.', 'pl']
 	]) {
 		const response = await page.goto(url(path));
 		expect(response?.status()).toBe(404);

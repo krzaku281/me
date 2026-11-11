@@ -3,13 +3,16 @@
  * language switching, prerendering and the `reroute` hook.
  *
  * Every page lives in src/routes/[lang=lang]/<internal path>/+page.svelte,
- * where the internal path is built from `id`s (e.g. education/university).
- * Public URLs use the slugs of the given language: /pl/edukacja/politechnika/.
+ * where the internal path is built from `id`s (e.g. education/engineer).
+ * Public URLs use the slugs of the given language: /pl/edukacja/inzynier/.
  * Plain TS with no SvelteKit imports, so vite.config.ts can load it.
  */
 import { LOCALES, isLocale, type Locale } from './config.ts';
 
-/** URL slug per language. Languages without one (ar, he, zh) use the English slug. */
+/**
+ * URL slug per language. Languages without one use the English slug: non-Latin scripts
+ * (ar, he, zh, hi, bn, ru, ur, ja) on purpose, so URLs stay readable ASCII.
+ */
 type Slugs = Readonly<{ en: string } & Partial<Record<Locale, string>>>;
 
 interface PageDef {
@@ -30,36 +33,128 @@ const allLocales = (fn: (l: Locale) => string) =>
 	Object.fromEntries(LOCALES.map((l) => [l, fn(l)])) as Record<Locale, string>;
 
 export const SITE_MAP = [
-	{ id: 'about', slug: { pl: 'o-mnie', en: 'about', de: 'ueber-mich' } },
+	{
+		id: 'about',
+		slug: {
+			pl: 'o-mnie',
+			en: 'about',
+			de: 'ueber-mich',
+			es: 'sobre-mi',
+			pt: 'sobre-mim',
+			fr: 'a-propos',
+			id: 'tentang-saya'
+		}
+	},
 	{
 		id: 'education',
-		slug: { pl: 'edukacja', en: 'education', de: 'bildung' },
+		slug: {
+			pl: 'edukacja',
+			en: 'education',
+			de: 'bildung',
+			es: 'educacion',
+			pt: 'educacao',
+			fr: 'formation',
+			id: 'pendidikan'
+		},
 		children: [
-			{ id: 'university', slug: { pl: 'politechnika', en: 'university', de: 'hochschule' } },
-			{ id: 'masters', slug: { pl: 'magisterium', en: 'masters', de: 'master' } },
-			{ id: 'technical', slug: { pl: 'technikum', en: 'technical-school', de: 'technikum' } },
+			{
+				id: 'technician',
+				slug: {
+					pl: 'technik',
+					en: 'technician',
+					de: 'techniker',
+					es: 'tecnico',
+					pt: 'tecnico',
+					fr: 'technicien',
+					id: 'teknisi'
+				}
+			},
+			{
+				id: 'engineer',
+				slug: {
+					pl: 'inzynier',
+					en: 'engineer',
+					de: 'ingenieur',
+					es: 'ingeniero',
+					pt: 'engenheiro',
+					fr: 'ingenieur',
+					id: 'insinyur'
+				}
+			},
+			{
+				id: 'master',
+				slug: {
+					pl: 'magister',
+					en: 'master',
+					de: 'master',
+					es: 'master',
+					pt: 'mestre',
+					fr: 'master',
+					id: 'magister'
+				}
+			},
 			{ id: 'mensa', slug: same('mensa') }
 		]
 	},
 	{
 		id: 'sport',
-		slug: same('sport'),
+		slug: { en: 'sport', es: 'deporte', pt: 'esporte', id: 'olahraga' },
 		children: [
-			{ id: 'club', slug: { pl: 'klub', en: 'club', de: 'verein' } },
-			{ id: 'running', slug: { pl: 'bieganie', en: 'running', de: 'laufen' } }
+			{ id: 'club', slug: { pl: 'klub', en: 'club', de: 'verein', pt: 'clube', id: 'klub' } },
+			{
+				id: 'running',
+				slug: {
+					pl: 'bieganie',
+					en: 'running',
+					de: 'laufen',
+					es: 'correr',
+					pt: 'corrida',
+					fr: 'course-a-pied',
+					id: 'lari'
+				}
+			}
 		]
 	},
 	{
 		id: 'growth',
-		slug: { pl: 'rozwoj', en: 'growth', de: 'entwicklung' },
+		slug: {
+			pl: 'rozwoj',
+			en: 'growth',
+			de: 'entwicklung',
+			es: 'desarrollo',
+			pt: 'desenvolvimento',
+			fr: 'developpement',
+			id: 'pengembangan-diri'
+		},
 		children: [
-			{ id: 'journeyman', slug: { pl: 'czeladnik', en: 'journeyman', de: 'geselle' } },
+			{ id: 'prana', slug: same('prana') },
 			{ id: 'reiki', slug: same('reiki') },
-			{ id: 'prana', slug: same('prana') }
+			{
+				id: 'journeyman',
+				slug: {
+					pl: 'czeladnik',
+					en: 'journeyman',
+					de: 'geselle',
+					es: 'oficial',
+					pt: 'oficial-artesao',
+					fr: 'compagnon',
+					id: 'tukang-ahli'
+				}
+			}
 		]
 	},
 	{ id: 'youtube', slug: same('youtube') },
-	{ id: 'contact', slug: { pl: 'kontakt', en: 'contact', de: 'kontakt' } }
+	{
+		id: 'contact',
+		slug: {
+			pl: 'kontakt',
+			en: 'contact',
+			de: 'kontakt',
+			es: 'contacto',
+			pt: 'contato',
+			id: 'kontak'
+		}
+	}
 ] as const satisfies readonly (PageDef | GroupDef)[];
 
 type Entry = (typeof SITE_MAP)[number];
@@ -76,9 +171,9 @@ export type NavItem =
 
 export interface PageRoute {
 	id: PageId;
-	/** Route path built from ids, without locale: 'education/university' ('' for home). */
+	/** Route path built from ids, without locale: 'education/engineer' ('' for home). */
 	internal: string;
-	/** Translated path, without locale: 'edukacja/politechnika' ('' for home). */
+	/** Translated path, without locale: 'edukacja/inzynier' ('' for home). */
 	localized: Readonly<Record<Locale, string>>;
 }
 
@@ -117,7 +212,7 @@ const byLocalized = Object.fromEntries(
 
 export const NAVIGATION: readonly NavItem[] = NAV;
 
-/** Public path (without base) of a page in a language, e.g. '/pl/edukacja/politechnika/'. */
+/** Public path (without base) of a page in a language, e.g. '/pl/edukacja/inzynier/'. */
 export function localizedPath(id: PageId, locale: Locale): `/${string}` {
 	const path = byId.get(id)!.localized[locale];
 	return `/${locale}/${path ? path + '/' : ''}`;
@@ -157,7 +252,7 @@ export function toInternalPath(pathname: string): string | null | undefined {
 	return `/${locale}${page.internal ? '/' + page.internal : ''}`;
 }
 
-/** Page id for a SvelteKit route id such as '/[lang=lang]/education/university'. */
+/** Page id for a SvelteKit route id such as '/[lang=lang]/education/engineer'. */
 export function pageIdFromRouteId(routeId: string | null): PageId | null {
 	const match = routeId?.match(/^\/\[lang=lang\](?:\/(.*))?$/);
 	if (!match) return null;
