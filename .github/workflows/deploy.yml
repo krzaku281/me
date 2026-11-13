@@ -47,7 +47,6 @@ jobs:
             throw new Error("yarn audit did not return a vulnerability summary.");
           }
 
-          const { vulnerabilities, dependencies } = summary;
           const severityExitCodes = {
             info: 1,
             low: 2,
@@ -55,6 +54,12 @@ jobs:
             high: 8,
             critical: 16
           };
+          const { vulnerabilities } = summary;
+          const dependencies = summary.totalDependencies;
+          if (!Number.isInteger(dependencies)) {
+            throw new Error("yarn audit did not return a dependency count.");
+          }
+
           const expectedExitCode = Object.entries(severityExitCodes)
             .filter(([severity]) => (vulnerabilities[severity] ?? 0) > 0)
             .reduce((exitCode, [, code]) => exitCode + code, 0);
@@ -64,6 +69,10 @@ jobs:
           }
 
           const severities = Object.keys(severityExitCodes);
+          const totalVulnerabilities = severities.reduce(
+            (total, severity) => total + (vulnerabilities[severity] ?? 0),
+            0
+          );
           const blockingFindings = (vulnerabilities.high ?? 0) + (vulnerabilities.critical ?? 0);
           const lines = [
             "## Dependency vulnerability audit",
@@ -71,13 +80,13 @@ jobs:
             "| Severity | Findings |",
             "| --- | ---: |",
             ...severities.map((severity) => `| ${severity} | ${vulnerabilities[severity] ?? 0} |`),
-            `| **Total** | **${vulnerabilities.total}** |`,
+            `| **Total** | **${totalVulnerabilities}** |`,
             "",
-            `Audited ${dependencies.total} dependencies.`,
+            `Audited ${dependencies} dependencies.`,
             "INFO, LOW, and MODERATE findings are accepted; HIGH and CRITICAL findings block the workflow.",
             blockingFindings > 0
               ? `**Blocked:** ${blockingFindings} HIGH or CRITICAL finding(s). See the dependency-audit-report artifact for details.`
-              : vulnerabilities.total > 0
+              : totalVulnerabilities > 0
                 ? "Passed: no HIGH or CRITICAL findings. See the `dependency-audit-report` artifact for details."
                 : "Passed: no vulnerabilities found."
           ];
