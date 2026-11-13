@@ -14,6 +14,85 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - name: Audit dependencies
+        run: |
+          set +e
+          yarn audit --json > yarn-audit.json
+          audit_status=$?
+          set -e
+
+          YARN_AUDIT_EXIT_CODE="$audit_status" node <<'NODE'
+          const fs = require("node:fs");
+
+          const records = fs.readFileSync("yarn-audit.json", "utf8")
+            .split(/\r?\n/)
+            .filter(Boolean)
+            .map((line) => JSON.parse(line));
+          const summary = records.find((record) => record.type === "auditSummary")?.data;
+
+          if (!summary?.vulnerabilities) {
+            throw new Error("yarn audit did not return a vulnerability summary.");
+          }
+
+          const { vulnerabilities, dependencies } = summary;
+          const severityExitCodes = {
+            info: 1,
+            low: 2,
+            moderate: 4,
+            high: 8,
+            critical: 16
+          };
+          const expectedExitCode = Object.entries(severityExitCodes)
+            .filter(([severity]) => (vulnerabilities[severity] ?? 0) > 0)
+            .reduce((exitCode, [, code]) => exitCode + code, 0);
+
+          if (Number(process.env.YARN_AUDIT_EXIT_CODE) !== expectedExitCode) {
+            throw new Error("yarn audit failed unexpectedly or returned an inconsistent summary.");
+          }
+
+          const severities = Object.keys(severityExitCodes);
+          const blockingFindings = (vulnerabilities.high ?? 0) + (vulnerabilities.critical ?? 0);
+          const lines = [
+            "## Dependency vulnerability audit",
+            "",
+            "| Severity | Findings |",
+            "| --- | ---: |",
+            ...severities.map((severity) => `| ${severity} | ${vulnerabilities[severity] ?? 0} |`),
+            `| **Total** | **${vulnerabilities.total}** |`,
+            "",
+            `Audited ${dependencies.total} dependencies.`,
+            "INFO, LOW, and MODERATE findings are accepted; HIGH and CRITICAL findings block the workflow.",
+            blockingFindings > 0
+              ? `**Blocked:** ${blockingFindings} HIGH or CRITICAL finding(s). See the dependency-audit-report artifact for details.`
+              : vulnerabilities.total > 0
+                ? "Passed: no HIGH or CRITICAL findings. See the `dependency-audit-report` artifact for details."
+                : "Passed: no vulnerabilities found."
+          ];
+
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${lines.join("\n")}\n`);
+          process.exitCode = blockingFindings > 0 ? 1 : 0;
+          NODE
+
+      - uses: actions/upload-artifact@v4
+        if: always() && hashFiles('yarn-audit.json') != ''
+        with:
+          name: dependency-audit-report
+          path: yarn-audit.json
+          retention-days: 7
+
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -40,7 +119,7 @@ jobs:
           retention-days: 7
 
   build:
-    needs: test
+    needs: [test, audit]
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     permissions:
