@@ -422,18 +422,18 @@
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.5.tgz#1785356b8cb396e58430e03865281280acb818b1"
   integrity sha512-x76eH0vEiHlcMQu8Y8IenntaACtddpT6W0wmXtWrnKcnKI7ME5DdgqhAD6SEWOEl1v2zDvkZDhFA9KnURwpfqg==
 
-"@inlang/paraglide-js@2.29.3":
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/@inlang/paraglide-js/-/paraglide-js-2.29.3.tgz#5d5ca1703e974b22f2283e5583a2340f389d4493"
-  integrity sha512-aI9gT7zGTpr/l8tZM7OXHrgGruZ6jcu2iIqIw8QXKOGOY4akF3u1cIK6EBsttBm+DHI0FGiwCl8xVUjz7kDZHg==
+"@inlang/paraglide-js@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@inlang/paraglide-js/-/paraglide-js-3.2.2.tgz#cf7d822f6593826f510b9acaef3e32022fc56d99"
+  integrity sha512-YoQ2aHmzSgC+yfUgKwcJew3F0lFfwLJsriGCbwQHiJfjKGNjhQnbRr0OXoxsy2ulY2/gK8vYpiphuTv2J0wf5Q==
   dependencies:
     "@inlang/recommend-sherlock" "^0.2.1"
-    "@inlang/sdk" "^4.0.4"
+    "@inlang/sdk" "^4.2.0"
     commander "11.1.0"
     consola "3.4.0"
     jiti "^2.7.0"
     json5 "2.2.3"
-    jsonc-parser "^3.3.1"
+    magic-string "^0.30.21"
     unplugin "^2.1.2"
     urlpattern-polyfill "^10.0.0"
     valibot "^1.4.2"
@@ -445,7 +445,7 @@
   dependencies:
     comment-json "^4.2.3"
 
-"@inlang/sdk@^4.0.4":
+"@inlang/sdk@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@inlang/sdk/-/sdk-4.2.0.tgz#900f4b6e668b0d52cac366214fd0849761d6f0a0"
   integrity sha512-Cmaqvn34wsxiF27318Zw2rg+017HHNJWV5MH8rfyVKVANZNpzlztxzRbFienE/gASMLD8oluYHHolIb/p6Egrw==
@@ -1584,11 +1584,6 @@ json5@2.2.3:
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
-jsonc-parser@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.3.1.tgz#f2a524b4f7fd11e3d791e559977ad60b98b798b4"
-  integrity sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==
-
 keyv@^5.6.0:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-5.6.0.tgz#03044074c6b4d072d0a62c7b9fa649537baf0105"
@@ -1718,7 +1713,7 @@ lz-utils@^2.1.1:
   resolved "https://registry.yarnpkg.com/lz-utils/-/lz-utils-2.1.1.tgz#78958062d0f4be37e8ff127f710997bc558143be"
   integrity sha512-d3Thjos0PSJQAoyMj6vipSSrtrRHS7DImqUNR8x9NW3+zQIftPIbMJAWhi5nPdg5Q9zHz6lxtN8kp/VdMlhi/Q==
 
-magic-string@^0.30.11:
+magic-string@^0.30.11, magic-string@^0.30.21:
   version "0.30.21"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.21.tgz#56763ec09a0fa8091df27879fd94d19078c00d91"
   integrity sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==
