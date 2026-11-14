@@ -766,10 +766,10 @@
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-4.0.1.tgz#1e0db2d52d22881a0d64252345766f1c0bf91a87"
   integrity sha512-svOU1OcBiJ9Kn1cdxHDmJIsBy1/iQe9STPvUFkO2/iinxPFS7r8fc9TiCaWWUgbrE+7ox6Bt4MURv3RPi7sunQ==
 
-"@sveltejs/enhanced-img@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sveltejs/enhanced-img/-/enhanced-img-1.0.0.tgz#5a9d266eea3a97a7473c2a8dd875d596acc7196f"
-  integrity sha512-MVY2SNj1NE/DW7yrAePFfOeEnj/PfkHPQvWfeL23h/a0i7r1qEF5qj3iIyxqCF5Vu+akskQ/h5eEEM7hjvFmrQ==
+"@sveltejs/enhanced-img@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@sveltejs/enhanced-img/-/enhanced-img-1.0.1.tgz#77728db9cb028121c41e18c5ce8ea4f00d592ff6"
+  integrity sha512-BWCjkVq+uUQlNDu5+ZOPaSoH45Tlt4dD/G+7eXxi3TVLYx0+q1T+4BtKQrZfU5ry1mCtcyamI7EN0ekZp9C3mA==
   dependencies:
     magic-string "^1.2.3"
     sharp "^0.35.3"
