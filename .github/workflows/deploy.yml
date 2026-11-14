@@ -114,7 +114,7 @@ jobs:
           cache: yarn
 
       - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: yarn playwright install chromium
+      - run: node node_modules/playwright/cli.js install chromium
 
       - run: yarn run test:e2e
 
