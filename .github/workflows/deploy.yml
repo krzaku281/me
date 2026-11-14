@@ -103,12 +103,11 @@ jobs:
           retention-days: 7
 
   test:
+    name: E2E tests
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -128,19 +127,38 @@ jobs:
           path: coverage-reports/e2e/lcov.info
           retention-days: 7
 
-      - name: Analyze with SonarCloud
-        if: github.event_name != 'pull_request'
-        uses: SonarSource/sonarqube-scan-action@59202af334b4ba7b5db01b701b8e79f8b3bef0f4 # v8.5.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: https://sonarcloud.io
-
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-report
           path: playwright-report
           retention-days: 7
+
+  sonar:
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: e2e-coverage
+          path: coverage-reports/e2e
+
+      - name: Analyze with SonarCloud
+        uses: SonarSource/sonarqube-scan-action@59202af334b4ba7b5db01b701b8e79f8b3bef0f4 # v8.5.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
 
   lint:
     runs-on: ubuntu-latest
@@ -187,7 +205,7 @@ jobs:
           path: build
 
   deploy:
-    needs: [test, lint, audit, build]
+    needs: [test, sonar, lint, audit, build]
     runs-on: ubuntu-latest
     permissions:
       pages: write
