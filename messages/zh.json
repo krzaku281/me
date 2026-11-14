@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "技术员",
-			"lead": "技术员资格：中等教育与第一份职业。"
+			"lead": "技术员资格：中等教育与第一份职业。",
+			"timeline": {
+				"school": {
+					"title": "电子技术员",
+					"text": "电子专业，最早的单片机项目。"
+				},
+				"exams": {
+					"title": "职业考试和毕业考试"
+				}
+			}
 		},
 		"engineer": {
 			"title": "工程师",
-			"lead": "工学学士：本科阶段学习。"
+			"lead": "工学学士：本科阶段学习。",
+			"timeline": {
+				"degree": {
+					"title": "计算机科学工学学士",
+					"text": "专业方向：分布式系统。"
+				},
+				"internship": {
+					"title": "在软件公司实习"
+				},
+				"thesisDefense": {
+					"title": "工程学位论文答辩"
+				}
+			}
 		},
 		"master": {
 			"title": "硕士",
-			"lead": "硕士学位：研究生阶段学习。"
+			"lead": "硕士学位：研究生阶段学习。",
+			"timeline": {
+				"studies": {
+					"title": "硕士学习",
+					"text": "关于 Web 应用性能的论文。"
+				},
+				"graduation": {
+					"title": "工学硕士"
+				}
+			}
 		},
 		"mensa": {
 			"title": "门萨",
-			"lead": "门萨会员。"
+			"lead": "门萨会员。",
+			"timeline": {
+				"admission": {
+					"title": "门萨测试与入会"
+				},
+				"gathering": {
+					"title": "会员聚会"
+				}
+			}
 		},
 		"club": {
 			"title": "俱乐部",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "普拉纳",
-			"lead": "与普拉纳能量一起工作。"
+			"lead": "与普拉纳能量一起工作。",
+			"timeline": {
+				"basicCourse": {
+					"title": "普拉纳基础课程"
+				},
+				"advancedCourse": {
+					"title": "高级课程",
+					"text": "定期练习和工作坊。"
+				}
+			}
 		},
 		"reiki": {
 			"title": "灵气",
-			"lead": "灵气练习。"
+			"lead": "灵气练习。",
+			"timeline": {
+				"levelOne": {
+					"title": "灵气一级"
+				},
+				"levelTwo": {
+					"title": "灵气二级"
+				},
+				"master": {
+					"title": "导师级"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "工匠",
-			"lead": "手工艺工匠证书。"
+			"lead": "手工艺工匠证书。",
+			"timeline": {
+				"apprenticeship": {
+					"title": "跟随师傅学艺"
+				},
+				"exam": {
+					"title": "工匠资格考试"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

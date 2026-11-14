@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "Technicien",
-			"lead": "Diplôme de technicien : lycée et un premier métier."
+			"lead": "Diplôme de technicien : lycée et un premier métier.",
+			"timeline": {
+				"school": {
+					"title": "Technicien en électronique",
+					"text": "Filière électronique, premiers projets avec des microcontrôleurs."
+				},
+				"exams": {
+					"title": "Examen professionnel et baccalauréat"
+				}
+			}
 		},
 		"engineer": {
 			"title": "Ingénieur",
-			"lead": "Diplôme d’ingénieur : études supérieures en ingénierie."
+			"lead": "Diplôme d’ingénieur : études supérieures en ingénierie.",
+			"timeline": {
+				"degree": {
+					"title": "Licence en informatique",
+					"text": "Spécialisation : systèmes distribués."
+				},
+				"internship": {
+					"title": "Stage dans une entreprise de logiciels"
+				},
+				"thesisDefense": {
+					"title": "Soutenance du mémoire d’ingénieur"
+				}
+			}
 		},
 		"master": {
 			"title": "Master",
-			"lead": "Diplôme de master : deuxième cycle universitaire."
+			"lead": "Diplôme de master : deuxième cycle universitaire.",
+			"timeline": {
+				"studies": {
+					"title": "Études de master",
+					"text": "Mémoire sur les performances des applications web."
+				},
+				"graduation": {
+					"title": "Master en ingénierie"
+				}
+			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Membre de Mensa."
+			"lead": "Membre de Mensa.",
+			"timeline": {
+				"admission": {
+					"title": "Test et admission à Mensa"
+				},
+				"gathering": {
+					"title": "Rencontre des membres"
+				}
+			}
 		},
 		"club": {
 			"title": "Club",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Travail avec l’énergie du prana."
+			"lead": "Travail avec l’énergie du prana.",
+			"timeline": {
+				"basicCourse": {
+					"title": "Cours de base sur le prana"
+				},
+				"advancedCourse": {
+					"title": "Cours avancé",
+					"text": "Pratique régulière et ateliers."
+				}
+			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Pratique du reiki."
+			"lead": "Pratique du reiki.",
+			"timeline": {
+				"levelOne": {
+					"title": "Reiki niveau I"
+				},
+				"levelTwo": {
+					"title": "Reiki niveau II"
+				},
+				"master": {
+					"title": "Niveau maître"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "Compagnon",
-			"lead": "Titre de compagnon dans un métier artisanal."
+			"lead": "Titre de compagnon dans un métier artisanal.",
+			"timeline": {
+				"apprenticeship": {
+					"title": "Apprentissage auprès d’un maître artisan"
+				},
+				"exam": {
+					"title": "Examen de compagnon"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

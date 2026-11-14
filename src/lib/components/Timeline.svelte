@@ -11,12 +11,12 @@
 		{#each entries as entry, i (i)}
 			<li>
 				<p class="period">{entry.period}</p>
-				<h2>{entry.title[locale]}</h2>
+				<h2>{entry.title(locale)}</h2>
 				{#if entry.org}
 					<p class="org">{entry.org}</p>
 				{/if}
 				{#if entry.text}
-					<p class="text">{entry.text[locale]}</p>
+					<p class="text">{entry.text(locale)}</p>
 				{/if}
 			</li>
 		{/each}

@@ -30,33 +30,41 @@ test('RTL: Arabic page is mirrored, sans-serif, without letter spacing', async (
 	expect(spaced).toEqual([]);
 });
 
-test('RTL: Hebrew is right-to-left too', async ({ page }) => {
-	await page.goto(url('/he/'));
-	await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
-	await expect(h1(page)).toHaveText('התחלה');
-});
+for (const { language, locale, heading } of [
+	{ language: 'Hebrew', locale: 'he', heading: 'התחלה' },
+	{ language: 'Urdu', locale: 'ur', heading: 'سرورق' }
+]) {
+	test(`${language} sets RTL direction and removes letter spacing`, async ({ page }) => {
+		await page.goto(url(`/${locale}/`));
+		const html = page.locator('html');
+		await expect(html).toHaveAttribute('dir', 'rtl');
+		await expect(html).toHaveAttribute('lang', locale);
+		await expect(h1(page)).toHaveText(heading);
 
-test('Chinese text gets a Chinese sans-serif after the monospace fonts', async ({ page }) => {
-	await page.goto(url('/zh/'));
-	await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
-	expect(await page.evaluate(() => getComputedStyle(document.body).fontFamily)).toMatch(
-		/^ui-monospace.*PingFang SC.*Microsoft YaHei/
-	);
-});
+		const spaced = await page.evaluate(
+			(expectedLocale) =>
+				[...document.querySelectorAll('body *')]
+					.filter((el) => el.closest('[lang]')?.getAttribute('lang') === expectedLocale)
+					.filter((el) => !['normal', '0px'].includes(getComputedStyle(el).letterSpacing))
+					.map((el) => `${el.tagName}.${el.className}: ${getComputedStyle(el).letterSpacing}`),
+			locale
+		);
+		expect(spaced).toEqual([]);
+	});
+}
 
-test('Urdu is right-to-left without letter spacing', async ({ page }) => {
-	await page.goto(url('/ur/'));
-	await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
-	await expect(h1(page)).toHaveText('سرورق');
-});
-
-test('Japanese text gets a Japanese sans-serif after the monospace fonts', async ({ page }) => {
-	await page.goto(url('/ja/'));
-	await expect(page.locator('html')).toHaveAttribute('dir', 'ltr');
-	expect(await page.evaluate(() => getComputedStyle(document.body).fontFamily)).toMatch(
-		/^ui-monospace.*Hiragino Sans.*Yu Gothic/
-	);
-});
+for (const { language, locale, font } of [
+	{ language: 'Chinese', locale: 'zh', font: /^ui-monospace.*PingFang SC.*Microsoft YaHei/ },
+	{ language: 'Japanese', locale: 'ja', font: /^ui-monospace.*Hiragino Sans.*Yu Gothic/ }
+]) {
+	test(`${language} page uses its script-specific font stack`, async ({ page }) => {
+		await page.goto(url(`/${locale}/`));
+		const html = page.locator('html');
+		await expect(html).toHaveAttribute('dir', 'ltr');
+		await expect(html).toHaveAttribute('lang', locale);
+		expect(await page.evaluate(() => getComputedStyle(document.body).fontFamily)).toMatch(font);
+	});
+}
 
 for (const { locale, font } of [
 	{ locale: 'hi', font: /^ui-monospace.*Noto Sans Devanagari/ },

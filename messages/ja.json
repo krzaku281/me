@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "技術者",
-			"lead": "技術者資格：中等教育と最初の職業。"
+			"lead": "技術者資格：中等教育と最初の職業。",
+			"timeline": {
+				"school": {
+					"title": "電子技術者",
+					"text": "電子科、初めてのマイコン工作。"
+				},
+				"exams": {
+					"title": "技能検定と卒業試験"
+				}
+			}
 		},
 		"engineer": {
 			"title": "学士（工学）",
-			"lead": "工学の学士課程。"
+			"lead": "工学の学士課程。",
+			"timeline": {
+				"degree": {
+					"title": "情報工学の学士",
+					"text": "専攻：分散システム。"
+				},
+				"internship": {
+					"title": "ソフトウェア会社でのインターンシップ"
+				},
+				"thesisDefense": {
+					"title": "卒業論文の口頭審査"
+				}
+			}
 		},
 		"master": {
 			"title": "修士（工学）",
-			"lead": "工学の修士課程。"
+			"lead": "工学の修士課程。",
+			"timeline": {
+				"studies": {
+					"title": "修士課程",
+					"text": "Webアプリケーションの性能に関する修士論文。"
+				},
+				"graduation": {
+					"title": "工学修士"
+				}
+			}
 		},
 		"mensa": {
 			"title": "メンサ",
-			"lead": "メンサの会員です。"
+			"lead": "メンサの会員です。",
+			"timeline": {
+				"admission": {
+					"title": "メンサの入会テストと入会"
+				},
+				"gathering": {
+					"title": "会員の集い"
+				}
+			}
 		},
 		"club": {
 			"title": "クラブ",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "プラーナ",
-			"lead": "プラーナのエネルギーワーク。"
+			"lead": "プラーナのエネルギーワーク。",
+			"timeline": {
+				"basicCourse": {
+					"title": "プラーナ基礎コース"
+				},
+				"advancedCourse": {
+					"title": "上級コース",
+					"text": "定期的な実践とワークショップ。"
+				}
+			}
 		},
 		"reiki": {
 			"title": "レイキ",
-			"lead": "レイキの実践。"
+			"lead": "レイキの実践。",
+			"timeline": {
+				"levelOne": {
+					"title": "レイキ 第1段階"
+				},
+				"levelTwo": {
+					"title": "レイキ 第2段階"
+				},
+				"master": {
+					"title": "マスター段階"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "職人資格",
-			"lead": "手工業の職人資格。"
+			"lead": "手工業の職人資格。",
+			"timeline": {
+				"apprenticeship": {
+					"title": "親方のもとでの修業"
+				},
+				"exam": {
+					"title": "職人資格試験"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

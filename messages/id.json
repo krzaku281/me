@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "Teknisi",
-			"lead": "Sertifikat teknisi: sekolah menengah dan profesi pertama."
+			"lead": "Sertifikat teknisi: sekolah menengah dan profesi pertama.",
+			"timeline": {
+				"school": {
+					"title": "Teknisi elektronika",
+					"text": "Jurusan elektronika, proyek mikrokontroler pertama."
+				},
+				"exams": {
+					"title": "Ujian kejuruan dan ujian akhir"
+				}
+			}
 		},
 		"engineer": {
 			"title": "Insinyur",
-			"lead": "Gelar insinyur: studi sarjana."
+			"lead": "Gelar insinyur: studi sarjana.",
+			"timeline": {
+				"degree": {
+					"title": "Sarjana Teknik Informatika",
+					"text": "Peminatan: sistem terdistribusi."
+				},
+				"internship": {
+					"title": "Magang di perusahaan perangkat lunak"
+				},
+				"thesisDefense": {
+					"title": "Sidang skripsi"
+				}
+			}
 		},
 		"master": {
 			"title": "Magister",
-			"lead": "Gelar magister: studi pascasarjana."
+			"lead": "Gelar magister: studi pascasarjana.",
+			"timeline": {
+				"studies": {
+					"title": "Studi magister",
+					"text": "Tesis tentang kinerja aplikasi web."
+				},
+				"graduation": {
+					"title": "Magister Teknik"
+				}
+			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Keanggotaan di Mensa."
+			"lead": "Keanggotaan di Mensa.",
+			"timeline": {
+				"admission": {
+					"title": "Tes dan penerimaan di Mensa"
+				},
+				"gathering": {
+					"title": "Pertemuan anggota"
+				}
+			}
 		},
 		"club": {
 			"title": "Klub",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Bekerja dengan energi prana."
+			"lead": "Bekerja dengan energi prana.",
+			"timeline": {
+				"basicCourse": {
+					"title": "Kursus dasar prana"
+				},
+				"advancedCourse": {
+					"title": "Kursus lanjutan",
+					"text": "Latihan rutin dan lokakarya."
+				}
+			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Praktik reiki."
+			"lead": "Praktik reiki.",
+			"timeline": {
+				"levelOne": {
+					"title": "Reiki tingkat I"
+				},
+				"levelTwo": {
+					"title": "Reiki tingkat II"
+				},
+				"master": {
+					"title": "Tingkat master"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "Tukang ahli",
-			"lead": "Sertifikat tukang ahli dalam suatu kerajinan."
+			"lead": "Sertifikat tukang ahli dalam suatu kerajinan.",
+			"timeline": {
+				"apprenticeship": {
+					"title": "Magang pada seorang perajin mahir"
+				},
+				"exam": {
+					"title": "Ujian tukang ahli"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

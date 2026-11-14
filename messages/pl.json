@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "Technik",
-			"lead": "Tytuł technika: szkoła średnia i pierwszy zawód."
+			"lead": "Tytuł technika: szkoła średnia i pierwszy zawód.",
+			"timeline": {
+				"school": {
+					"title": "Technik elektronik",
+					"text": "Profil elektroniczny, pierwsze projekty z mikrokontrolerami."
+				},
+				"exams": {
+					"title": "Egzamin zawodowy i matura"
+				}
+			}
 		},
 		"engineer": {
 			"title": "Inżynier",
-			"lead": "Tytuł inżyniera: studia pierwszego stopnia."
+			"lead": "Tytuł inżyniera: studia pierwszego stopnia.",
+			"timeline": {
+				"degree": {
+					"title": "Studia inżynierskie, informatyka",
+					"text": "Specjalizacja: systemy rozproszone."
+				},
+				"internship": {
+					"title": "Praktyki w firmie programistycznej"
+				},
+				"thesisDefense": {
+					"title": "Obrona pracy inżynierskiej"
+				}
+			}
 		},
 		"master": {
 			"title": "Magister",
-			"lead": "Tytuł magistra: studia drugiego stopnia."
+			"lead": "Tytuł magistra: studia drugiego stopnia.",
+			"timeline": {
+				"studies": {
+					"title": "Studia magisterskie",
+					"text": "Praca dyplomowa o wydajności aplikacji webowych."
+				},
+				"graduation": {
+					"title": "Tytuł magistra inżyniera"
+				}
+			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Członkostwo w stowarzyszeniu Mensa."
+			"lead": "Członkostwo w stowarzyszeniu Mensa.",
+			"timeline": {
+				"admission": {
+					"title": "Test i przyjęcie do Mensy"
+				},
+				"gathering": {
+					"title": "Udział w zjeździe członków"
+				}
+			}
 		},
 		"club": {
 			"title": "Klub",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Praca z energią prany."
+			"lead": "Praca z energią prany.",
+			"timeline": {
+				"basicCourse": {
+					"title": "Kurs podstawowy pracy z praną"
+				},
+				"advancedCourse": {
+					"title": "Kurs zaawansowany",
+					"text": "Regularna praktyka i warsztaty."
+				}
+			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Praktyka reiki."
+			"lead": "Praktyka reiki.",
+			"timeline": {
+				"levelOne": {
+					"title": "I stopień reiki"
+				},
+				"levelTwo": {
+					"title": "II stopień reiki"
+				},
+				"master": {
+					"title": "Stopień mistrzowski"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "Czeladnik",
-			"lead": "Tytuł czeladnika w rzemiośle."
+			"lead": "Tytuł czeladnika w rzemiośle.",
+			"timeline": {
+				"apprenticeship": {
+					"title": "Nauka zawodu u mistrza"
+				},
+				"exam": {
+					"title": "Egzamin czeladniczy"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

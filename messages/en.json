@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "Technician",
-			"lead": "Technician diploma: secondary school and a first trade."
+			"lead": "Technician diploma: secondary school and a first trade.",
+			"timeline": {
+				"school": {
+					"title": "Electronics technician",
+					"text": "Electronics track, first microcontroller projects."
+				},
+				"exams": {
+					"title": "Vocational exam and final exams"
+				}
+			}
 		},
 		"engineer": {
 			"title": "Engineer",
-			"lead": "Engineering degree: first-cycle studies."
+			"lead": "Engineering degree: first-cycle studies.",
+			"timeline": {
+				"degree": {
+					"title": "BEng in Computer Science",
+					"text": "Specialisation: distributed systems."
+				},
+				"internship": {
+					"title": "Internship at a software company"
+				},
+				"thesisDefense": {
+					"title": "Engineering thesis defence"
+				}
+			}
 		},
 		"master": {
 			"title": "Master",
-			"lead": "Master’s degree: second-cycle studies."
+			"lead": "Master’s degree: second-cycle studies.",
+			"timeline": {
+				"studies": {
+					"title": "Master's studies",
+					"text": "Thesis on web application performance."
+				},
+				"graduation": {
+					"title": "MSc in Engineering"
+				}
+			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Membership in Mensa."
+			"lead": "Membership in Mensa.",
+			"timeline": {
+				"admission": {
+					"title": "Test and admission to Mensa"
+				},
+				"gathering": {
+					"title": "Members’ gathering"
+				}
+			}
 		},
 		"club": {
 			"title": "Club",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Working with prana energy."
+			"lead": "Working with prana energy.",
+			"timeline": {
+				"basicCourse": {
+					"title": "Basic prana course"
+				},
+				"advancedCourse": {
+					"title": "Advanced course",
+					"text": "Regular practice and workshops."
+				}
+			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Reiki practice."
+			"lead": "Reiki practice.",
+			"timeline": {
+				"levelOne": {
+					"title": "Reiki level I"
+				},
+				"levelTwo": {
+					"title": "Reiki level II"
+				},
+				"master": {
+					"title": "Master level"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "Journeyman",
-			"lead": "Journeyman's certificate in a craft."
+			"lead": "Journeyman's certificate in a craft.",
+			"timeline": {
+				"apprenticeship": {
+					"title": "Apprenticeship with a master craftsman"
+				},
+				"exam": {
+					"title": "Journeyman’s examination"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

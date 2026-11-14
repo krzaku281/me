@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "Techniker",
-			"lead": "Technikerabschluss: Schule und ein erster Beruf."
+			"lead": "Technikerabschluss: Schule und ein erster Beruf.",
+			"timeline": {
+				"school": {
+					"title": "Elektroniktechniker",
+					"text": "Fachrichtung Elektronik, erste Projekte mit Mikrocontrollern."
+				},
+				"exams": {
+					"title": "Berufsprüfung und Abitur"
+				}
+			}
 		},
 		"engineer": {
 			"title": "Ingenieur",
-			"lead": "Ingenieurabschluss: Bachelorstudium."
+			"lead": "Ingenieurabschluss: Bachelorstudium.",
+			"timeline": {
+				"degree": {
+					"title": "Bachelorstudium Informatik",
+					"text": "Schwerpunkt: verteilte Systeme."
+				},
+				"internship": {
+					"title": "Praktikum in einem Softwareunternehmen"
+				},
+				"thesisDefense": {
+					"title": "Verteidigung der Bachelorarbeit"
+				}
+			}
 		},
 		"master": {
 			"title": "Master",
-			"lead": "Masterabschluss: Masterstudium."
+			"lead": "Masterabschluss: Masterstudium.",
+			"timeline": {
+				"studies": {
+					"title": "Masterstudium",
+					"text": "Abschlussarbeit über die Performance von Webanwendungen."
+				},
+				"graduation": {
+					"title": "Master of Science"
+				}
+			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Mitgliedschaft bei Mensa."
+			"lead": "Mitgliedschaft bei Mensa.",
+			"timeline": {
+				"admission": {
+					"title": "Test und Aufnahme in Mensa"
+				},
+				"gathering": {
+					"title": "Teilnahme am Mitgliedertreffen"
+				}
+			}
 		},
 		"club": {
 			"title": "Verein",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Arbeit mit Prana-Energie."
+			"lead": "Arbeit mit Prana-Energie.",
+			"timeline": {
+				"basicCourse": {
+					"title": "Grundkurs Prana"
+				},
+				"advancedCourse": {
+					"title": "Fortgeschrittenenkurs",
+					"text": "Regelmäßige Praxis und Workshops."
+				}
+			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Reiki-Praxis."
+			"lead": "Reiki-Praxis.",
+			"timeline": {
+				"levelOne": {
+					"title": "Reiki 1. Grad"
+				},
+				"levelTwo": {
+					"title": "Reiki 2. Grad"
+				},
+				"master": {
+					"title": "Meistergrad"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "Geselle",
-			"lead": "Gesellenbrief im Handwerk."
+			"lead": "Gesellenbrief im Handwerk.",
+			"timeline": {
+				"apprenticeship": {
+					"title": "Ausbildung bei einem Meister"
+				},
+				"exam": {
+					"title": "Gesellenprüfung"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",

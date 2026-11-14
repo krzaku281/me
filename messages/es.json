@@ -40,19 +40,57 @@
 		},
 		"technician": {
 			"title": "Técnico",
-			"lead": "Título de técnico: secundaria y un primer oficio."
+			"lead": "Título de técnico: secundaria y un primer oficio.",
+			"timeline": {
+				"school": {
+					"title": "Técnico en electrónica",
+					"text": "Especialidad de electrónica, primeros proyectos con microcontroladores."
+				},
+				"exams": {
+					"title": "Examen profesional y exámenes finales"
+				}
+			}
 		},
 		"engineer": {
 			"title": "Ingeniero",
-			"lead": "Título de ingeniero: estudios de grado."
+			"lead": "Título de ingeniero: estudios de grado.",
+			"timeline": {
+				"degree": {
+					"title": "Grado en Ingeniería Informática",
+					"text": "Especialización: sistemas distribuidos."
+				},
+				"internship": {
+					"title": "Prácticas en una empresa de software"
+				},
+				"thesisDefense": {
+					"title": "Defensa del trabajo de fin de grado"
+				}
+			}
 		},
 		"master": {
 			"title": "Máster",
-			"lead": "Título de máster: estudios de posgrado."
+			"lead": "Título de máster: estudios de posgrado.",
+			"timeline": {
+				"studies": {
+					"title": "Estudios de máster",
+					"text": "Tesis sobre el rendimiento de aplicaciones web."
+				},
+				"graduation": {
+					"title": "Máster en Ingeniería"
+				}
+			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Miembro de Mensa."
+			"lead": "Miembro de Mensa.",
+			"timeline": {
+				"admission": {
+					"title": "Prueba y admisión en Mensa"
+				},
+				"gathering": {
+					"title": "Encuentro de miembros"
+				}
+			}
 		},
 		"club": {
 			"title": "Club",
@@ -64,15 +102,43 @@
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Trabajo con la energía prana."
+			"lead": "Trabajo con la energía prana.",
+			"timeline": {
+				"basicCourse": {
+					"title": "Curso básico de prana"
+				},
+				"advancedCourse": {
+					"title": "Curso avanzado",
+					"text": "Práctica regular y talleres."
+				}
+			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Práctica de reiki."
+			"lead": "Práctica de reiki.",
+			"timeline": {
+				"levelOne": {
+					"title": "Reiki nivel I"
+				},
+				"levelTwo": {
+					"title": "Reiki nivel II"
+				},
+				"master": {
+					"title": "Nivel de maestro"
+				}
+			}
 		},
 		"journeyman": {
 			"title": "Oficial",
-			"lead": "Título de oficial en un oficio artesanal."
+			"lead": "Título de oficial en un oficio artesanal.",
+			"timeline": {
+				"apprenticeship": {
+					"title": "Aprendizaje con un maestro artesano"
+				},
+				"exam": {
+					"title": "Examen de oficial"
+				}
+			}
 		},
 		"youtube": {
 			"title": "YouTube",
