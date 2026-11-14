@@ -84,7 +84,7 @@ function parseFaces(family: Family): Face[] {
 			file: resolve(root(pkg), 'files', `${file}.woff`),
 			ranges: range.split(',').map((part) => {
 				const [from, to] = part.trim().replace(/^U\+/i, '').split('-');
-				return [parseInt(from, 16), parseInt(to ?? from, 16)];
+				return [Number.parseInt(from, 16), Number.parseInt(to ?? from, 16)];
 			})
 		});
 	}
