@@ -158,7 +158,6 @@ jobs:
       - run: yarn run check && yarn run lint
 
   build:
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -187,6 +186,7 @@ jobs:
           path: build
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: [test, lint, audit, build]
     runs-on: ubuntu-latest
     permissions:
