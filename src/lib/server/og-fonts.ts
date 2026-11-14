@@ -65,17 +65,24 @@ const root = (pkg: string) => resolve('node_modules/@fontsource', pkg);
 function parseFaces(family: Family): Face[] {
 	const pkg = PACKAGES[family];
 	const css = readFileSync(resolve(root(pkg), '400.css'), 'utf8');
-	const blocks = css.matchAll(/url\(\.\/files\/([^)]+?)\.woff2\)[^}]*?unicode-range:\s*([^;]+);/g);
-	return [...blocks].map(([, file, range], i) => ({
-		family,
-		name: `${family} ${i}`,
-		// Satori reads woff, not woff2
-		file: resolve(root(pkg), 'files', `${file}.woff`),
-		ranges: range.split(',').map((part) => {
-			const [from, to] = part.trim().replace(/^U\+/i, '').split('-');
-			return [parseInt(from, 16), parseInt(to ?? from, 16)];
-		})
-	}));
+	const faces: Face[] = [];
+	for (const [, block] of css.matchAll(/@font-face\s*{([^}]*)}/g)) {
+		const file = block.match(/url\(\.\/files\/([^)]+)\.woff2\)/)?.[1];
+		const range = block.match(/unicode-range:\s*([^;]+);/)?.[1];
+		if (!file || !range) continue;
+
+		faces.push({
+			family,
+			name: `${family} ${faces.length}`,
+			// Satori reads woff, not woff2
+			file: resolve(root(pkg), 'files', `${file}.woff`),
+			ranges: range.split(',').map((part) => {
+				const [from, to] = part.trim().replace(/^U\+/i, '').split('-');
+				return [Number.parseInt(from, 16), Number.parseInt(to ?? from, 16)];
+			})
+		});
+	}
+	return faces;
 }
 
 const FACES = (Object.keys(PACKAGES) as Family[]).flatMap(parseFaces);

@@ -6,12 +6,27 @@
 // It also fakes the GoatCounter endpoint: GET /gc/count records a hit, GET /gc/hits lists them.
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
-import { extname, join, normalize } from 'node:path';
+import { extname, isAbsolute, join, relative, resolve, sep } from 'node:path';
 import { gzipSync } from 'node:zlib';
 
 const PORT = Number(process.env.PORT ?? 4174);
 const BASE = '/me';
 const ROOT = join(import.meta.dirname, '..', 'build-test');
+
+const resolveRequestFile = (pathname) => {
+	let decodedPath;
+	try {
+		decodedPath = decodeURIComponent(pathname.slice(BASE.length)) || '/';
+	} catch (error) {
+		if (error instanceof URIError) return null;
+		throw error;
+	}
+
+	const file = resolve(ROOT, `.${decodedPath}`);
+	const fromRoot = relative(ROOT, file);
+	if (fromRoot === '..' || fromRoot.startsWith(`..${sep}`) || isAbsolute(fromRoot)) return null;
+	return file;
+};
 
 /** @type {Record<string, string>} */
 const TYPES = {
@@ -61,9 +76,8 @@ createServer((req, res) => {
 
 	if (url.pathname !== BASE && !url.pathname.startsWith(BASE + '/')) return notFound();
 
-	const relative = normalize(decodeURIComponent(url.pathname.slice(BASE.length)) || '/');
-	if (relative.startsWith('..')) return notFound();
-	let file = join(ROOT, relative);
+	let file = resolveRequestFile(url.pathname);
+	if (!file) return notFound();
 
 	if (existsSync(file) && statSync(file).isDirectory()) {
 		if (!url.pathname.endsWith('/')) {
