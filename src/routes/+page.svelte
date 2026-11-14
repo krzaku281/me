@@ -16,7 +16,12 @@
 <svelte:head>
 	<InlineScript
 		code={redirect}
-		data={{ locales: LOCALES.join(','), fallback: DEFAULT_LOCALE, storageKey: STORAGE_KEY }}
+		data={{
+			basePath: __BASE_PATH__,
+			locales: LOCALES.join(','),
+			fallback: DEFAULT_LOCALE,
+			storageKey: STORAGE_KEY
+		}}
 	/>
 	<title>{m['nav.home']()}</title>
 	<meta name="robots" content="noindex" />

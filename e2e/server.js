@@ -13,6 +13,7 @@ const PORT = Number(process.env.PORT ?? 4174);
 const BASE = '/me';
 const ROOT = join(import.meta.dirname, '..', 'build-test');
 
+/** @param {string} pathname */
 const resolveRequestFile = (pathname) => {
 	let decodedPath;
 	try {

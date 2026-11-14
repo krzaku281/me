@@ -22,7 +22,5 @@
 			}
 		}
 	}
-	location.replace(
-		location.pathname.replace(/\/?$/, '/') + lang + '/' + location.search + location.hash
-	);
+	location.replace(cfg.basePath + '/' + lang + '/' + location.search + location.hash);
 })();

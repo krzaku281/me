@@ -68,7 +68,13 @@ function parseFaces(family: Family): Face[] {
 	const faces: Face[] = [];
 	for (const [, block] of css.matchAll(/@font-face\s*{([^}]*)}/g)) {
 		const file = block.match(/url\(\.\/files\/([^)]+)\.woff2\)/)?.[1];
-		const range = block.match(/unicode-range:\s*([^;]+);/)?.[1];
+		const rangeProperty = 'unicode-range:';
+		const rangeStart = block.indexOf(rangeProperty);
+		const rangeEnd = rangeStart < 0 ? -1 : block.indexOf(';', rangeStart + rangeProperty.length);
+		const range =
+			rangeEnd > rangeStart + rangeProperty.length
+				? block.slice(rangeStart + rangeProperty.length, rangeEnd).trim()
+				: undefined;
 		if (!file || !range) continue;
 
 		faces.push({
