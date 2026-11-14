@@ -1,6 +1,8 @@
 import { test as base, expect, type Page } from '@playwright/test';
+import { MCR } from 'monocart-coverage-reports';
 import { LOCALES, type Locale } from '../src/lib/i18n/config.ts';
 import { allPaths, localizedPath, type PageId } from '../src/lib/i18n/routes.ts';
+import coverageOptions from './coverage-config.ts';
 
 /** Must match BASE_PATH / SITE_ORIGIN in the `build:test` script. */
 export const BASE = '/me';
@@ -38,7 +40,24 @@ export async function chooseLanguage(page: Page, code: string) {
  * Fails the test on uncaught errors, console errors and broken sub-resources
  * (images, fonts...). A 404 of the page itself is fine: some tests expect it.
  */
-export const test = base.extend<{ consoleErrors: string[] }>({
+export const test = base.extend<{ browserCoverage: void; consoleErrors: string[] }>({
+	browserCoverage: [
+		async ({ browserName, page }, use) => {
+			if (browserName !== 'chromium') {
+				await use();
+				return;
+			}
+
+			await page.coverage.startJSCoverage({ resetOnNavigation: false });
+			try {
+				await use();
+			} finally {
+				const coverage = await page.coverage.stopJSCoverage();
+				if (coverage.length > 0) await MCR(coverageOptions).add(coverage);
+			}
+		},
+		{ auto: true }
+	],
 	consoleErrors: [
 		async ({ page }, use) => {
 			const errors: string[] = [];

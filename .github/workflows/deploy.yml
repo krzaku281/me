@@ -107,6 +107,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -117,6 +119,21 @@ jobs:
       - run: node node_modules/playwright/cli.js install chromium
 
       - run: yarn run test:e2e
+
+      - name: Upload E2E coverage
+        if: always() && hashFiles('coverage-reports/e2e/lcov.info') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-coverage
+          path: coverage-reports/e2e/lcov.info
+          retention-days: 7
+
+      - name: Analyze with SonarCloud
+        if: github.event_name != 'pull_request'
+        uses: SonarSource/sonarqube-scan-action@59202af334b4ba7b5db01b701b8e79f8b3bef0f4 # v8.5.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
 
       - uses: actions/upload-artifact@v4
         if: failure()

@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { relative } from 'node:path';
 import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import { enhancedImages } from '@sveltejs/enhanced-img';
 import adapter from '@sveltejs/adapter-static';
@@ -28,7 +29,8 @@ function inlineScripts(): Plugin {
 			const [file, query] = id.split('?');
 			if (query !== 'script') return;
 			this.addWatchFile(file);
-			const { code, errors } = minifySync(file, readFileSync(file, 'utf8'), {});
+			const sourceFile = relative(process.cwd(), file).replaceAll('\\', '/');
+			const { code, errors } = minifySync(sourceFile, readFileSync(file, 'utf8'), {});
 			if (errors.length) throw new Error(`${file}: ${errors.map((e) => e.message).join('\n')}`);
 			if (code.includes('</script')) throw new Error(`${file} must not contain "</script"`);
 			return `export default ${JSON.stringify(code.trim())};`;

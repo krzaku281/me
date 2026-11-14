@@ -1,3 +1,4 @@
+import { test as baseTest } from '@playwright/test';
 import { expect, h1, test, url } from './fixtures.ts';
 
 test.describe('desktop menu', () => {
@@ -69,10 +70,10 @@ test.describe('desktop menu', () => {
 	});
 });
 
-test.describe('without JavaScript', () => {
-	test.use({ javaScriptEnabled: false });
+baseTest.describe('without JavaScript', () => {
+	baseTest.use({ javaScriptEnabled: false });
 
-	test('pages, menu dropdowns and the language menu work', async ({ page }) => {
+	baseTest('pages, menu dropdowns and the language menu work', async ({ page }) => {
 		await page.goto(url('/pl/sport/bieganie/'));
 		await expect(h1(page)).toHaveText('Bieganie');
 
@@ -84,7 +85,7 @@ test.describe('without JavaScript', () => {
 		await expect(page).toHaveURL(url('/he/sport/running/'));
 	});
 
-	test('"/" lists languages and the 404 page shows a message', async ({ page }) => {
+	baseTest('"/" lists languages and the 404 page shows a message', async ({ page }) => {
 		await page.goto(url('/'));
 		await expect(page.locator('main.choose a')).toHaveText([
 			'Polski',
