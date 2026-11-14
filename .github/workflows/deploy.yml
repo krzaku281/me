@@ -170,7 +170,7 @@ jobs:
           path: build
 
   deploy:
-  needs: [test, lint, audit, build]
+    needs: [test, lint, audit, build]
     runs-on: ubuntu-latest
     permissions:
       pages: write

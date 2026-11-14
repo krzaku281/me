@@ -177,10 +177,10 @@
   dependencies:
     "@types/json-schema" "^7.0.15"
 
-"@eslint/js@10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-10.0.1.tgz#1e8a876f50117af8ab67e47d5ad94d38d6622583"
-  integrity sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==
+"@eslint/js@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-10.0.0.tgz#7f8e3c76e4eadb14718d89c60891ae526092b134"
+  integrity sha512-J2VKrn6YUBegZFzRQVOVA8jk7VViV/MXhQUvXuCUK1I2RGGT2E+bmNGOsgtdO9Wo25Kd3hfZFuCm8LcfsUFV7g==
 
 "@eslint/object-schema@^3.0.5":
   version "3.0.5"
