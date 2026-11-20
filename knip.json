@@ -1,0 +1,13 @@
+{
+	"entry": [
+		"src/routes/**/*.{ts,svelte}",
+		"src/hooks*.ts",
+		"src/params.ts",
+		"e2e/**/*.{js,ts}",
+		"*.config.{js,ts}"
+	],
+	"project": ["src/**/*.{js,ts,svelte}", "e2e/**/*.{js,ts}", "*.config.{js,ts}"],
+	"playwright": false,
+	"sveltekit": false,
+	"vite": false
+}

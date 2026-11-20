@@ -32,7 +32,7 @@ const slugFor = (slug: Slugs, locale: Locale) => slug[locale] ?? slug.en;
 const allLocales = (fn: (l: Locale) => string) =>
 	Object.fromEntries(LOCALES.map((l) => [l, fn(l)])) as Record<Locale, string>;
 
-export const SITE_MAP = [
+const SITE_MAP = [
 	{
 		id: 'about',
 		slug: {
@@ -169,7 +169,7 @@ export type GroupId = Extract<Entry, { children: unknown }>['id'];
 export type NavItem =
 	{ kind: 'page'; id: PageId } | { kind: 'group'; id: GroupId; children: PageId[] };
 
-export interface PageRoute {
+interface PageRoute {
 	id: PageId;
 	/** Route path built from ids, without locale: 'education/engineer' ('' for home). */
 	internal: string;
