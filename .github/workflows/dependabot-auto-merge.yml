@@ -10,33 +10,20 @@ permissions:
 
 jobs:
   enable-auto-merge:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
     steps:
-      - name: Verify pull request author
-        id: verify-author
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: |
-          author_id=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq '.user.id')
-          if [[ "$author_id" == "49699333" ]]; then
-            echo "is-dependabot=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "is-dependabot=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Fetch Dependabot metadata
         id: metadata
-        if: steps.verify-author.outputs.is-dependabot == 'true'
         uses: dependabot/fetch-metadata@21025c705c08248db411dc16f3619e6b5f9ea21a # v2.5.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable auto-merge for patch and minor updates
-        if: steps.verify-author.outputs.is-dependabot == 'true' && (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor')
+        if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
