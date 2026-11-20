@@ -6,10 +6,10 @@ export const SITE = {
 	name: 'Marek Krzak',
 	givenName: 'Marek',
 	familyName: 'Krzak',
-	email: 'kontakt@example.com',
+	email: 'krzakmarek88@gmail.com',
 	/** Optional, e.g. '+48 600 000 000'. Empty = not shown in the vCard. */
 	phone: '' as string,
-	youtube: 'https://www.youtube.com/@your-channel',
+	youtube: 'https://www.youtube.com/@marekkrzak',
 
 	/**
 	 * Public origin, used for absolute URLs (canonical, sitemap, Open Graph).
