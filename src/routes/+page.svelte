@@ -32,9 +32,14 @@
 	<h1>{SITE.name}</h1>
 	<nav aria-label={m['redirect.choose']()}>
 		{#each LOCALES as locale (locale)}
-			<a href={pageHref('home', locale)} hreflang={locale} lang={locale} dir={textDirection(locale)}
-				>{LANGUAGE_NAMES[locale]}</a
+			<a
+				href={pageHref('home', locale)}
+				hreflang={locale}
+				lang={locale}
+				dir={textDirection(locale)}
 			>
+				{LANGUAGE_NAMES[locale]}
+			</a>
 		{/each}
 	</nav>
 </main>
