@@ -31,8 +31,10 @@
 						<a
 							class="link"
 							href={pageHref(item.id, locale)}
-							aria-current={current === item.id ? 'page' : undefined}>{navLabel(item.id)}</a
+							aria-current={current === item.id ? 'page' : undefined}
 						>
+							{navLabel(item.id)}
+						</a>
 					</li>
 				{:else}
 					{@const active = current !== null && item.children.includes(current)}
@@ -46,8 +48,10 @@
 									<li>
 										<a
 											href={pageHref(child, locale)}
-											aria-current={current === child ? 'page' : undefined}>{navLabel(child)}</a
+											aria-current={current === child ? 'page' : undefined}
 										>
+											{navLabel(child)}
+										</a>
 									</li>
 								{/each}
 							</ul>

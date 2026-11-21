@@ -15,9 +15,9 @@
 		{/if}
 		<dt>YouTube</dt>
 		<dd>
-			<a href={SITE.youtube} rel="noopener external"
-				>{SITE.youtube.replace(/^https?:\/\/(www\.)?/, '')}</a
-			>
+			<a href={SITE.youtube} rel="noopener external">
+				{SITE.youtube.replace(/^https?:\/\/(www\.)?/, '')}
+			</a>
 		</dd>
 	</dl>
 
