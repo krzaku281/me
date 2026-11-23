@@ -1,29 +1,27 @@
 <script lang="ts">
 	import Page from '#lib/components/Page.svelte';
+	import Photo from '#lib/components/Photo.svelte';
+	import { images } from '#lib/images/index.ts';
 	import { m } from '#lib/paraglide/messages.js';
 	import { SITE } from '#lib/site.ts';
 </script>
 
 <Page id="youtube">
-	<p>{m.placeholder()}</p>
-	<p>
+	{#snippet actions()}
 		<a class="cta" href={SITE.youtube} rel="noopener external">{m['youtube.cta']()} ↗</a>
-	</p>
+	{/snippet}
+
+	<Photo
+		src={images.house}
+		alt={m['photo.house.alt']()}
+		caption={m['photo.house.caption']()}
+		priority
+	/>
+
+	<div class="prose">
+		<p>{m['page.youtube.body.p1']()}</p>
+		<p>{m['page.youtube.body.p2']()}</p>
+		<p>{m['page.youtube.body.p3']()}</p>
+		<p>{m['page.youtube.body.p4']()}</p>
+	</div>
 </Page>
-
-<style>
-	.cta {
-		display: inline-block;
-		padding: 0.75rem 1.25rem;
-		border: 1px solid var(--line);
-		border-radius: var(--radius);
-		background: linear-gradient(var(--g-3), var(--g-2));
-		text-decoration: none;
-		box-shadow: var(--shadow);
-		transition: border-color 0.2s var(--ease);
-	}
-
-	.cta:hover {
-		border-color: var(--g-6);
-	}
-</style>

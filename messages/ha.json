@@ -1,0 +1,235 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Mai tsara manhajar kwamfuta, mai gudu kuma mai bincike har abada. Barka da zuwa shafina."
+	},
+	"ui": {
+		"skip": "Tsallaka zuwa abubuwan da ke ciki",
+		"mainNav": "Babban menu",
+		"menu": "Menu",
+		"language": "Harshe",
+		"home": "Shafin farko",
+		"close": "Rufe"
+	},
+	"nav": {
+		"home": "Farko",
+		"about": "Game da ni",
+		"education": "Ilimi",
+		"technician": "Ƙwararren fasaha",
+		"engineer": "Injiniya",
+		"master": "Digiri na biyu",
+		"mensa": "Mensa",
+		"sport": "Wasanni",
+		"club": "Ƙungiya",
+		"running": "Gudu",
+		"growth": "Ci gaba",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"youtube": "YouTube",
+		"contact": "Tuntuɓa"
+	},
+	"page": {
+		"home": {
+			"title": "Farko",
+			"lead": "Mai tsara manhajar kwamfuta, mai gudu kuma mai bincike har abada. Barka da zuwa shafina.",
+			"intro": "Ku duba ku ga yadda wannan shafi yake aiki da sauri. Kowane shafi yana buɗewa kusan nan take, kuma za ku ga lokacin da ya ɗauka kafin ya buɗe a ƙasan allo."
+		},
+		"about": {
+			"title": "Game da ni",
+			"lead": "Mai tsara manhajar kwamfuta, mai gudu, miji kuma uba, mai sha'awar sanin duniya da zurfinta gaba ɗaya.",
+			"body": {
+				"p1": "Ni mai tsara manhajar kwamfuta ne a sana'a, amma sha'awata ta wuce allon kwamfuta nesa. Na fi kusa da kyakkyawan misalin mutumin zamanin Renaissance: abubuwa da yawa na rayuwa suna burge ni, kuma ina iya samun hanyata a fannoni da dama, tun daga fasaha da wasanni har zuwa ci gaban ruhi.",
+				"p2": "Labarin rayuwata ya yi tasiri sosai a kan wanda nake a yau. Kamar mutane da yawa na zamanin millennials, na ɗauko wasu matsaloli daga gidan iyalina waɗanda dole ne in fuskance su a lokacin da na girma. Waɗannan matsalolin ne suka tura ni in yi aiki a kan kaina. Ba tare da waɗannan abubuwan da na fuskanta ba, da wuya in kai wannan matsayi a ci gabana, kuma da ban fahimci kaina da duniyar da ke kewaye da ni sosai haka ba.",
+				"p3": "Ni miji ne kuma uban yara maza biyu. Iyali makaranta ce a gare ni kowace rana: ina koyon abubuwa da yawa daga matata da ɗiyana, kuma tare muka gina gida da muke jin daɗin zama tare a cikinsa. Muna ƙoƙarin ba juna fikafikai, don kowannenmu ya hau sama gwargwadon iyawarsa.",
+				"p4": "A wannan shafi za ku sami hanyata ta ilimi, wasanni, ci gaban kai da gina gidan katakai. Ina fatan za ku ji daɗin karatu."
+			}
+		},
+		"technician": {
+			"title": "Ƙwararren fasaha",
+			"lead": "Makarantar fasaha ta tattalin arziki a Kępno da lakabin ƙwararren fasaha na tattalin arziki.",
+			"facts": {
+				"school": "Rukunin Makarantu Na 1, Kępno",
+				"title": "ƙwararren fasaha na tattalin arziki"
+			},
+			"body": {
+				"p1": "Zaɓen makarantar sakandare ba shawarata ta kaina kaɗai ba ce. A lokacin ban riga na san wace hanya nake so in bi ba, don haka na saurari iyayena na zaɓi makarantar fasaha. Irin wannan makaranta ta ba ni abubuwa biyu a lokaci guda: matura, wato jarrabawar ƙarshen sakandare da ke buɗe hanyar shiga jami'a, da kuma sana'a ta gaske. Maimakon ilimi na gama-gari kaɗai, zan iya fita da ƙwarewar aiki da ke sauƙaƙa samun aiki. Idan na waiwayi baya, ina ganin shawara ce mai kyau.",
+				"p2": "A lokacin, Makarantar Fasaha ta Tattalin Arziki a Rukunin Makarantun Sakandare Na 1 a Kępno ana ɗaukarta a matsayin mafi daraja a yankin. Tana da matakin koyarwa mai girma da malamai masu tsauri da jajircewa. Ana ganin hakan a sakamakon ɗalibai: da yawa daga cikinsu sun shiga gasa da olympiad na ƙasa. Ni ma na shiga, kuma na kai matakin ƙarshe a Gasar Ilimi da Ƙwarewar Kasuwanci da Gudanarwa.",
+				"p3": "Shekaru huɗu na karatu sun ƙare da jarrabawar sana'a, wadda ta ba ni lakabin ƙwararren fasaha na tattalin arziki. Domin na kai matakin ƙarshe a gasar, an yafe mini ɓangaren rubutu na jarrabawar. Na kuma ci matura sosai har ƙofofin mafi kyawun jami'o'i suka buɗe mini. Baya ga takardar shaida, makarantar ta koya mini yin aiki cikin tsari kuma ta nuna mini cewa shiri mai kyau yana kawo sakamako. Wannan al'ada ta kasance tare da ni a kowane mataki na karatuna da ya biyo baya."
+			}
+		},
+		"engineer": {
+			"title": "Injiniya",
+			"lead": "Kimiyyar kwamfuta a Jami'ar Kimiyya da Fasaha ta Wrocław da lakabin injiniya.",
+			"facts": {
+				"field": "kimiyyar kwamfuta"
+			},
+			"body": {
+				"p1": "Hanyar zuwa kimiyyar kwamfuta ba mai sauƙi ba ce. Kafin in same ta, na gwada wasu fannonin karatu guda biyu, amma babu wanda ya dace da ni. Abokina Dawid ne ya fi yin tasiri. Hanyoyinmu sun sha haɗuwa, tun daga makarantar sakandare ta ƙaramin mataki har zuwa makarantar fasaha. Ya shawo kaina cewa kimiyyar kwamfuta an yi ta ne don yadda nake tunani. Ya gargaɗe ni cewa tsawon shekaru huɗu dole ne in yi aiki tuƙuru in fito daga wannan tafiya a matsayin mai nasara. Amma ya yi mini alƙawarin cewa a ƙarshe zan riƙa yin abin da nake so, kuma aikina zai ba ni farin ciki.",
+				"p2": "Hasashensa ya zama gaskiya. Tsawon shekaru huɗu na mai da hankalina gaba ɗaya ga karatu. Na so in gama a kan lokaci kuma in samu ilimi da ƙwarewa gwargwadon iyawa, don in shiga kasuwar aiki a matsayin matashin ƙwararren mai sana'ar hannu, a shirye in ƙirƙiri abubuwa masu inganci. Sai dai sana'ata ta zama ta zamani: tsara manhaja.",
+				"p3": "Jami'ar Kimiyya da Fasaha ta Wrocław ta ba ni isasshen sarari in zama injiniya a ma'anar kalmar gaba ɗaya. Ina tuna da kyau farfesan ilimin dabaru na shekarar farko, wanda yake yawan gaya mana cewa injiniya mai ƙirƙira ne. Kalmar ta fito daga Latin ingenium, wato dabara da basirar ƙirƙira, kuma farfesan yana tsammanin mu zama masu ƙirƙira. A lokacin karatuna na haɗu da fitattun masu hankali da yawa, amma ma'aunin ya yi tsayi: daga cikin kusan mutum ɗari da muka fara tare, mutum goma sha kaɗan ne kawai suka kai jarrabawar ƙarshe a kan lokaci. Aikin kammala karatuna wani shiri ne na tsara manhaja, wato manhaja mai aiki maimakon takarda ta ra'ayi kaɗai.",
+				"p4": "Karatuna ya shirya ni sosai don aikin mai tsara manhaja. Tushen da na gina a jami'a ya ba ni damar shiga kasuwar aiki da ƙwarin gwiwa kuma na gina ƙwaƙƙwaran matsayi a cikinta. Saboda haka, na shiga ayyukan ƙasashen duniya kan manhajoji masu sarƙaƙiya sosai, kuma na taka muhimman matsayi na fasaha a cikinsu."
+			}
+		},
+		"master": {
+			"title": "Digiri na biyu",
+			"lead": "Karatun mataki na biyu, ana yi yanzu.",
+			"body": {
+				"p1": "A yanzu ina karatun digiri na biyu. Bayanin wannan mataki zai bayyana a nan idan na gama shi."
+			}
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Zama memba na Mensa Polska, bayan ƙoƙari na uku.",
+			"facts": {
+				"role": "memba na ƙungiya"
+			},
+			"body": {
+				"p1": "A wurina, zama memba na Mensa yana da alaƙa da wani labari da ya koya mini fiye da sakamakon gwajin kansa. Ya nuna mini yadda abin da muke ci yake shafar ingancin tunaninmu.",
+				"p2": "Sai a ƙoƙari na uku na shiga Mensa, kuma watakila haka aka yi nufi. Na yi gwajin a karon farko a lokacin karatuna, kusan shekarar 2011. Na rasa ƙofar da ɗan kaɗan, amma hakan ya isa ya sa na bar tunanin sake gwadawa na shekaru da yawa. Sai a shekarar 2021 na koma gare shi, lokacin da nake bin wani tsarin abinci na ban mamaki. Amma a wannan karon gwajin ya fi na farko muni.",
+				"p3": "Wannan abin da na fuskanta ya sa na yi tunani. Na fara bincike a kan abin da ya kamata mu ci da gaske, kuma a shekarun da suka biyo baya na canza yadda nake cin abinci gaba ɗaya, na koma kusan akasin yadda nake a da. A shekarar 2025 na yi gwajin a karo na uku, kuma a wannan karon na cancanta da maki masu yawa sama da ƙofar. Ba na ɗaukar hakan a matsayin hujja ta kimiyya, amma misalin kaina ya tabbatar mini cewa abinci zai iya shafar yadda tunaninmu yake aiki.",
+				"p4": "Na san cewa irin wannan girmamawa tana iya zama dalilin fahariya cikin sauƙi. A lokacin makaranta da alama haka za ta kasance, domin girman kaina ya fi na yanzu a lokacin. Da shigewar lokaci, duba rayuwata da kyau da koyon darasi daga kowane sabon abu da na fuskanta sun taimaka mini in rage shi sosai. A wurina, zama memba na Mensa shi ne abin tunawa da wannan tafiya, da kuma tunatarwa kan yadda abubuwa da yawa suke dogara ga yadda muke kula da kanmu kowace rana."
+			}
+		},
+		"club": {
+			"title": "Ƙungiya",
+			"lead": "KS Gepard Kępno: ƙungiyar masu gudu daga Kępno, wadda aka kafa a shekarar 2015.",
+			"body": {
+				"p1": "Tarihin ƙungiyarmu ya koma lokacin da gudu yake bunƙasa sosai a Poland. Ƙungiyar abokanmu ma ta bi wannan guguwa, kuma a ranar 21 ga Yuni, 2015 muka yanke shawarar kafa ƙungiyarmu ta yankinmu. Muna so mu ƙirƙiri al'umma da muke jin daɗin gudu tare a cikinta, kuma muke tura iyakar iyawarmu gaba. Haka aka haifi KS Gepard Kępno. Mu huɗu ne muka ƙirƙiri sunan: Rafał, Dominik, Damian da ni.",
+				"p2": "Kowanne daga cikin waɗanda suka kafa ya kawo wani abu nasa don ƙungiyar ta tashi kuma ta dawwama. Tsawon shekaru, tawagar ta canza ta halitta, kuma masu gudu da yawa masu irin wannan himma sun haɗu da mu. Halayensu da jajircewarsu sun taimaka wa ƙungiyar ta girma. Muna shiga tseren tare, muna ƙarfafa juna, kuma muna kafa sabbin mafi kyawun lokutanmu sau da yawa. Mun kuma lashe matsayi na farko a jerin ƙungiyoyi sau da yawa.",
+				"p3": "Godiya ga dukkan membobinmu, mun ƙirƙiri wuri mai kyau don gudu da haɓaka sha'awa. Kowa zai iya jin kamar a gidansa a nan, ko wane irin matsayi yake da shi, yana jin cewa sauran ƙungiyar sun fahimce shi, kuma koyaushe yana iya dogara da tallafi. Idan matsala ko tambaya ta taso, muna farin cikin raba abin da muka sani kuma mu taimaki juna wajen cimma burin gudu na kowa. Ƙungiyar tana aiki ba tare da tsayawa ba tun 2015, kuma tana da masu gudu fiye da goma."
+			}
+		},
+		"running": {
+			"title": "Gudu",
+			"lead": "Daga rabin marathon bayan makonni biyu na horo zuwa sabbin mafi kyawun lokuta.",
+			"body": {
+				"p1": "A lokacin makaranta ina da ƙwazo sosai a wasanni. Lambobin yabon da na samu a gasar wasannin guje-guje da tsalle-tsalle na yanki sun nuna hakan, musamman a tseren mita 100 da tsallen tsawo. Bayan makaranta kuwa, sai na fara rasa motsa jiki. Lokacin da na sami digirin injiniya, gudu yana da farin jini sosai, don haka ni ma na bi wannan guguwa.",
+				"p2": "Tseren farko da na shiga shi ne Cross Ostrzeszowski, rabin marathon da aka sani sosai a yankin. Na gudu shi bayan makonni biyu kacal na horo. Eh, ba kuskure ba ne. Kafin farawa ina jin tsoron komai a zahiri: ko na yi ado kamar ƙwararre, ko zan iya riƙe sauri, ko ma zan iya ƙarasawa. Don haka cikin gaggawa na sayi takalman gudu, agogon da ke auna bugun zuciya da kayan gudu, kuma saboda haka na ji ƙarfin gwiwa a farawa. A ƙarshe agogon ya nuna 1:43:25, sakamako mai kyau ga irin wannan ɗan gajeren shiri. Himmata ba ta ragu ba. Bayan watanni biyar na horo, na gudu marathon na farko a rayuwata kuma na gama shi a 3:08:48. Wannan sakamakon farko har yanzu shi ne mafi kyawun lokacina, don haka har yanzu ina da abin da zan nema.",
+				"p3": "Bayan kakar farko ta ci gaba cikin sauri, ba ni da tsarin horo mai kyau, kuma na daɗe a wuri ɗaya. Don haka na yanke shawarar yin aiki da koci. Wannan haɗin gwiwa ya kawo sabbin mafi kyawun lokuta a tseren kilomita 5 da 10 a shekarar 2020.",
+				"p4": "Akwai kuma tsawon lokuta da dole ne al'amuran kaina su rinjayi sha'awata ta gudu, kuma horo ya koma baya.",
+				"p5": "Don in fahimci ka'idojin horo da kyau, na kammala kwas a Makarantar Al'adu da Wasanni ta Poland (Polska Akademia Kultury i Sportu) kuma na zama malamin motsa jiki na nishaɗi, mai ƙwarewa a gudu. Kwas ɗin ya ba ni sabon kallo gaba ɗaya ga wannan wasa. Tun daga lokacin ina shirya shirina da kaina, kuma na horar da ɗana, wanda shi ma ya gano sha'awar gudu."
+			}
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Pranic Healing a Cibiyar Pranic Healing da ke Częstochowa.",
+			"body": {
+				"p1": "Jim kaɗan kafin na cika shekara 33, wata bukata mai ƙarfi ta ci gaban kai ta tashi a cikina. A gaskiya tana tare da ni a dukan rayuwata ta baya: kullum ina tambayar kaina game da ma'anar rayuwa, daga ina muka fito kuma ina za mu je. Na nemi amsoshi ta hanyar tunani kan addini, mutuwa da tarihin ɗan Adam na da.",
+				"p2": "Wannan bukata ta kai ni kwasa-kwasan Pranic Healing a Częstochowa. A cikin shekara ɗaya na kammala kwasa-kwasai biyar na matakai daban-daban. Lokaci ne na zurfin sauyi da tsarkakewa a ciki, kuma ya canza yadda nake kallon gaskiya sosai. Mahalarta suna kwana a wurin, don haka da yamma, bayan manyan darussa, muna haɗuwa don ƙarin atisaye, hira da musayar abubuwan da muka fuskanta. Waɗannan maraice sun ƙara zurfafa fahimtarmu ta aiki da kuzari kuma sun buɗe zukatanmu.",
+				"p3": "Wannan lokaci mai tsanani ya zo a lokaci guda da sauye-sauye da yawa a rayuwata ta kaina, waɗanda suka nisanta ni da sabuwar ƙungiyar na ɗan lokaci.",
+				"p4": "Sai bayan shekaru biyar na shirya komawa in sake haɗuwa da malamin, Jerzy Opara. Ya bayyana cewa mutane kaɗan ne suka rage daga tsohuwar ƙungiyar, galibi ainihin tawagar da ke shirya da gina al'ummar Częstochowa. Yawancin mahalarta sababbi ne a gare ni.",
+				"p5": "Kowane irin wannan taro dama ce ta haɗuwa da mutane da yawa masu ban sha'awa. A hirar lokacin hutu, muna raba ra'ayoyi da kallo daban-daban game da hanyoyinmu na ci gaba. Kowane lokaci ina ganin yadda abokantakar da ake yi a can za ta iya zama mai daraja, da kuma yadda mutum zai iya jin abubuwa da yawa game da sababbin hanyoyin aiki da kuzari."
+			}
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Hanyata da reiki: shigar da ni cikin reiki da aiki da kuzari.",
+			"body": {
+				"p1": "Labarina da reiki ya fara kaɗan a baya, lokacin da na haɗu da {link}, wadda a yau abokiyata ce. Da farko ta taimaka mini a matsalolina na kaina, daga baya kuma a na iyali. Bayan haka, tsawon shekara ɗaya, na halarci Makarantar Ci Gaban Ruhi da take gudanarwa.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "Bayan wannan lokaci na ji cewa na shirya in ci gaba, kuma na ji bukatar zurfafa ci gabana. Agnieszka ce ta shigar da ni cikin Usui Reiki. Da jagorarta na zurfafa aikina da kuzari da fahimtarsa, kuma kowace sabuwar shigarwa tana buɗe sabon mataki na tsarkakewar ciki.",
+				"p3": "Mataki na farko ya kawo tsarkakewa mai ƙarfi. Daren farko bayan shigarwar ya fi tsanani, amma duk lokacin tsarkakewar kwana 21 da ke biyo bayanta ma ya yi wahala. Bayan watanni biyar na sami mataki na biyu. Wannan mataki ya ƙara zurfafa tsarin buɗewa da tsarkakewa, ko da yake a wannan karon ya wuce cikin sauƙi sosai."
+			}
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "“Dom z Bala”, tasha game da gina da gama gidan katakai da aka manna.",
+			"body": {
+				"p1": "Na fara tashar ne saboda gina gidanmu na katakai da aka manna, ko kuma a faɗi daidai, saboda shirye-shiryen yin sa. Ƙungiyar masu gini ce ta gina gidan, amma na shiga cikin zane kuma na yi aikin gamawa da kaina. Shirye-shiryen sun yi sarƙaƙiya sosai, kuma amintattun bayanai da shawarwari a intanet sun yi ƙaranci har na yanke shawara a hankali in raba abin da na koya. Na yi tunanin cewa zai iya taimaka wa wasu da ke fuskantar irin waɗannan matsaloli wajen gina gidan itace.",
+				"p2": "Bidiyoyin farko a gaskiya rahotanni ne ga matata. Ita tana kula da yara, ni kuma ina dawowa daga wurin gini da sabbin labarai game da ci gaban aikin.",
+				"p3": "Da shigewar lokaci, tashar ta zama hutu a gare ni daga ayyukan yau da kullum da nauyin da ke kaina. A kanta ina nuna ci gaban aiki, gamawa, ayyukan da ke kewayen gida da lambu, gyare-gyaren hannu, da mafita da abubuwan da na gano a hanya. Hakanan kasada ce kuma dama ce ta koyon yadda kafafen sada zumunta suke aiki a yau daga ciki.",
+				"p4": "Ina ɗaukar yawancin bidiyoyi yayin da nake aiki, don kada ɗaukar bidiyo ya raba ni da aikin da yawa. Wani lokaci hakan yana buƙatar dabaru da yawa: dole in ɗauki hoto duk da wasannin yara masu hayaniya, ko duk da shigarsu ba zato cikin firam a daidai lokacin da baba yake buƙatar ɗan natsuwa don ya ƙirƙiri wani abu."
+			}
+		},
+		"contact": {
+			"title": "Tuntuɓa",
+			"lead": "Kuna da tambaya ko shawara? Ku tuntuɓe ni ta hanyar da ta fi dacewa da ku."
+		}
+	},
+	"youtube": {
+		"cta": "Ku kalli tashar “Dom z Bala”"
+	},
+	"contact": {
+		"email": "Imel",
+		"phone": "Waya",
+		"vcard": "Ajiye lambar sadarwa a wayarku",
+		"vcardHint": "Fayil ɗin vCard (.vcf)"
+	},
+	"photo": {
+		"house": {
+			"alt": "Gidan itace na katakai da aka manna mai baranda da shirayi mai rufi, a rana mai haske",
+			"caption": "Gidanmu na katakai da aka manna."
+		},
+		"club": {
+			"alt": "Hoton ƙungiyar masu gudu na KS Gepard Kępno cikin kayan ƙungiya masu launin rawaya da baƙi, da lambobin yabo a wuyansu",
+			"caption": "Tawagar KS Gepard Kępno."
+		},
+		"clubLogo": "Alamar KS Gepard Kępno",
+		"podium": {
+			"alt": "Marek Krzak a kan dandalin masu nasara cikin rigar ƙungiya mai launin rawaya, da lambar yabo da kofi",
+			"caption": "A kan dandalin masu nasara na Marathon na Leszno na 7."
+		},
+		"marathon": {
+			"alt": "Marek Krzak cikin rigar KS Gepard Kępno yana ƙetare layin ƙarshe da hannayensa a buɗe",
+			"caption": "Ƙarshen marathon na farko: Marathon na PKO Wrocław na 33, 2015."
+		},
+		"mensaCard": "Katin zama memba na Mensa Polska da aka bayar da sunan Marek Krzak",
+		"portrait": "Marek Krzak"
+	},
+	"error": {
+		"notFound": "Wannan shafi babu shi.",
+		"generic": "Wani abu ya faru ba daidai ba.",
+		"back": "Koma shafin farko"
+	},
+	"redirect": {
+		"choose": "Zaɓi harshe"
+	},
+	"perf": {
+		"loaded": "Wannan shafi ya buɗe cikin {ms} ms · {kb} KB",
+		"prerendered": "Wannan shafi ya riga ya shirya kafin ku danna: 0 ms · {kb} KB"
+	},
+	"certificates": {
+		"heading": "Takardun shaida",
+		"open": "Ƙara girman takardar shaida: {name}",
+		"alt": "Takardar shaida: {name}",
+		"qualifications": "Cancanta",
+		"diploma": "Diploma"
+	},
+	"certificate": {
+		"prana": {
+			"basic": "Kwas na Aiki na Farko na Pranic Healing"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – Mataki na Farko",
+			"level2": "Reiki Usui Shiki Ryoho – Mataki na Biyu"
+		},
+		"running": {
+			"instructor": "Malamin motsa jiki na nishaɗi – gudu (Makarantar Al'adu da Wasanni ta Poland)"
+		},
+		"technician": {
+			"diploma": "Diploma da ke tabbatar da cancantar sana'a: ƙwararren fasaha na tattalin arziki"
+		},
+		"engineer": {
+			"diploma": "Diploma ta injiniya: kimiyyar kwamfuta, Jami'ar Kimiyya da Fasaha ta Wrocław"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno a Facebook"
+	},
+	"running": {
+		"records": {
+			"heading": "Mafi kyawun lokuta na kaina",
+			"halfMarathon": "rabin marathon",
+			"marathon": "marathon"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Sassan shafi",
+			"education": "Makarantar fasaha, jami'a da Mensa",
+			"sport": "KS Gepard Kępno da gudu",
+			"growth": "Prana da reiki",
+			"youtube": "Tashar “Dom z Bala”"
+		}
+	}
+}

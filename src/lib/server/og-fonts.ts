@@ -8,7 +8,7 @@
  * - it falls back per glyph only across fonts with *different* names, so every subset
  *   gets its own name;
  * - the first font decides which font the spaces come from; with a Latin font first,
- *   spaces between Arabic/Hebrew words get lost. So the script's own font goes first.
+ *   spaces between Arabic or Persian words get lost. So the script's own font goes first.
  */
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -17,7 +17,9 @@ import type { Locale } from '#lib/i18n/config.ts';
 type Family =
 	| 'Fira Mono'
 	| 'Noto Sans Arabic'
-	| 'Noto Sans Hebrew'
+	| 'Noto Sans Mono'
+	| 'Noto Sans KR'
+	| 'Noto Sans Thai'
 	| 'Noto Sans SC'
 	| 'Noto Sans JP'
 	| 'Noto Sans Devanagari'
@@ -26,7 +28,9 @@ type Family =
 const PACKAGES: Record<Family, string> = {
 	'Fira Mono': 'fira-mono',
 	'Noto Sans Arabic': 'noto-sans-arabic',
-	'Noto Sans Hebrew': 'noto-sans-hebrew',
+	'Noto Sans Mono': 'noto-sans-mono',
+	'Noto Sans KR': 'noto-sans-kr',
+	'Noto Sans Thai': 'noto-sans-thai',
 	'Noto Sans SC': 'noto-sans-sc',
 	'Noto Sans JP': 'noto-sans-jp',
 	'Noto Sans Devanagari': 'noto-sans-devanagari',
@@ -39,7 +43,6 @@ const PRIMARY: Record<Locale, Family> = {
 	en: 'Fira Mono',
 	de: 'Fira Mono',
 	ar: 'Noto Sans Arabic',
-	he: 'Noto Sans Hebrew',
 	zh: 'Noto Sans SC',
 	hi: 'Noto Sans Devanagari',
 	es: 'Fira Mono',
@@ -49,7 +52,17 @@ const PRIMARY: Record<Locale, Family> = {
 	fr: 'Fira Mono',
 	id: 'Fira Mono',
 	ur: 'Noto Sans Arabic',
-	ja: 'Noto Sans JP'
+	ja: 'Noto Sans JP',
+	// Fira Mono has no Vietnamese letters and no Hausa hooked letters (ɓ ɗ ƙ),
+	// although its unicode-range lists them
+	vi: 'Noto Sans Mono',
+	tr: 'Fira Mono',
+	ko: 'Noto Sans KR',
+	fa: 'Noto Sans Arabic',
+	th: 'Noto Sans Thai',
+	sw: 'Fira Mono',
+	it: 'Fira Mono',
+	ha: 'Noto Sans Mono'
 };
 
 interface Face {

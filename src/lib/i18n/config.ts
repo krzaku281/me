@@ -4,8 +4,8 @@
  * Adding a language (e.g. Arabic):
  *  1. add "ar" to `locales` in project.inlang/settings.json
  *  2. create messages/ar.json
- *  3. add it to LOCALES, LANGUAGE_NAMES and OG_LOCALES below and give it texts in
- *     src/lib/content/timeline.ts. Slugs in routes.ts are optional (English is the fallback).
+ *  3. add it to LOCALES, LANGUAGE_NAMES and OG_LOCALES below. Slugs in routes.ts are optional
+ *     (English is the fallback).
  *  4. for Open Graph images in a new script, add a font in src/lib/server/og-fonts.ts
  * RTL languages get dir="rtl" automatically (see RTL_LANGUAGES).
  */
@@ -14,7 +14,6 @@ export const LOCALES = [
 	'en',
 	'de',
 	'ar',
-	'he',
 	'zh',
 	'hi',
 	'es',
@@ -24,7 +23,15 @@ export const LOCALES = [
 	'fr',
 	'id',
 	'ur',
-	'ja'
+	'ja',
+	'vi',
+	'tr',
+	'ko',
+	'fa',
+	'th',
+	'sw',
+	'it',
+	'ha'
 ] as const;
 export type Locale = (typeof LOCALES)[number];
 
@@ -40,7 +47,6 @@ export const LANGUAGE_NAMES: Record<Locale, string> = {
 	en: 'English',
 	de: 'Deutsch',
 	ar: 'العربية',
-	he: 'עברית',
 	zh: '中文',
 	hi: 'हिन्दी',
 	es: 'Español',
@@ -50,7 +56,15 @@ export const LANGUAGE_NAMES: Record<Locale, string> = {
 	fr: 'Français',
 	id: 'Bahasa Indonesia',
 	ur: 'اردو',
-	ja: '日本語'
+	ja: '日本語',
+	vi: 'Tiếng Việt',
+	tr: 'Türkçe',
+	ko: '한국어',
+	fa: 'فارسی',
+	th: 'ไทย',
+	sw: 'Kiswahili',
+	it: 'Italiano',
+	ha: 'Hausa'
 };
 
 /** Locale codes for Open Graph (og:locale). */
@@ -59,7 +73,6 @@ export const OG_LOCALES: Record<Locale, string> = {
 	en: 'en_US',
 	de: 'de_DE',
 	ar: 'ar_AR',
-	he: 'he_IL',
 	zh: 'zh_CN',
 	hi: 'hi_IN',
 	es: 'es_ES',
@@ -69,7 +82,15 @@ export const OG_LOCALES: Record<Locale, string> = {
 	fr: 'fr_FR',
 	id: 'id_ID',
 	ur: 'ur_PK',
-	ja: 'ja_JP'
+	ja: 'ja_JP',
+	vi: 'vi_VN',
+	tr: 'tr_TR',
+	ko: 'ko_KR',
+	fa: 'fa_IR',
+	th: 'th_TH',
+	sw: 'sw_KE',
+	it: 'it_IT',
+	ha: 'ha_NG'
 };
 
 const RTL_LANGUAGES = new Set(['ar', 'dv', 'fa', 'he', 'ks', 'ku', 'ps', 'sd', 'ug', 'ur', 'yi']);

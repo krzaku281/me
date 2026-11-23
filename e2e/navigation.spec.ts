@@ -1,5 +1,5 @@
 import { test as baseTest } from '@playwright/test';
-import { expect, h1, test, url } from './fixtures.ts';
+import { LANGUAGE_NAMES, expect, h1, test, url } from './fixtures.ts';
 
 test.describe('desktop menu', () => {
 	// Regression: the dropdown used to close while the mouse crossed the gap to the list.
@@ -27,17 +27,13 @@ test.describe('desktop menu', () => {
 		await expect(page.locator('summary.active')).toContainText('Education');
 	});
 
-	test('clicking the label of a hovered dropdown keeps it open', async ({ page }) => {
+	test('hover: clicking the label keeps it open, another group switches, leaving closes', async ({
+		page
+	}) => {
 		await page.goto(url('/en/'));
-		const summary = page.locator('summary', { hasText: 'Sport' });
-		await summary.hover();
-		await summary.click();
-		await expect(page.getByRole('link', { name: 'Running' })).toBeVisible();
-	});
-
-	test('hovering another group switches; leaving closes after a short delay', async ({ page }) => {
-		await page.goto(url('/en/'));
-		await page.locator('summary', { hasText: 'Sport' }).hover();
+		const sport = page.locator('summary', { hasText: 'Sport' });
+		await sport.hover();
+		await sport.click();
 		await expect(page.getByRole('link', { name: 'Running' })).toBeVisible();
 
 		const growth = (await page.locator('summary', { hasText: 'Growth' }).boundingBox())!;
@@ -70,6 +66,31 @@ test.describe('desktop menu', () => {
 	});
 });
 
+test.describe('certificates', () => {
+	test('thumbnail opens the full scan, Escape and × close it', async ({ page }) => {
+		await page.goto(url('/en/growth/reiki/'));
+		const thumbs = page.locator('button.thumb');
+		await expect(thumbs).toHaveCount(2);
+		const viewer = page.locator('.viewer').first();
+		const full = viewer.locator('img');
+
+		// The full-size scan is not downloaded before it is opened
+		await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+		expect(await full.evaluate((i: HTMLImageElement) => i.currentSrc)).toBe('');
+
+		await thumbs.first().click();
+		await expect(viewer).toBeVisible();
+		await expect(full).toHaveAttribute('alt', /Reiki Usui Shiki Ryoho/);
+		await expect.poll(() => full.evaluate((i: HTMLImageElement) => i.naturalWidth)).toBe(1280);
+		await page.keyboard.press('Escape');
+		await expect(viewer).toBeHidden();
+
+		await thumbs.first().click();
+		await viewer.getByRole('button').click();
+		await expect(viewer).toBeHidden();
+	});
+});
+
 baseTest.describe('without JavaScript', () => {
 	baseTest.use({ javaScriptEnabled: false });
 
@@ -81,29 +102,13 @@ baseTest.describe('without JavaScript', () => {
 		await expect(page.getByRole('link', { name: 'Inżynier' })).toBeVisible();
 
 		await page.locator('details.lang > summary').click();
-		await page.locator('details.lang a[data-lang="he"]').click();
-		await expect(page).toHaveURL(url('/he/sport/running/'));
+		await page.locator('details.lang a[data-lang="fa"]').click();
+		await expect(page).toHaveURL(url('/fa/sport/running/'));
 	});
 
-	baseTest('"/" lists languages and the 404 page shows a message', async ({ page }) => {
+	baseTest('"/" lists every language and the 404 page shows a message', async ({ page }) => {
 		await page.goto(url('/'));
-		await expect(page.locator('main.choose a')).toHaveText([
-			'Polski',
-			'English',
-			'Deutsch',
-			'العربية',
-			'עברית',
-			'中文',
-			'हिन्दी',
-			'Español',
-			'বাংলা',
-			'Русский',
-			'Português',
-			'Français',
-			'Bahasa Indonesia',
-			'اردو',
-			'日本語'
-		]);
+		await expect(page.locator('main.choose a')).toHaveText(Object.values(LANGUAGE_NAMES));
 		await page.goto(url('/de/nope/'));
 		await expect(page.locator('main.error h1').first()).toBeVisible();
 	});

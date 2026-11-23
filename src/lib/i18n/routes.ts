@@ -11,7 +11,7 @@ import { LOCALES, isLocale, type Locale } from './config.ts';
 
 /**
  * URL slug per language. Languages without one use the English slug: non-Latin scripts
- * (ar, he, zh, hi, bn, ru, ur, ja) on purpose, so URLs stay readable ASCII.
+ * (ar, zh, hi, bn, ru, ur, ja, ko, fa, th) on purpose. Hausa too, for lack of settled terms, so URLs stay readable ASCII.
  */
 type Slugs = Readonly<{ en: string } & Partial<Record<Locale, string>>>;
 
@@ -42,7 +42,11 @@ const SITE_MAP = [
 			es: 'sobre-mi',
 			pt: 'sobre-mim',
 			fr: 'a-propos',
-			id: 'tentang-saya'
+			id: 'tentang-saya',
+			vi: 'gioi-thieu',
+			tr: 'hakkimda',
+			sw: 'kuhusu-mimi',
+			it: 'chi-sono'
 		}
 	},
 	{
@@ -54,7 +58,11 @@ const SITE_MAP = [
 			es: 'educacion',
 			pt: 'educacao',
 			fr: 'formation',
-			id: 'pendidikan'
+			id: 'pendidikan',
+			vi: 'hoc-van',
+			tr: 'egitim',
+			sw: 'elimu',
+			it: 'formazione'
 		},
 		children: [
 			{
@@ -66,7 +74,11 @@ const SITE_MAP = [
 					es: 'tecnico',
 					pt: 'tecnico',
 					fr: 'technicien',
-					id: 'teknisi'
+					id: 'teknisi',
+					vi: 'ky-thuat-vien',
+					tr: 'teknisyen',
+					sw: 'fundi',
+					it: 'tecnico'
 				}
 			},
 			{
@@ -78,7 +90,11 @@ const SITE_MAP = [
 					es: 'ingeniero',
 					pt: 'engenheiro',
 					fr: 'ingenieur',
-					id: 'insinyur'
+					id: 'insinyur',
+					vi: 'ky-su',
+					tr: 'muhendis',
+					sw: 'mhandisi',
+					it: 'ingegnere'
 				}
 			},
 			{
@@ -90,7 +106,11 @@ const SITE_MAP = [
 					es: 'master',
 					pt: 'mestre',
 					fr: 'master',
-					id: 'magister'
+					id: 'magister',
+					vi: 'thac-si',
+					tr: 'yuksek-lisans',
+					sw: 'uzamili',
+					it: 'laurea-magistrale'
 				}
 			},
 			{ id: 'mensa', slug: same('mensa') }
@@ -98,9 +118,29 @@ const SITE_MAP = [
 	},
 	{
 		id: 'sport',
-		slug: { en: 'sport', es: 'deporte', pt: 'esporte', id: 'olahraga' },
+		slug: {
+			en: 'sport',
+			es: 'deporte',
+			pt: 'esporte',
+			id: 'olahraga',
+			vi: 'the-thao',
+			tr: 'spor',
+			sw: 'michezo'
+		},
 		children: [
-			{ id: 'club', slug: { pl: 'klub', en: 'club', de: 'verein', pt: 'clube', id: 'klub' } },
+			{
+				id: 'club',
+				slug: {
+					pl: 'klub',
+					en: 'club',
+					de: 'verein',
+					pt: 'clube',
+					id: 'klub',
+					vi: 'cau-lac-bo',
+					tr: 'kulup',
+					sw: 'klabu'
+				}
+			},
 			{
 				id: 'running',
 				slug: {
@@ -110,7 +150,11 @@ const SITE_MAP = [
 					es: 'correr',
 					pt: 'corrida',
 					fr: 'course-a-pied',
-					id: 'lari'
+					id: 'lari',
+					vi: 'chay-bo',
+					tr: 'kosu',
+					sw: 'kukimbia',
+					it: 'corsa'
 				}
 			}
 		]
@@ -124,23 +168,15 @@ const SITE_MAP = [
 			es: 'desarrollo',
 			pt: 'desenvolvimento',
 			fr: 'developpement',
-			id: 'pengembangan-diri'
+			id: 'pengembangan-diri',
+			vi: 'phat-trien',
+			tr: 'gelisim',
+			sw: 'maendeleo',
+			it: 'crescita'
 		},
 		children: [
 			{ id: 'prana', slug: same('prana') },
-			{ id: 'reiki', slug: same('reiki') },
-			{
-				id: 'journeyman',
-				slug: {
-					pl: 'czeladnik',
-					en: 'journeyman',
-					de: 'geselle',
-					es: 'oficial',
-					pt: 'oficial-artesao',
-					fr: 'compagnon',
-					id: 'tukang-ahli'
-				}
-			}
+			{ id: 'reiki', slug: same('reiki') }
 		]
 	},
 	{ id: 'youtube', slug: same('youtube') },
@@ -152,7 +188,11 @@ const SITE_MAP = [
 			de: 'kontakt',
 			es: 'contacto',
 			pt: 'contato',
-			id: 'kontak'
+			id: 'kontak',
+			vi: 'lien-he',
+			tr: 'iletisim',
+			sw: 'mawasiliano',
+			it: 'contatti'
 		}
 	}
 ] as const satisfies readonly (PageDef | GroupDef)[];

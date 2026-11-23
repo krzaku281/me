@@ -42,7 +42,9 @@ export const GET: RequestHandler = async ({ url }) => {
 		`EMAIL;TYPE=INTERNET:${SITE.email}`,
 		...(SITE.phone ? [`TEL;TYPE=CELL:${SITE.phone}`] : []),
 		`URL:${url.origin}${__BASE_PATH__}${localizedPath('home', DEFAULT_LOCALE)}`,
+		`X-SOCIALPROFILE;TYPE=linkedin:${SITE.linkedin}`,
 		`X-SOCIALPROFILE;TYPE=youtube:${SITE.youtube}`,
+		`X-SOCIALPROFILE;TYPE=facebook:${SITE.facebook}`,
 		`PHOTO;ENCODING=b;TYPE=PNG:${photo.toString('base64')}`,
 		'END:VCARD'
 	];

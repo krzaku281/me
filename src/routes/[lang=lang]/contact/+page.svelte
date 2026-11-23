@@ -3,6 +3,14 @@
 	import Page from '#lib/components/Page.svelte';
 	import { m } from '#lib/paraglide/messages.js';
 	import { SITE } from '#lib/site.ts';
+
+	/** Profiles in display order; the link text is the address without the protocol. */
+	const profiles = [
+		{ label: 'LinkedIn', href: SITE.linkedin },
+		{ label: 'YouTube', href: SITE.youtube },
+		{ label: 'Facebook', href: SITE.facebook }
+	];
+	const shortUrl = (href: string) => href.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
 </script>
 
 <Page id="contact">
@@ -10,15 +18,15 @@
 		<dt>{m['contact.email']()}</dt>
 		<dd><a href="mailto:{SITE.email}">{SITE.email}</a></dd>
 		{#if SITE.phone}
-			<dt>Tel.</dt>
+			<dt>{m['contact.phone']()}</dt>
 			<dd><a href="tel:{SITE.phone.replace(/\s/g, '')}">{SITE.phone}</a></dd>
 		{/if}
-		<dt>YouTube</dt>
-		<dd>
-			<a href={SITE.youtube} rel="noopener external">
-				{SITE.youtube.replace(/^https?:\/\/(www\.)?/, '')}
-			</a>
-		</dd>
+		{#each profiles as { label, href } (label)}
+			<dt>{label}</dt>
+			<dd>
+				<a {href} rel="noopener external">{shortUrl(href)}</a>
+			</dd>
+		{/each}
 	</dl>
 
 	<!-- Phones open .vcf files straight in the address book -->

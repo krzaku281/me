@@ -5,7 +5,7 @@
 	import { m } from '#lib/paraglide/messages.js';
 
 	// Native <details> (works without JS), in the same name="nav" group as the menu
-	// dropdowns, so only one is open at a time. Desktop: compact "PL" button with a list.
+	// dropdowns, so only one is open at a time. Desktop: compact "PL" button with a two-column list.
 	// Mobile: a row in the menu panel. data-lang: site.js stores a manual choice.
 	let { locale, current }: { locale: Locale; current: PageId | null } = $props();
 </script>
@@ -110,7 +110,15 @@
 		inset-inline-end: 0;
 		z-index: 1;
 		display: grid;
-		min-inline-size: 12rem;
+		/* Two columns keep 22 languages short; on a low window the list scrolls on its own */
+		grid-template-columns: repeat(2, minmax(11rem, auto));
+		/* Absolute inside the small button: without this it shrinks to min-content */
+		inline-size: max-content;
+		gap: 0.1rem 0.25rem;
+		max-block-size: calc(100dvh - 5rem);
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		scrollbar-width: thin;
 		margin: 0;
 		padding: 0.4rem;
 		list-style: none;
@@ -144,6 +152,11 @@
 	.options a[aria-current='true'] {
 		background: rgb(255 255 255 / 0.07);
 		color: var(--strong);
+	}
+
+	/* "Bahasa Indonesia" stays on one line */
+	.options a > :first-child {
+		white-space: nowrap;
 	}
 
 	.option-code {
@@ -205,6 +218,10 @@
 			grid-template-columns: 1fr 1fr;
 			gap: 0.25rem;
 			min-inline-size: 0;
+			/* The menu panel scrolls as a whole */
+			inline-size: auto;
+			max-block-size: none;
+			overflow: visible;
 			padding: 0 0 0.75rem;
 			border: 0;
 			background: none;

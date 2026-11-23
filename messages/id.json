@@ -1,15 +1,15 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"site": {
-		"description": "Halaman pribadi: pendidikan, olahraga, pengembangan diri, dan kontak."
+		"description": "Programmer, pelari, dan penjelajah abadi. Selamat datang di situs saya."
 	},
 	"ui": {
 		"skip": "Langsung ke konten",
 		"mainNav": "Menu utama",
 		"menu": "Menu",
-		"closeMenu": "Tutup menu",
 		"language": "Bahasa",
-		"home": "Beranda"
+		"home": "Beranda",
+		"close": "Tutup"
 	},
 	"nav": {
 		"home": "Beranda",
@@ -25,141 +25,156 @@
 		"growth": "Pengembangan diri",
 		"prana": "Prana",
 		"reiki": "Reiki",
-		"journeyman": "Tukang ahli",
 		"youtube": "YouTube",
 		"contact": "Kontak"
 	},
 	"page": {
 		"home": {
 			"title": "Beranda",
-			"lead": "Selamat datang di halaman saya."
+			"lead": "Programmer, pelari, dan penjelajah abadi. Selamat datang di situs saya.",
+			"intro": "Silakan lihat-lihat dan buktikan sendiri secepat apa situs ini berjalan. Setiap halaman terbuka hampir seketika, dan waktu pemuatannya bisa Anda lihat di bagian bawah layar."
 		},
 		"about": {
 			"title": "Tentang saya",
-			"lead": "Sedikit tentang saya."
+			"lead": "Programmer, pelari, suami, dan ayah yang penasaran akan dunia dalam segala kedalamannya.",
+			"body": {
+				"p1": "Pekerjaan saya adalah programmer, tetapi minat saya jauh melampaui layar komputer. Saya paling dekat dengan cita-cita manusia Renaisans: banyak sisi kenyataan yang menarik bagi saya, dan saya bisa menemukan tempat di banyak bidang, dari teknologi dan olahraga sampai pertumbuhan spiritual.",
+				"p2": "Kisah hidup saya sangat memengaruhi diri saya sekarang. Seperti banyak generasi milenial, saya membawa kesulitan dari rumah keluarga yang harus saya hadapi saat dewasa. Kesulitan itulah yang mendorong saya untuk membenahi diri. Tanpa pengalaman itu, saya mungkin tidak akan sampai sejauh ini dalam perkembangan diri, dan tidak akan memahami diri sendiri serta dunia di sekitar saya sebaik ini.",
+				"p3": "Saya seorang suami dan ayah dari dua anak laki-laki. Keluarga adalah sekolah bagi saya setiap hari: saya belajar banyak dari istri dan anak-anak saya, dan bersama-sama kami membangun rumah tempat kami merasa nyaman satu sama lain. Kami berusaha saling memberi sayap, supaya masing-masing dari kami bisa terbang setinggi kemampuannya.",
+				"p4": "Di situs ini Anda akan menemukan perjalanan saya lewat pendidikan, olahraga, pengembangan diri, dan pembangunan rumah balok kayu. Selamat membaca."
+			}
 		},
 		"technician": {
 			"title": "Teknisi",
-			"lead": "Sertifikat teknisi: sekolah menengah dan profesi pertama.",
-			"timeline": {
-				"school": {
-					"title": "Teknisi elektronika",
-					"text": "Jurusan elektronika, proyek mikrokontroler pertama."
-				},
-				"exams": {
-					"title": "Ujian kejuruan dan ujian akhir"
-				}
+			"lead": "Sekolah Teknik Ekonomi di Kępno dan gelar teknisi ekonomi.",
+			"facts": {
+				"school": "Kompleks Sekolah No. 1, Kępno",
+				"title": "teknisi ekonomi"
+			},
+			"body": {
+				"p1": "Memilih sekolah menengah atas bukan sepenuhnya keputusan saya. Saat itu saya belum tahu arah yang ingin saya tempuh, jadi saya mendengarkan orang tua dan memilih sekolah teknik. Sekolah seperti ini memberi dua hal sekaligus: matura, yaitu ujian akhir yang membuka jalan ke universitas, dan profesi yang nyata. Selain pengetahuan umum, saya bisa lulus dengan keterampilan praktis yang memudahkan saya mencari kerja. Kalau melihat ke belakang, saya rasa itu keputusan yang masuk akal.",
+				"p2": "Pada masa itu, Sekolah Teknik Ekonomi di Kompleks Sekolah No. 1 di Kępno dianggap sebagai program paling bergengsi di daerah itu. Tingkat pengajarannya tinggi, dan para gurunya menuntut serta berdedikasi. Hal ini terlihat dari hasil para siswa: banyak dari mereka ikut kompetisi dan olimpiade tingkat nasional. Saya juga ikut, dan menjadi finalis Turnamen Pengetahuan dan Keterampilan Perdagangan dan Manajemen.",
+				"p3": "Empat tahun belajar berakhir dengan ujian kejuruan, yang memberi saya gelar teknisi ekonomi. Sebagai finalis turnamen, saya dibebaskan dari bagian tertulis ujian itu. Nilai matura saya juga cukup baik sehingga pintu universitas terbaik terbuka untuk saya. Selain ijazah, sekolah ini mengajari saya bekerja secara teratur dan menunjukkan bahwa persiapan yang cermat membuahkan hasil. Kebiasaan ini tetap menyertai saya di setiap tahap pendidikan berikutnya."
 			}
 		},
 		"engineer": {
 			"title": "Insinyur",
-			"lead": "Gelar insinyur: studi sarjana.",
-			"timeline": {
-				"degree": {
-					"title": "Sarjana Teknik Informatika",
-					"text": "Peminatan: sistem terdistribusi."
-				},
-				"internship": {
-					"title": "Magang di perusahaan perangkat lunak"
-				},
-				"thesisDefense": {
-					"title": "Sidang skripsi"
-				}
+			"lead": "Ilmu komputer di Universitas Sains dan Teknologi Wrocław dan gelar insinyur.",
+			"facts": {
+				"field": "ilmu komputer"
+			},
+			"body": {
+				"p1": "Jalan menuju ilmu komputer tidak mudah. Sebelum menemukannya, saya mencoba dua program studi lain, tetapi tidak ada yang cocok untuk saya. Yang menentukan adalah teman saya, Dawid. Jalan kami sering searah, dari SMP sampai sekolah teknik. Dia meyakinkan saya bahwa ilmu komputer cocok dengan cara berpikir saya. Dia memperingatkan bahwa selama empat tahun saya harus bekerja sangat keras supaya bisa melewati perjalanan ini sebagai pemenang. Tetapi dia berjanji bahwa pada akhirnya saya akan mengerjakan apa yang saya sukai, dan pekerjaan saya akan memberi saya kegembiraan.",
+				"p2": "Ramalannya terbukti benar. Selama empat tahun saya benar-benar fokus belajar. Saya ingin lulus tepat waktu dan mendapat pengetahuan serta keterampilan sebanyak mungkin, supaya bisa masuk ke dunia kerja sebagai pengrajin muda yang berspesialisasi dan siap membuat karya berkualitas tinggi. Namun, kerajinan saya ternyata kerajinan modern: pemrograman.",
+				"p3": "Universitas Sains dan Teknologi Wrocław memberi saya banyak ruang untuk menjadi insinyur dalam arti sebenarnya. Saya ingat jelas dosen logika di tahun pertama, yang terus mengatakan bahwa insinyur adalah pencipta. Kata ini berasal dari bahasa Latin ingenium, yang berarti kecerdikan dan bakat kreatif, dan dosen itu mengharapkan kami kreatif. Selama kuliah saya bertemu banyak orang cemerlang, tetapi standarnya tinggi: dari sekitar seratus orang yang mulai bersama saya, hanya sekitar selusin yang mencapai ujian akhir tepat waktu. Tugas akhir saya adalah proyek pemrograman, yaitu perangkat lunak yang berjalan, bukan makalah teoretis.",
+				"p4": "Kuliah saya mempersiapkan saya dengan sangat baik untuk bekerja sebagai programmer. Dasar-dasar yang saya peroleh di universitas membuat saya percaya diri masuk ke dunia kerja dan membangun posisi yang kuat di sana. Berkat itu, saya ikut dalam proyek internasional untuk aplikasi yang sangat kompleks dan memegang peran teknis yang penting di dalamnya."
 			}
 		},
 		"master": {
 			"title": "Magister",
-			"lead": "Gelar magister: studi pascasarjana.",
-			"timeline": {
-				"studies": {
-					"title": "Studi magister",
-					"text": "Tesis tentang kinerja aplikasi web."
-				},
-				"graduation": {
-					"title": "Magister Teknik"
-				}
+			"lead": "Studi jenjang kedua, sedang berjalan.",
+			"body": {
+				"p1": "Saat ini saya sedang menempuh studi magister. Deskripsi tahap ini akan muncul di sini setelah saya menyelesaikannya."
 			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Keanggotaan di Mensa.",
-			"timeline": {
-				"admission": {
-					"title": "Tes dan penerimaan di Mensa"
-				},
-				"gathering": {
-					"title": "Pertemuan anggota"
-				}
+			"lead": "Keanggotaan Mensa Polska, diperoleh pada percobaan ketiga.",
+			"facts": {
+				"role": "anggota"
+			},
+			"body": {
+				"p1": "Bagi saya, keanggotaan Mensa terkait dengan kisah yang mengajari saya lebih banyak daripada hasil tesnya sendiri. Kisah itu menunjukkan betapa besar pengaruh makanan terhadap kemampuan kita berpikir.",
+				"p2": "Saya baru masuk Mensa pada percobaan ketiga, dan mungkin memang begitulah seharusnya. Saya pertama kali ikut tes saat kuliah, sekitar tahun 2011. Saya hanya kurang sedikit dari batas nilai, tetapi itu cukup membuat saya tidak mencoba lagi selama bertahun-tahun. Saya kembali mencobanya baru pada 2021, saat saya menjalani diet yang cukup tidak biasa. Namun kali ini hasil tes lebih buruk daripada percobaan pertama.",
+				"p3": "Pengalaman itu membuat saya berpikir. Saya mulai menyelidiki apa yang sebenarnya sebaiknya kita makan, dan dalam beberapa tahun berikutnya saya mengubah pola makan sepenuhnya, hampir berpindah ke kutub yang berlawanan. Pada 2025 saya ikut tes untuk ketiga kalinya, dan kali ini saya lolos dengan nilai di atas batas. Saya tidak menganggapnya bukti ilmiah, tetapi dari pengalaman sendiri saya yakin bahwa pola makan benar-benar bisa memengaruhi cara kerja pikiran kita.",
+				"p4": "Saya tahu penghargaan seperti ini mudah dianggap alasan untuk pamer. Di masa sekolah, mungkin memang begitu, karena ego saya waktu itu jauh lebih besar. Seiring waktu, memperhatikan hidup saya sendiri dengan cermat dan belajar dari setiap pengalaman baru membantu saya mengecilkannya. Bagi saya, keanggotaan Mensa terutama kenang-kenangan dari perjalanan itu dan pengingat betapa banyak yang bergantung pada cara kita merawat diri setiap hari."
 			}
 		},
 		"club": {
 			"title": "Klub",
-			"lead": "Klub olahraga saya."
+			"lead": "KS Gepard Kępno: tim lari dari Kępno, didirikan pada 2015.",
+			"body": {
+				"p1": "Sejarah klub kami berawal dari masa ketika lari sedang booming di Polandia. Kelompok teman kami pun terbawa gelombang itu, dan pada 21 Juni 2015 kami memutuskan mendirikan klub lokal sendiri. Kami ingin membuat komunitas tempat kami senang berlari bersama dan menggeser batas kemampuan kami. Begitulah KS Gepard Kępno lahir. Nama itu kami pikirkan berempat: Rafał, Dominik, Damian, dan saya.",
+				"p2": "Setiap pendiri membawa sesuatu yang khas untuk menjalankan klub dan membuatnya bertahan. Seiring tahun, susunan tim berubah secara alami, dan banyak pelari yang sama bersemangatnya bergabung dengan kami. Kepribadian dan komitmen mereka membantu klub berkembang. Kami ikut lomba bersama, saling memotivasi, dan berulang kali mencetak rekor pribadi baru. Kami juga sering memenangkan klasemen tim.",
+				"p3": "Berkat semua anggota, kami berhasil membuat tempat yang bagus untuk berlari dan mengembangkan hobi. Siapa pun bisa merasa betah di sini, apa pun levelnya, merasa dipahami oleh kelompok, dan selalu bisa mengandalkan dukungan. Ketika ada masalah atau pertanyaan, kami senang berbagi pengalaman dan saling membantu mencapai target lari pribadi. Klub ini aktif tanpa henti sejak 2015 dan memiliki belasan pelari."
+			}
 		},
 		"running": {
 			"title": "Lari",
-			"lead": "Latihan, lomba, dan rute."
+			"lead": "Dari half marathon setelah dua minggu latihan sampai rekor pribadi baru.",
+			"body": {
+				"p1": "Di masa sekolah saya sangat sporty. Medali dari kejuaraan atletik tingkat daerah menunjukkannya, terutama dari lari 100 meter dan lompat jauh. Setelah sekolah, saya mulai merindukan aktivitas fisik. Ketika saya meraih gelar insinyur, lari kebetulan sedang sangat populer, jadi saya pun terbawa gelombang itu.",
+				"p2": "Lomba pertama saya adalah Cross Ostrzeszowski, half marathon yang terkenal di daerah itu. Saya menjalaninya hanya setelah dua minggu latihan. Ya, itu bukan salah tulis. Sebelum start, saya mengkhawatirkan hampir segalanya: apakah pakaian saya sudah seperti profesional, apakah saya sanggup menjaga tempo, dan apakah saya bisa menyelesaikannya. Jadi saya cepat-cepat membeli sepatu lari, jam dengan pengukur detak jantung, dan pakaian lari, dan karena itu saya merasa percaya diri di garis start. Di garis finis, jam menunjukkan 1:43:25, hasil yang bagus untuk persiapan sesingkat itu. Semangat saya tidak surut. Setelah lima bulan latihan, saya lari maraton pertama dalam hidup saya dan menyelesaikannya dalam 3:08:48. Hasil debut ini sampai sekarang masih rekor pribadi saya, jadi saya masih punya target untuk dikejar.",
+				"p3": "Setelah musim pertama dengan kemajuan cepat, saya tidak punya program latihan yang direncanakan dengan baik, dan lama sekali saya stagnan. Karena itu saya memutuskan berlatih bersama pelatih. Kerja sama ini menghasilkan rekor pribadi baru untuk 5 dan 10 kilometer pada 2020.",
+				"p4": "Ada juga masa-masa yang lebih panjang ketika urusan pribadi harus didahulukan di atas hobi lari, dan latihan jadi kurang penting.",
+				"p5": "Karena ingin memahami prinsip latihan dengan lebih baik, saya mengikuti kursus di Akademi Kebudayaan dan Olahraga Polandia dan menjadi instruktur rekreasi gerak dengan spesialisasi lari. Kursus itu memberi saya cara pandang yang benar-benar baru tentang olahraga ini. Sejak itu saya merencanakan persiapan saya sendiri, dan saya juga melatih anak saya, yang ternyata juga menemukan hobi lari."
+			}
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Bekerja dengan energi prana.",
-			"timeline": {
-				"basicCourse": {
-					"title": "Kursus dasar prana"
-				},
-				"advancedCourse": {
-					"title": "Kursus lanjutan",
-					"text": "Latihan rutin dan lokakarya."
-				}
+			"lead": "Pranic Healing di Pusat Pranic Healing di Częstochowa.",
+			"body": {
+				"p1": "Tidak lama sebelum saya berusia 33 tahun, kebutuhan akan pengembangan diri terbangun kuat dalam diri saya. Sebenarnya kebutuhan itu sudah menyertai saya sepanjang hidup: saya selalu bertanya tentang makna hidup, dari mana kita berasal dan ke mana kita menuju. Saya mencari jawaban dengan merenungkan agama, kematian, dan sejarah umat manusia yang jauh.",
+				"p2": "Kebutuhan ini membawa saya ke kursus Pranic Healing di Częstochowa. Dalam satu tahun saya menyelesaikan lima kursus dengan tingkat yang berbeda. Itu adalah masa perubahan batin dan pembersihan yang dalam, dan jelas mengubah cara saya memandang kenyataan. Para peserta menginap di tempat, jadi pada malam hari, setelah kelas utama, kami bertemu untuk latihan tambahan, percakapan, dan berbagi pengalaman. Malam-malam itu memperdalam pemahaman kami tentang bekerja dengan energi dan membuka pikiran kami.",
+				"p3": "Masa yang intens ini bertepatan dengan banyak perubahan dalam kehidupan pribadi saya, yang membuat saya menjauh dari kelompok baru itu untuk beberapa waktu.",
+				"p4": "Baru setelah lima tahun saya siap kembali dan bertemu lagi dengan guru kami, Jerzy Opara. Ternyata hanya sedikit orang dari kelompok lama yang masih ada, terutama tim inti yang mengatur dan membangun komunitas di Częstochowa. Sebagian besar peserta baru bagi saya.",
+				"p5": "Setiap pertemuan seperti ini adalah kesempatan untuk mengenal banyak orang menarik. Dalam percakapan saat istirahat, kami berbagi kesan dan pandangan berbeda tentang jalan pengembangan diri masing-masing. Setiap kali saya melihat betapa berharganya persahabatan yang terjalin di sana, dan betapa banyak yang bisa didengar tentang cara-cara baru bekerja dengan energi."
 			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Praktik reiki.",
-			"timeline": {
-				"levelOne": {
-					"title": "Reiki tingkat I"
-				},
-				"levelTwo": {
-					"title": "Reiki tingkat II"
-				},
-				"master": {
-					"title": "Tingkat master"
-				}
-			}
-		},
-		"journeyman": {
-			"title": "Tukang ahli",
-			"lead": "Sertifikat tukang ahli dalam suatu kerajinan.",
-			"timeline": {
-				"apprenticeship": {
-					"title": "Magang pada seorang perajin mahir"
-				},
-				"exam": {
-					"title": "Ujian tukang ahli"
-				}
+			"lead": "Jalan saya dengan reiki: inisiasi dan bekerja dengan energi.",
+			"body": {
+				"p1": "Kisah saya dengan reiki dimulai sedikit lebih awal, ketika saya bertemu {link}, yang kini menjadi teman saya. Awalnya dia membantu saya dengan kesulitan pribadi, lalu juga dengan kesulitan keluarga. Setelah itu, selama satu tahun, saya mengikuti Sekolah Pengembangan Spiritual yang dia pimpin.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "Setelah itu saya merasa siap melangkah lebih jauh, dan saya merasa perlu memperdalam perkembangan diri. Agnieszka-lah yang memberi saya inisiasi Reiki Usui. Dengan bimbingannya, saya memperdalam kerja dengan energi dan pemahaman saya tentangnya, dan setiap inisiasi baru membuka tahap baru pembersihan batin.",
+				"p3": "Tingkat pertama membawa pembersihan yang kuat. Malam pertama setelah inisiasi sangat intens, tetapi seluruh masa pembersihan 21 hari yang mengikutinya juga berat. Lima bulan kemudian saya menerima tingkat kedua. Tahap ini memperdalam proses pembukaan dan pembersihan lebih jauh, meskipun kali ini jauh lebih lembut."
 			}
 		},
 		"youtube": {
 			"title": "YouTube",
-			"lead": "Saya mengelola kanal YouTube."
+			"lead": "“Dom z Bala”, kanal tentang membangun dan menyelesaikan rumah balok kayu laminasi.",
+			"body": {
+				"p1": "Saya memulai kanal ini karena pembangunan rumah balok kayu laminasi kami, atau lebih tepatnya karena persiapannya. Sebuah tim bangunan mendirikan rumahnya, tetapi saya ikut merancang dan mengerjakan sendiri bagian penyelesaiannya. Persiapannya begitu rumit, dan informasi serta saran yang bisa dipercaya di internet begitu sedikit, sehingga lama-kelamaan saya memutuskan berbagi apa yang telah saya pelajari. Saya pikir ini bisa membantu orang lain yang menghadapi masalah serupa saat membangun rumah kayu.",
+				"p2": "Video-video pertama sebenarnya laporan untuk istri saya. Dia mengurus anak-anak, dan saya pulang dari lokasi bangunan membawa kabar terbaru tentang kemajuan pekerjaan.",
+				"p3": "Lama-kelamaan kanal ini menjadi jeda dari rutinitas dan kewajiban sehari-hari. Di sana saya menunjukkan kemajuan pekerjaan, penyelesaian rumah, pekerjaan di sekitar rumah dan di kebun, kerajinan tangan, serta solusi dan temuan yang saya dapat di sepanjang jalan. Ini juga petualangan dan kesempatan untuk belajar dari dalam bagaimana media sosial bekerja saat ini.",
+				"p4": "Saya merekam sebagian besar video sambil bekerja, supaya pembuatan video tidak terlalu mengalihkan saya dari pekerjaan. Kadang ini butuh banyak akal: saya harus mengambil gambar meskipun anak-anak bermain dengan ribut, atau tiba-tiba masuk ke bingkai tepat saat ayah butuh ketenangan sebentar untuk membuat sesuatu."
+			}
 		},
 		"contact": {
 			"title": "Kontak",
-			"lead": "Hubungi saya."
+			"lead": "Punya pertanyaan atau usulan? Hubungi saya dengan cara yang paling nyaman bagi Anda."
 		}
 	},
-	"placeholder": "Konten segera hadir.",
 	"youtube": {
-		"cta": "Kunjungi kanal"
+		"cta": "Tonton kanal “Dom z Bala”"
 	},
 	"contact": {
 		"email": "Email",
+		"phone": "Telp.",
 		"vcard": "Simpan kontak di ponsel",
 		"vcardHint": "Berkas vCard (.vcf)"
 	},
 	"photo": {
-		"mensa": "Foto terkait Mensa"
+		"house": {
+			"alt": "Rumah kayu dari balok laminasi dengan balkon dan teras beratap pada hari yang cerah",
+			"caption": "Rumah balok kayu laminasi kami."
+		},
+		"club": {
+			"alt": "Foto bersama para pelari KS Gepard Kępno dengan seragam klub kuning-hitam, dengan medali di leher",
+			"caption": "Tim KS Gepard Kępno."
+		},
+		"clubLogo": "Logo KS Gepard Kępno",
+		"podium": {
+			"alt": "Marek Krzak di podium dengan seragam klub kuning, membawa medali dan piala",
+			"caption": "Di podium Maraton Leszno ke-7."
+		},
+		"marathon": {
+			"alt": "Marek Krzak dengan kaus KS Gepard Kępno melintasi garis finis sambil merentangkan kedua tangan lebar-lebar",
+			"caption": "Finis maraton pertama saya: PKO Wrocław Marathon ke-33, 2015."
+		},
+		"mensaCard": "Kartu anggota Mensa Polska atas nama Marek Krzak",
+		"portrait": "Marek Krzak"
 	},
 	"error": {
 		"notFound": "Halaman ini tidak ada.",
@@ -173,11 +188,48 @@
 		"loaded": "Halaman ini dimuat dalam {ms} ms · {kb} KB",
 		"prerendered": "Halaman ini sudah siap sebelum Anda mengklik: 0 ms · {kb} KB"
 	},
-	"timeline": {
-		"label": "Lini masa",
-		"sample": "Data contoh"
+	"certificates": {
+		"heading": "Sertifikat",
+		"open": "Perbesar sertifikat: {name}",
+		"alt": "Sertifikat: {name}",
+		"qualifications": "Kualifikasi",
+		"diploma": "Ijazah"
 	},
-	"notFound": {
-		"title": "Halaman tidak ditemukan"
+	"certificate": {
+		"prana": {
+			"basic": "Kursus Praktis Dasar Pranic Healing"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – Tingkat Pertama",
+			"level2": "Reiki Usui Shiki Ryoho – Tingkat Kedua"
+		},
+		"running": {
+			"instructor": "Instruktur rekreasi gerak – lari (Akademi Kebudayaan dan Olahraga Polandia)"
+		},
+		"technician": {
+			"diploma": "Ijazah yang menyatakan kualifikasi kejuruan: teknisi ekonomi"
+		},
+		"engineer": {
+			"diploma": "Ijazah insinyur: ilmu komputer, Universitas Sains dan Teknologi Wrocław"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno di Facebook"
+	},
+	"running": {
+		"records": {
+			"heading": "Rekor pribadi",
+			"halfMarathon": "half marathon",
+			"marathon": "maraton"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Bagian situs",
+			"education": "Sekolah teknik, universitas, dan Mensa",
+			"sport": "KS Gepard Kępno dan lari",
+			"growth": "Prana dan reiki",
+			"youtube": "Kanal “Dom z Bala”"
+		}
 	}
 }

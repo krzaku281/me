@@ -20,11 +20,14 @@ export default defineConfig({
 		reuseExistingServer: !process.env.CI
 	},
 	projects: [
+		// Built files over HTTP and message files: no browser, every page in every language
+		{ name: 'build', testMatch: /(build|messages)\.spec\.ts/ },
 		{
 			name: 'desktop',
 			use: { ...devices['Desktop Chrome'], viewport: { width: 1280, height: 800 } },
-			testIgnore: /mobile\.spec\.ts/
+			testIgnore: /(build|messages|mobile|webkit)\.spec\.ts/
 		},
-		{ name: 'mobile', use: { ...devices['Pixel 7'] }, testMatch: /mobile\.spec\.ts/ }
+		{ name: 'mobile', use: { ...devices['Pixel 7'] }, testMatch: /mobile\.spec\.ts/ },
+		{ name: 'webkit', use: { ...devices['Desktop Safari'] }, testMatch: /webkit\.spec\.ts/ }
 	]
 });

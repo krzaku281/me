@@ -1,0 +1,235 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Mtengenezaji wa programu, mkimbiaji na mgunduzi wa milele. Karibu kwenye tovuti yangu."
+	},
+	"ui": {
+		"skip": "Ruka hadi maudhui",
+		"mainNav": "Menyu kuu",
+		"menu": "Menyu",
+		"language": "Lugha",
+		"home": "Ukurasa wa mwanzo",
+		"close": "Funga"
+	},
+	"nav": {
+		"home": "Mwanzo",
+		"about": "Kunihusu",
+		"education": "Elimu",
+		"technician": "Fundi",
+		"engineer": "Mhandisi",
+		"master": "Uzamili",
+		"mensa": "Mensa",
+		"sport": "Michezo",
+		"club": "Klabu",
+		"running": "Kukimbia",
+		"growth": "Ukuaji",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"youtube": "YouTube",
+		"contact": "Mawasiliano"
+	},
+	"page": {
+		"home": {
+			"title": "Mwanzo",
+			"lead": "Mtengenezaji wa programu, mkimbiaji na mgunduzi wa milele. Karibu kwenye tovuti yangu.",
+			"intro": "Angalia pande zote na ujionee jinsi tovuti hii inavyofanya kazi haraka. Kila ukurasa unafunguka karibu papo hapo, na unaweza kuona muda wa kupakia chini ya skrini."
+		},
+		"about": {
+			"title": "Kunihusu",
+			"lead": "Mtengenezaji wa programu, mkimbiaji, mume na baba, mwenye shauku ya kuujua ulimwengu kwa kina chake chote.",
+			"body": {
+				"p1": "Kwa kazi mimi ni mtengenezaji wa programu, lakini mambo ninayovutiwa nayo yanavuka mbali skrini ya kompyuta. Ninajiona karibu zaidi na mfano bora wa mtu wa enzi ya Renaissance: mambo mengi ya maisha yananivutia, na naweza kujipatia nafasi katika nyanja nyingi, kuanzia teknolojia na michezo hadi ukuaji wa kiroho.",
+				"p2": "Historia yangu imeathiri sana jinsi nilivyo. Kama watu wengi wa kizazi cha milenia, nilibeba kutoka nyumbani kwetu matatizo ambayo nililazimika kukabiliana nayo nilipokuwa mtu mzima. Matatizo hayo ndiyo yaliyonisukuma kujifanyia kazi. Bila uzoefu huo, huenda nisingefika mbali hivi katika ukuaji, na nisingejielewa mimi mwenyewe na ulimwengu unaonizunguka vizuri hivi.",
+				"p3": "Mimi ni mume na baba wa wavulana wawili. Familia ni shule kwangu kila siku: ninajifunza mengi kutoka kwa mke wangu na wanangu, na pamoja tumejenga nyumba ambamo tunajisikia vizuri na kila mmoja. Tunajaribu kupeana mabawa, ili kila mmoja wetu aweze kupaa juu kadiri anavyoweza.",
+				"p4": "Kwenye tovuti hii utapata safari yangu kupitia elimu, michezo, ukuaji binafsi na ujenzi wa nyumba ya magogo. Karibu usome."
+			}
+		},
+		"technician": {
+			"title": "Fundi",
+			"lead": "Shule ya Ufundi ya Uchumi huko Kępno na cheo cha fundi wa uchumi.",
+			"facts": {
+				"school": "Kituo cha Shule Na. 1, Kępno",
+				"title": "fundi wa uchumi"
+			},
+			"body": {
+				"p1": "Kuchagua shule ya sekondari hakukuwa uamuzi wangu kabisa. Wakati huo sikuwa nimejua ni mwelekeo gani nataka kuchukua, kwa hiyo niliwasikiliza wazazi wangu na kuchagua shule ya ufundi. Shule ya aina hii ilinipa vitu viwili kwa wakati mmoja: matura, yaani mtihani wa mwisho unaofungua njia ya kwenda chuo kikuu, na taaluma halisi. Badala ya maarifa ya jumla tu, ningeweza kuhitimu na ujuzi wa vitendo unaorahisisha kupata kazi. Nikiangalia nyuma, naona ulikuwa uamuzi wa busara.",
+				"p2": "Wakati huo, Shule ya Ufundi ya Uchumi katika Kituo cha Shule Na. 1 huko Kępno ilionekana kuwa programu yenye hadhi zaidi katika kanda. Kiwango cha ufundishaji kilikuwa juu, na walimu walikuwa wakali na waliojitolea. Ungeweza kuona hili katika matokeo ya wanafunzi: wengi wao walishiriki mashindano na olimpiadi za kitaifa. Mimi pia nilishiriki, na nikawa mshiriki wa fainali ya Mashindano ya Maarifa na Ujuzi wa Biashara na Usimamizi.",
+				"p3": "Miaka minne ya masomo ilimalizika kwa mtihani wa taaluma, ulionipa cheo cha fundi wa uchumi. Kwa kuwa nilikuwa mshiriki wa fainali ya mashindano, nilisamehewa sehemu ya maandishi ya mtihani. Pia nilifaulu matura kwa alama nzuri za kutosha hivi kwamba milango ya vyuo bora ilikuwa wazi kwangu. Mbali na cheti, shule ilinifundisha kufanya kazi kwa utaratibu na kunionyesha kwamba maandalizi makini huleta matokeo. Tabia hii ilibaki nami katika kila hatua ya elimu yangu iliyofuata."
+			}
+		},
+		"engineer": {
+			"title": "Mhandisi",
+			"lead": "Sayansi ya kompyuta katika Chuo Kikuu cha Sayansi na Teknolojia cha Wrocław na cheo cha mhandisi.",
+			"facts": {
+				"field": "sayansi ya kompyuta"
+			},
+			"body": {
+				"p1": "Njia ya kuelekea sayansi ya kompyuta haikuwa rahisi. Kabla ya kuipata, nilijaribu programu nyingine mbili za shahada, lakini hakuna iliyonifaa. Aliyeamua ni rafiki yangu Dawid. Njia zetu mara nyingi zilienda pamoja, kuanzia shule ya sekondari ya chini hadi shule ya ufundi. Alinishawishi kwamba sayansi ya kompyuta imeumbwa kwa jinsi ninavyofikiri. Alinionya kwamba kwa miaka minne ningehitaji kufanya kazi kwa bidii sana ili nimalize safari hii kama mshindi. Lakini aliahidi kwamba mwishowe ningefanya ninachopenda, na kazi yangu ingenipa furaha.",
+				"p2": "Utabiri wake ulitimia. Kwa miaka minne nilijikita kabisa katika masomo. Nilitaka kumaliza kwa wakati na kupata maarifa na ujuzi mwingi iwezekanavyo, ili niingie kwenye soko la ajira kama fundi stadi kijana aliyebobea, tayari kutengeneza vitu vya ubora wa juu. Hata hivyo, ufundi wangu ulikuwa ufundi wa kisasa: kuandika programu.",
+				"p3": "Chuo Kikuu cha Sayansi na Teknolojia cha Wrocław kilinipa nafasi nyingi ya kuwa mhandisi kwa maana kamili ya neno hilo. Ninakumbuka wazi profesa wa mantiki wa mwaka wa kwanza, aliyetukumbusha kila mara kwamba mhandisi ni mbunifu. Neno hili linatokana na Kilatini ingenium, yaani ubunifu na kipaji cha uumbaji, na profesa alitarajia tuwe wabunifu. Wakati wa masomo nilikutana na akili nyingi bora, lakini kiwango kilikuwa cha juu: kati ya watu takriban mia moja walioanza nami, ni watu kumi na kadhaa tu waliofika kwenye mtihani wa mwisho kwa wakati. Tasnifu yangu ya mwisho ilikuwa mradi wa programu, yaani programu inayofanya kazi badala ya andiko la nadharia.",
+				"p4": "Masomo yangu yalinitayarisha vizuri sana kwa kazi ya mtengenezaji wa programu. Misingi niliyoipata chuoni ilinifanya niingie sokoni kwa kujiamini na kujenga nafasi imara huko. Kwa sababu hiyo, nilishiriki katika miradi ya kimataifa ya programu tata sana na nikatekeleza majukumu muhimu ya kiufundi."
+			}
+		},
+		"master": {
+			"title": "Uzamili",
+			"lead": "Masomo ya ngazi ya pili, yanayoendelea sasa.",
+			"body": {
+				"p1": "Kwa sasa nasoma shahada ya uzamili. Maelezo ya hatua hii yataonekana hapa nitakapoimaliza."
+			}
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Uanachama wa Mensa Polska, uliopatikana kwa jaribio la tatu.",
+			"facts": {
+				"role": "mwanachama wa chama"
+			},
+			"body": {
+				"p1": "Kwangu, uanachama wa Mensa unahusiana na hadithi iliyonifundisha zaidi ya matokeo ya jaribio lenyewe. Ilinionyesha jinsi tunachokula kinavyoathiri sana uwezo wetu wa kufikiri.",
+				"p2": "Niliingia Mensa kwa jaribio la tatu tu, na labda ndivyo ilivyopaswa kuwa. Nilifanya jaribio kwa mara ya kwanza nikiwa chuoni, karibu mwaka 2011. Nilikosa kidogo tu kufikia kiwango, lakini hilo lilitosha kunifanya niache wazo la kujaribu tena kwa miaka mingi. Nilirudi kwake mwaka 2021 tu, nilipokuwa kwenye lishe isiyo ya kawaida. Hata hivyo, mara hii jaribio lilienda vibaya zaidi kuliko mara ya kwanza.",
+				"p3": "Uzoefu huo ulinifanya nifikiri. Nilianza kuchunguza ni nini hasa tunapaswa kula, na katika miaka iliyofuata nilibadilisha kabisa jinsi ninavyokula, nikihamia karibu upande wa pili kabisa. Mwaka 2025 nilifanya jaribio kwa mara ya tatu, na safari hii nilifaulu kwa alama zaidi ya kiwango. Siuchukulii huu kama ushahidi wa kisayansi, lakini kupitia mfano wangu mwenyewe nimeshawishika kwamba lishe inaweza kweli kuathiri jinsi akili yetu inavyofanya kazi.",
+				"p4": "Najua heshima kama hii inaweza kuonekana kwa urahisi kama sababu ya kujisifu. Katika miaka ya shule huenda ingekuwa hivyo, kwa sababu kiburi changu kilikuwa kikubwa zaidi wakati huo. Kadiri muda ulivyopita, kuangalia maisha yangu kwa makini na kujifunza kutokana na kila uzoefu mpya vilinisaidia kukipunguza sana. Kwangu, uanachama wa Mensa ni zaidi ya yote kumbukumbu ya safari hiyo na ukumbusho wa jinsi mengi yanavyotegemea namna tunavyojitunza kila siku."
+			}
+		},
+		"club": {
+			"title": "Klabu",
+			"lead": "KS Gepard Kępno: timu ya kukimbia kutoka Kępno, iliyoanzishwa mwaka 2015.",
+			"body": {
+				"p1": "Historia ya klabu yetu inarudi nyuma hadi wakati kukimbia kulipopata umaarufu mkubwa nchini Poland. Kikundi chetu cha marafiki pia kilichukuliwa na wimbi hili, na tarehe 21 Juni 2015 tuliamua kuanzisha klabu yetu ya mtaa. Tulitaka kuunda jamii ambamo tunafurahia kukimbia pamoja na kusukuma mipaka ya uwezo wetu. Ndivyo KS Gepard Kępno ilivyozaliwa. Sisi wanne tulibuni jina: Rafał, Dominik, Damian na mimi.",
+				"p2": "Kila mwanzilishi alileta kitu chake mwenyewe ili klabu ianze na idumu. Kwa miaka mingi timu ilibadilika kwa kawaida, na wakimbiaji wengi wenye shauku kama yetu walijiunga. Haiba na kujitolea kwao vilisaidia klabu kukua. Tunashiriki mbio pamoja, tunahamasishana na tunaboresha rekodi zetu binafsi tena na tena. Pia tumeshinda nafasi za kwanza katika mashindano ya timu mara nyingi.",
+				"p3": "Shukrani kwa wanachama wote, tumeunda mahali pazuri pa kukimbia na kukuza shauku. Kila mtu anaweza kujisikia yuko nyumbani hapa, bila kujali kiwango chake, anajisikia kueleweka na kundi lote, na anaweza kutegemea msaada kila wakati. Tatizo au swali linapojitokeza, tunashiriki uzoefu wetu kwa furaha na kusaidiana kufikia malengo binafsi ya kukimbia. Klabu imekuwa ikifanya kazi bila kukoma tangu mwaka 2015 na ina wakimbiaji zaidi ya kumi."
+			}
+		},
+		"running": {
+			"title": "Kukimbia",
+			"lead": "Kutoka nusu marathoni baada ya wiki mbili za mazoezi hadi rekodi mpya binafsi.",
+			"body": {
+				"p1": "Nikiwa shuleni nilikuwa mwanamichezo hodari. Medali nilizoshinda katika mashindano ya riadha ya kanda zinaonyesha hili, hasa katika mbio za mita 100 na kuruka mbali. Baada ya shule, hata hivyo, nilianza kukosa mazoezi ya mwili. Nilipopata shahada ya uhandisi, kukimbia kulikuwa maarufu sana wakati huo, kwa hiyo nami nilichukuliwa na wimbi hili.",
+				"p2": "Mbio yangu ya kwanza ilikuwa Cross Ostrzeszowski, nusu marathoni inayojulikana vizuri katika kanda. Niliikimbia baada ya wiki mbili tu za mazoezi. Ndiyo, si kosa. Kabla ya kuanza nilihofia kila kitu kihalisi: je, nimevaa kama mtaalamu, je, nitaweza kudumisha kasi, na je, nitaweza kabisa. Kwa hiyo nilinunua haraka viatu vya kukimbia, saa ya kupima mapigo ya moyo na nguo za kukimbia, na kwa sababu hiyo nilijisikia kujiamini kwenye mstari wa kuanzia. Kwenye mstari wa kumalizia saa ilionyesha 1:43:25, matokeo mazuri kwa maandalizi mafupi hivyo. Shauku yangu haikupungua. Baada ya miezi mitano ya mazoezi nilikimbia marathoni ya kwanza maishani mwangu na kuimaliza kwa 3:08:48. Matokeo haya ya kwanza bado ni rekodi yangu binafsi, kwa hiyo bado nina cha kulenga.",
+				"p3": "Baada ya msimu wa kwanza wa maendeleo ya haraka, sikuwa na mpango wa mazoezi uliofikiriwa vizuri, na nikakwama kwa muda mrefu. Kwa hiyo niliamua kufanya kazi na kocha. Ushirikiano huu ulileta rekodi mpya binafsi katika kilomita 5 na 10 mwaka 2020.",
+				"p4": "Pia kulikuwa na vipindi virefu zaidi ambapo mambo ya kibinafsi yalipaswa kutangulia shauku yangu ya kukimbia, na mazoezi yakawa yasiyo muhimu sana.",
+				"p5": "Kwa kuwa nilitaka kuelewa vizuri kanuni za mazoezi, nilimaliza kozi katika Chuo cha Utamaduni na Michezo cha Poland na nikawa mkufunzi wa mazoezi ya burudani ya mwili, nikibobea katika kukimbia. Kozi hiyo ilinipa mtazamo mpya kabisa wa mchezo huu. Tangu hapo napanga maandalizi yangu mwenyewe, na pia nimemfundisha mwanangu, ambaye naye aligundua shauku ya kukimbia."
+			}
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Pranic Healing katika Kituo cha Pranic Healing huko Częstochowa.",
+			"body": {
+				"p1": "Muda mfupi kabla sijatimiza miaka 33, hitaji kubwa la ukuaji binafsi liliamka ndani yangu. Kwa kweli lilikuwa nami maisha yangu yote: kila mara nilijiuliza kuhusu maana ya maisha, tunatoka wapi na tunaelekea wapi. Nilitafuta majibu kwa kutafakari dini, kifo na historia ya mbali ya binadamu.",
+				"p2": "Hitaji hili lilinipeleka kwenye kozi za Pranic Healing huko Częstochowa. Ndani ya mwaka mmoja nilimaliza kozi tano za viwango tofauti. Ulikuwa wakati wa mabadiliko makubwa ya ndani na utakaso, na ulibadilisha wazi jinsi ninavyoona uhalisia. Washiriki walilala papo hapo, kwa hiyo jioni, baada ya masomo makuu, tulikutana kwa mazoezi ya ziada, mazungumzo na kushirikishana uzoefu. Jioni hizo ziliongeza zaidi uelewa wetu wa kufanya kazi na nishati na zikafungua akili zetu.",
+				"p3": "Kipindi hiki kizito kilitokea wakati mmoja na mabadiliko mengi katika maisha yangu binafsi, yaliyonifanya nikae mbali na kundi jipya kwa muda.",
+				"p4": "Baada ya miaka mitano tu nilikuwa tayari kurudi na kukutana tena na mwalimu, Jerzy Opara. Ilibainika kwamba ni watu wachache tu wa kundi la zamani waliobaki, hasa kikundi cha msingi kinachopanga na kujenga jamii ya Częstochowa. Washiriki wengi walikuwa wapya kwangu.",
+				"p5": "Kila mkutano kama huu ni nafasi ya kukutana na watu wengi wa kuvutia. Katika mazungumzo wakati wa mapumziko, tunashirikishana hisia na mitazamo tofauti kuhusu njia zetu za ukuaji. Kila mara naona jinsi urafiki unaoanzishwa huko unavyoweza kuwa wa thamani, na ni mengi kiasi gani unaweza kusikia kuhusu njia mpya kabisa za kufanya kazi na nishati."
+			}
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Njia yangu na reiki: uanzishaji na kufanya kazi na nishati.",
+			"body": {
+				"p1": "Hadithi yangu na reiki inaanza mapema kidogo, nilipokutana na {link}, ambaye sasa ni rafiki yangu. Mwanzoni alinisaidia katika matatizo binafsi, na baadaye pia ya kifamilia. Baada ya hapo, kwa mwaka mmoja, nilihudhuria Shule ya Ukuaji wa Kiroho anayoiendesha.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "Baada ya muda huo nilijisikia tayari kwenda mbele zaidi, na nilihisi hitaji la kuimarisha ukuaji wangu. Agnieszka ndiye aliyenipa uanzishaji wangu katika Usui Reiki. Kwa mwongozo wake niliimarisha kazi yangu na nishati na uelewa wangu wake, na kila uanzishaji mpya ulifungua hatua mpya ya utakaso wa ndani.",
+				"p3": "Shahada ya kwanza ilileta utakaso mkali. Usiku wa kwanza baada ya uanzishaji ulikuwa mzito hasa, lakini kipindi kizima cha utakaso cha siku 21 kinachofuata pia kilikuwa kigumu. Miezi mitano baadaye nilipokea shahada ya pili. Hatua hii iliimarisha zaidi mchakato wa kufunguka na utakaso, ingawa safari hii ilikuwa laini zaidi."
+			}
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "“Dom z Bala”, kituo kuhusu kujenga na kumalizia nyumba ya magogo yaliyounganishwa kwa gundi.",
+			"body": {
+				"p1": "Nilianzisha kituo kwa sababu ya ujenzi wa nyumba yetu ya magogo yaliyounganishwa kwa gundi, au kwa usahihi zaidi, kwa sababu ya maandalizi yake. Timu ya ujenzi ilisimamisha nyumba, lakini mimi nilishiriki katika usanifu na nilifanya kazi za umaliziaji mwenyewe. Maandalizi yalikuwa magumu sana, na taarifa na ushauri wa kuaminika mtandaoni vilikuwa vichache sana, hivi kwamba baada ya muda niliamua kushiriki nilichojifunza. Nilidhani inaweza kuwasaidia wengine wanaokabiliana na matatizo kama hayo wakijenga nyumba ya mbao.",
+				"p2": "Video za kwanza zilikuwa kwa kweli ripoti kwa mke wangu. Yeye alikuwa akiwatunza watoto, na mimi nilirudi kutoka eneo la ujenzi na habari mpya kuhusu maendeleo ya kazi.",
+				"p3": "Baada ya muda kituo kilikuwa mapumziko kutoka kwa shughuli zangu za kila siku na majukumu. Humo naonyesha maendeleo ya kazi, umaliziaji, kazi karibu na nyumba na bustanini, kujifanyia vitu mwenyewe, na suluhisho na ugunduzi ninaokutana nao njiani. Pia ni tukio la kusisimua na nafasi ya kujifunza kutoka ndani jinsi mitandao ya kijamii inavyofanya kazi leo.",
+				"p4": "Ninarekodi video nyingi nikiwa kazini, ili kurekodi kusinitoe sana kwenye kazi. Wakati mwingine hili linahitaji ujanja mwingi: lazima nipate picha licha ya michezo ya watoto yenye kelele, au kuingia ghafla kwenye fremu hasa baba anapohitaji dakika ya utulivu ili atengeneze kitu."
+			}
+		},
+		"contact": {
+			"title": "Mawasiliano",
+			"lead": "Una swali au pendekezo? Wasiliana nami kwa njia inayokufaa zaidi."
+		}
+	},
+	"youtube": {
+		"cta": "Tazama kituo cha “Dom z Bala”"
+	},
+	"contact": {
+		"email": "Barua pepe",
+		"phone": "Simu",
+		"vcard": "Hifadhi mawasiliano kwenye simu yako",
+		"vcardHint": "Faili ya vCard (.vcf)"
+	},
+	"photo": {
+		"house": {
+			"alt": "Nyumba ya mbao ya magogo yaliyounganishwa kwa gundi, yenye roshani na baraza lenye paa, siku ya jua",
+			"caption": "Nyumba yetu ya magogo yaliyounganishwa kwa gundi."
+		},
+		"club": {
+			"alt": "Picha ya kikundi ya wakimbiaji wa KS Gepard Kępno wakiwa na sare za klabu za njano na nyeusi, na medali shingoni",
+			"caption": "Timu ya KS Gepard Kępno."
+		},
+		"clubLogo": "Nembo ya KS Gepard Kępno",
+		"podium": {
+			"alt": "Marek Krzak jukwaani akiwa na sare ya klabu ya njano, na medali na kombe",
+			"caption": "Jukwaani kwenye Marathoni ya 7 ya Leszno."
+		},
+		"marathon": {
+			"alt": "Marek Krzak akiwa na fulana ya KS Gepard Kępno akivuka mstari wa kumalizia huku mikono ikiwa imetandazwa",
+			"caption": "Mwisho wa marathoni yangu ya kwanza: PKO Wrocław Marathon ya 33, 2015."
+		},
+		"mensaCard": "Kadi ya uanachama wa Mensa Polska iliyotolewa kwa Marek Krzak",
+		"portrait": "Marek Krzak"
+	},
+	"error": {
+		"notFound": "Ukurasa huu haupo.",
+		"generic": "Kuna kitu kimeharibika.",
+		"back": "Rudi kwenye ukurasa wa mwanzo"
+	},
+	"redirect": {
+		"choose": "Chagua lugha"
+	},
+	"perf": {
+		"loaded": "Ukurasa huu ulipakia ndani ya {ms} ms · {kb} KB",
+		"prerendered": "Ukurasa huu ulikuwa tayari kabla hujabofya: 0 ms · {kb} KB"
+	},
+	"certificates": {
+		"heading": "Vyeti",
+		"open": "Kuza cheti: {name}",
+		"alt": "Cheti: {name}",
+		"qualifications": "Sifa za kitaaluma",
+		"diploma": "Diploma"
+	},
+	"certificate": {
+		"prana": {
+			"basic": "Kozi ya Vitendo ya Msingi ya Pranic Healing"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – Shahada ya Kwanza",
+			"level2": "Reiki Usui Shiki Ryoho – Shahada ya Pili"
+		},
+		"running": {
+			"instructor": "Mkufunzi wa mazoezi ya burudani ya mwili – kukimbia (Chuo cha Utamaduni na Michezo cha Poland)"
+		},
+		"technician": {
+			"diploma": "Diploma inayothibitisha sifa za kitaaluma: fundi wa uchumi"
+		},
+		"engineer": {
+			"diploma": "Diploma ya uhandisi: sayansi ya kompyuta, Chuo Kikuu cha Sayansi na Teknolojia cha Wrocław"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno kwenye Facebook"
+	},
+	"running": {
+		"records": {
+			"heading": "Rekodi binafsi",
+			"halfMarathon": "nusu marathoni",
+			"marathon": "marathoni"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Sehemu za tovuti",
+			"education": "Shule ya ufundi, chuo kikuu na Mensa",
+			"sport": "KS Gepard Kępno na kukimbia",
+			"growth": "Prana na reiki",
+			"youtube": "Kituo cha “Dom z Bala”"
+		}
+	}
+}

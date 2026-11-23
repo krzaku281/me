@@ -1,15 +1,15 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"site": {
-		"description": "Wizytówka: edukacja, sport, rozwój i kontakt."
+		"description": "Programista, biegacz i wieczny odkrywca. Witaj na mojej stronie."
 	},
 	"ui": {
 		"skip": "Przejdź do treści",
 		"mainNav": "Menu główne",
 		"menu": "Menu",
-		"closeMenu": "Zamknij menu",
 		"language": "Język",
-		"home": "Strona startowa"
+		"home": "Strona startowa",
+		"close": "Zamknij"
 	},
 	"nav": {
 		"home": "Start",
@@ -25,141 +25,156 @@
 		"growth": "Rozwój",
 		"prana": "Prana",
 		"reiki": "Reiki",
-		"journeyman": "Czeladnik",
 		"youtube": "YouTube",
 		"contact": "Kontakt"
 	},
 	"page": {
 		"home": {
 			"title": "Start",
-			"lead": "Witaj na mojej stronie."
+			"lead": "Programista, biegacz i wieczny odkrywca. Witaj na mojej stronie.",
+			"intro": "Rozejrzyj się i sprawdź, jak szybko działa ta strona. Każda podstrona otwiera się praktycznie od razu, a czas jej ładowania zobaczysz na dole ekranu."
 		},
 		"about": {
 			"title": "O mnie",
-			"lead": "Kilka słów o mnie."
+			"lead": "Programista, biegacz, mąż i tata, ciekawy całej głębi świata.",
+			"body": {
+				"p1": "Z zawodu jestem programistą, ale moje zainteresowania sięgają daleko poza ekran komputera. Najbliżej mi do ideału człowieka renesansu: ciekawi mnie wiele aspektów rzeczywistości i w wielu dziedzinach potrafię się odnaleźć, od technologii, przez sport, po rozwój duchowy.",
+				"p2": "Duży wpływ na to, kim jestem, miała moja historia. Jak wielu milenialsów wyniosłem z domu rodzinnego trudności, z którymi musiałem zmierzyć się w dorosłym życiu. To właśnie one popchnęły mnie do pracy nad sobą. Bez tych doświadczeń pewnie nie zaszedłbym tak daleko w rozwoju i nie zrozumiałbym tak dobrze siebie i świata wokół.",
+				"p3": "Jestem mężem i ojcem dwóch chłopaków. Rodzina jest dla mnie codzienną szkołą: wiele uczę się od żony i synów, a razem tworzymy dom, w którym dobrze się ze sobą czujemy. Staramy się nawzajem dodawać sobie wiatru w skrzydła, żeby każde z nas mogło wzlecieć na wyżyny swoich możliwości.",
+				"p4": "Na tej stronie znajdziesz moją drogę przez edukację, sport, rozwój osobisty i budowę domu z bala. Zapraszam do lektury."
+			}
 		},
 		"technician": {
 			"title": "Technik",
-			"lead": "Tytuł technika: szkoła średnia i pierwszy zawód.",
-			"timeline": {
-				"school": {
-					"title": "Technik elektronik",
-					"text": "Profil elektroniczny, pierwsze projekty z mikrokontrolerami."
-				},
-				"exams": {
-					"title": "Egzamin zawodowy i matura"
-				}
+			"lead": "Technikum Ekonomiczne w Kępnie i tytuł technika ekonomisty.",
+			"facts": {
+				"school": "ZSP nr 1 w Kępnie",
+				"title": "technik ekonomista"
+			},
+			"body": {
+				"p1": "Wybór szkoły średniej nie był w pełni moją decyzją. Nie wiedziałem jeszcze wtedy, w którą stronę chcę pójść, dlatego posłuchałem rodziców i wybrałem technikum. Taka szkoła dawała mi dwie rzeczy jednocześnie: maturę, czyli przepustkę na studia, oraz konkretny zawód. Zamiast samej wiedzy ogólnej mogłem wynieść z niej praktyczne umiejętności, z którymi łatwiej odnaleźć się na rynku pracy. Z perspektywy czasu uważam, że była to rozsądna decyzja.",
+				"p2": "Technikum Ekonomiczne w Zespole Szkół Ponadgimnazjalnych nr 1 w Kępnie uchodziło wówczas za najbardziej prestiżowy kierunek w regionie. Szły za tym wysoki poziom nauczania i wymagająca, zaangażowana kadra nauczycieli. Efekty było widać w wynikach uczniów: wielu z nich startowało w konkursach i olimpiadach rangi krajowej. Również ja brałem w nich udział i zostałem finalistą Turnieju Wiedzy i Umiejętności Handlowo-Menedżerskich.",
+				"p3": "Zwieńczeniem czterech lat nauki był egzamin zawodowy, dzięki któremu uzyskałem tytuł technika ekonomisty. Jako finalista turnieju byłem zwolniony z części pisemnej egzaminu. Zdałem też maturę na tyle dobrze, że drzwi do najlepszych uczelni stanęły przede mną otworem. Poza dyplomem technikum nauczyło mnie systematycznej pracy i pokazało, że rzetelne przygotowanie przekłada się na wyniki. Ten nawyk towarzyszył mi na każdym kolejnym etapie edukacji."
 			}
 		},
 		"engineer": {
 			"title": "Inżynier",
-			"lead": "Tytuł inżyniera: studia pierwszego stopnia.",
-			"timeline": {
-				"degree": {
-					"title": "Studia inżynierskie, informatyka",
-					"text": "Specjalizacja: systemy rozproszone."
-				},
-				"internship": {
-					"title": "Praktyki w firmie programistycznej"
-				},
-				"thesisDefense": {
-					"title": "Obrona pracy inżynierskiej"
-				}
+			"lead": "Informatyka na Politechnice Wrocławskiej i tytuł inżyniera.",
+			"facts": {
+				"field": "informatyka"
+			},
+			"body": {
+				"p1": "Droga na informatykę nie była prosta. Zanim na nią trafiłem, próbowałem sił na dwóch innych kierunkach, ale żaden z nich do mnie nie pasował. Decydujący okazał się mój przyjaciel Dawid, z którym od gimnazjum, przez technikum, wiele naszych dróg biegło wspólnie. To on przekonał mnie, że informatyka jest stworzona dla mojego sposobu myślenia. Uprzedzał, że przez cztery lata będę musiał mocno się sprężyć, żeby wyjść z tej podróży zwycięsko, ale obiecywał, że na końcu będę robił to, co lubię, a praca zawodowa będzie mi dawała radość.",
+				"p2": "Jego przepowiednia się sprawdziła. Przez cztery lata byłem całkowicie skupiony na nauce. Chciałem skończyć studia w terminie i zdobyć przy tym jak najwięcej wiedzy i umiejętności, by wejść na rynek pracy jako młody, wyspecjalizowany rzemieślnik, gotowy tworzyć rzeczy na wysokim poziomie. Moim rzemiosłem stało się jednak rzemiosło nowoczesne: programowanie.",
+				"p3": "Politechnika Wrocławska dawała dużo przestrzeni, by stać się inżynierem w pełnym znaczeniu tego słowa. Dobrze pamiętam profesora logiki z pierwszego roku, który powtarzał nam, że inżynier to twórca. Słowo to wywodzi się od łacińskiego ingenium, czyli pomysłowości i talentu twórczego, a profesor oczekiwał od nas, że będziemy twórczy. W czasie studiów poznałem wiele wybitnych umysłów, ale poprzeczka wisiała wysoko: z około stu osób, które zaczynały ze mną studia, w terminie do egzaminu dyplomowego dotarło kilkanaście. Pracą dyplomową był projekt programistyczny, czyli działające oprogramowanie zamiast opracowania teoretycznego.",
+				"p4": "Studia dały mi bardzo solidne przygotowanie do pracy programisty. Podstawy zdobyte na politechnice pozwoliły mi pewnie wejść na rynek i zbudować na nim mocną pozycję. Dzięki temu brałem udział w międzynarodowych projektach przy bardzo złożonych aplikacjach i odgrywałem w nich ważne role techniczne."
 			}
 		},
 		"master": {
 			"title": "Magister",
-			"lead": "Tytuł magistra: studia drugiego stopnia.",
-			"timeline": {
-				"studies": {
-					"title": "Studia magisterskie",
-					"text": "Praca dyplomowa o wydajności aplikacji webowych."
-				},
-				"graduation": {
-					"title": "Tytuł magistra inżyniera"
-				}
+			"lead": "Studia drugiego stopnia, obecnie w trakcie.",
+			"body": {
+				"p1": "Obecnie jestem w trakcie studiów magisterskich. Opis tego etapu pojawi się tutaj, gdy go zakończę."
 			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Członkostwo w stowarzyszeniu Mensa.",
-			"timeline": {
-				"admission": {
-					"title": "Test i przyjęcie do Mensy"
-				},
-				"gathering": {
-					"title": "Udział w zjeździe członków"
-				}
+			"lead": "Członkostwo w Mensie Polska, zdobyte za trzecim podejściem.",
+			"facts": {
+				"role": "członek stowarzyszenia"
+			},
+			"body": {
+				"p1": "Członkostwo w Mensie wiąże się dla mnie z historią, która nauczyła mnie więcej niż sam wynik testu. Pokazała mi, jak bardzo to, co jemy, wpływa na sprawność naszego myślenia.",
+				"p2": "Do Mensy dostałem się dopiero za trzecim razem i chyba właśnie tak miało być. Pierwszy raz podszedłem do testu w czasie studiów, około 2011 roku. Zabrakło mi niewiele do progu, ale to wystarczyło, żebym na długie lata porzucił myśl o kolejnych próbach. Wróciłem do niej dopiero w 2021 roku, gdy byłem na dość specyficznej diecie. Tym razem test poszedł mi jednak gorzej niż za pierwszym podejściem.",
+				"p3": "To doświadczenie dało mi do myślenia. Zacząłem zgłębiać, czym właściwie powinniśmy się odżywiać, i w kolejnych latach całkowicie zmieniłem sposób jedzenia, przechodząc niemal na drugi biegun. W 2025 roku podszedłem do testu po raz trzeci i tym razem zakwalifikowałem się z nawiązką. Nie traktuję tego jako dowodu naukowego, ale na własnym przykładzie przekonałem się, że dieta może realnie wpływać na to, jak pracuje nasz umysł.",
+				"p4": "Wiem, że takie wyróżnienie łatwo odebrać jako powód do przechwałek. W czasach szkolnych pewnie tak by było, bo moje ego było wtedy znacznie większe. Z czasem wnikliwe przyglądanie się własnemu życiu i wnioski wyciągane z kolejnych doświadczeń pozwoliły mi wyraźnie je zmniejszyć. Członkostwo w Mensie jest dla mnie przede wszystkim pamiątką tej drogi i przypomnieniem, jak wiele zależy od tego, jak dbamy o siebie na co dzień."
 			}
 		},
 		"club": {
 			"title": "Klub",
-			"lead": "Mój klub sportowy."
+			"lead": "KS Gepard Kępno: biegowa drużyna z Kępna, założona w 2015 roku.",
+			"body": {
+				"p1": "Historia naszego klubu sięga czasów, gdy bieganie przeżywało w Polsce prawdziwy boom. Nasza grupa znajomych również dała się porwać tej fali, a 21 czerwca 2015 roku postanowiliśmy założyć własny, lokalny klub. Chcieliśmy stworzyć społeczność, w której wspólnie cieszymy się bieganiem i przesuwamy granice własnych możliwości. Tak powstał KS Gepard Kępno. Nazwę wymyśliliśmy we czterech: Rafał, Dominik, Damian i ja.",
+				"p2": "Każdy z założycieli wniósł coś własnego w rozkręcenie klubu i w to, by przetrwał próbę czasu. Przez lata skład naturalnie się zmieniał, a do klubu dołączyło wielu równie pozytywnie nakręconych biegaczy, którzy swoją osobowością i zaangażowaniem napędzali jego rozwój. Razem startujemy w zawodach, wzajemnie się motywujemy i raz po raz poprawiamy rekordy życiowe. Wielokrotnie wygrywaliśmy też klasyfikacje drużynowe.",
+				"p3": "Dzięki wszystkim członkom udało nam się stworzyć świetne miejsce do biegania i rozwijania pasji. Każdy może się tu odnaleźć niezależnie od poziomu, czuje się rozumiany przez resztę grupy i zawsze może liczyć na wsparcie. Gdy pojawia się problem albo pytanie, chętnie dzielimy się doświadczeniem i pomagamy sobie nawzajem w osiąganiu osobistych celów biegowych. Klub działa nieprzerwanie od 2015 roku i skupia kilkunastu biegaczy."
+			}
 		},
 		"running": {
 			"title": "Bieganie",
-			"lead": "Treningi, starty i trasy."
+			"lead": "Od półmaratonu po dwóch tygodniach treningów do kolejnych rekordów życiowych.",
+			"body": {
+				"p1": "W czasach szkolnych byłem bardzo wysportowany. Świadczą o tym medale z zawodów lekkoatletycznych na szczeblu regionalnym, zdobywane głównie w biegu na 100 metrów i w skoku w dal. Po szkole zaczęło mi jednak brakować ruchu. Kiedy uzyskałem tytuł inżyniera, bieganie przeżywało akurat ogromną popularność, więc i ja dałem się porwać tej fali.",
+				"p2": "Moim pierwszym startem był Cross Ostrzeszowski, dobrze znany w regionie półmaraton, który przebiegłem zaledwie po dwóch tygodniach treningów. Tak, to nie pomyłka. Przed startem obawiałem się dosłownie wszystkiego: czy jestem profesjonalnie ubrany, czy wytrzymam tempo i czy w ogóle dam radę. Szybko kupiłem więc buty do biegania, zegarek z pomiarem tętna i strój, dzięki czemu na starcie czułem się pewnie. Na mecie zegar pokazał 1:43:25, co jak na tak krótkie przygotowanie było świetnym wynikiem. Zapał nie mijał. Po pięciu miesiącach treningów wystartowałem w pierwszym maratonie w życiu i ukończyłem go w czasie 3:08:48. Ten wynik z debiutu do dziś pozostaje moim rekordem, więc wciąż mam z czym się zmierzyć.",
+				"p3": "Po pierwszym sezonie szybkich postępów zabrakło mi przemyślanego planu treningowego i na dłuższy czas utknąłem w miejscu. Postanowiłem więc skorzystać z opieki trenera. Ta współpraca zaowocowała nowymi rekordami życiowymi na 5 i 10 kilometrów w 2020 roku.",
+				"p4": "Bywały też dłuższe okresy, w których sprawy osobiste musiały wziąć górę nad pasją do biegania, a treningi schodziły na dalszy plan.",
+				"p5": "Chcąc lepiej zrozumieć zasady treningu, ukończyłem kurs w Polskiej Akademii Kultury i Sportu i uzyskałem tytuł instruktora rekreacji ruchowej ze specjalnością bieganie. Kurs dał mi zupełnie nowe spojrzenie na ten sport. Od tamtej pory sam planuję swoje przygotowania, a do tego prowadziłem treningi mojego syna, który również odkrył w sobie pasję do biegania."
+			}
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Praca z energią prany.",
-			"timeline": {
-				"basicCourse": {
-					"title": "Kurs podstawowy pracy z praną"
-				},
-				"advancedCourse": {
-					"title": "Kurs zaawansowany",
-					"text": "Regularna praktyka i warsztaty."
-				}
+			"lead": "Uzdrawianie Praniczne w Centrum Uzdrawiania Pranicznego w Częstochowie.",
+			"body": {
+				"p1": "Przed osiągnięciem lat chrystusowych mocno obudziła się we mnie potrzeba rozwoju osobistego. W zasadzie towarzyszyła mi przez całe wcześniejsze życie: zawsze zadawałem sobie pytania o sens istnienia, o to, skąd pochodzimy i dokąd zmierzamy. Szukałem odpowiedzi, rozmyślając nad religią, śmiercią i odległą historią ludzkości.",
+				"p2": "Ta potrzeba zaprowadziła mnie na kursy Uzdrawiania Pranicznego w Częstochowie. W ciągu roku ukończyłem pięć szkoleń o różnym stopniu zaawansowania. Był to czas głębokiej wewnętrznej przemiany i oczyszczenia, który wyraźnie zmienił moje postrzeganie rzeczywistości. Uczestnicy kursów nocowali na miejscu, więc wieczorami, poza głównymi zajęciami, spotykaliśmy się na dodatkowych praktykach, rozmowach i wymianie doświadczeń. Te wieczory jeszcze bardziej pogłębiały nasze rozumienie pracy z energią i otwierały umysły.",
+				"p3": "Ten intensywny okres zbiegł się z wieloma zmianami w moim życiu osobistym, które na pewien czas oddaliły mnie od nowo poznanej grupy.",
+				"p4": "Dopiero po pięciu latach byłem gotowy, by wrócić i ponownie spotkać się z prowadzącym, Jerzym Oparą. Okazało się, że z dawnej grupy zostało niewiele osób, głównie trzon, który organizuje i tworzy częstochowską społeczność. Większość uczestników była dla mnie nowa.",
+				"p5": "Każde takie spotkanie to okazja, by poznać wielu ciekawych ludzi. W rozmowach w kuluarach dzielimy się wrażeniami i różnymi spojrzeniami na własną drogę rozwoju. Za każdym razem przekonuję się, jak wartościowe znajomości można tam nawiązać i jak wiele można usłyszeć o zupełnie nowych formach pracy z energią."
 			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Praktyka reiki.",
-			"timeline": {
-				"levelOne": {
-					"title": "I stopień reiki"
-				},
-				"levelTwo": {
-					"title": "II stopień reiki"
-				},
-				"master": {
-					"title": "Stopień mistrzowski"
-				}
-			}
-		},
-		"journeyman": {
-			"title": "Czeladnik",
-			"lead": "Tytuł czeladnika w rzemiośle.",
-			"timeline": {
-				"apprenticeship": {
-					"title": "Nauka zawodu u mistrza"
-				},
-				"exam": {
-					"title": "Egzamin czeladniczy"
-				}
+			"lead": "Moja droga z reiki: inicjacje i praca z energią.",
+			"body": {
+				"p1": "Moja historia z reiki zaczyna się nieco wcześniej, od spotkania z {link}, dziś moją przyjaciółką. Najpierw pomagała mi w trudnościach osobistych, a później także rodzinnych. Następnie przez rok uczestniczyłem w prowadzonej przez nią Szkole Rozwoju Duchowego.",
+				"p1Link": "Agnieszką Panderską",
+				"p2": "Po tym czasie poczułem, że jestem gotowy pójść dalej, i pojawiła się we mnie potrzeba pogłębienia rozwoju. To Agnieszka przeprowadziła moje inicjacje w Reiki Usui. Pod jej opieką pogłębiałem pracę z energią i jej zrozumienie, a każda kolejna inicjacja otwierała nowy etap wewnętrznego oczyszczenia.",
+				"p3": "Pierwszy stopień przyniósł silne oczyszczenie. Szczególnie intensywna była pierwsza noc po inicjacji, ale wymagający okazał się też cały 21-dniowy okres oczyszczania, który po niej następuje. Pięć miesięcy później otrzymałem drugi stopień. Ten etap jeszcze bardziej pogłębił proces otwarcia i oczyszczenia, choć tym razem przebiegał już znacznie łagodniej."
 			}
 		},
 		"youtube": {
 			"title": "YouTube",
-			"lead": "Prowadzę kanał na YouTube."
+			"lead": "Kanał „Dom z Bala” o budowie i wykańczaniu domu z bala klejonego.",
+			"body": {
+				"p1": "Na założenie kanału zainspirowała mnie budowa naszego domu z bala klejonego, a dokładniej przygotowania do niej. Dom stawiała ekipa, ale ja uczestniczyłem w projektowaniu, a wykończenie wykonałem już sam. Prace przygotowawcze okazały się na tyle złożone, a rzetelnych informacji i wskazówek w internecie było na tyle mało, że z czasem dojrzałem do decyzji, by podzielić się zdobytą wiedzą. Pomyślałem, że może się ona przydać innym, którzy budując dom z drewna, mierzą się z podobnymi problemami.",
+				"p2": "Pierwsze filmy były właściwie relacjami dla żony. Ona zajmowała się dziećmi, a ja wracałem z budowy z najświeższymi wieściami o postępach prac.",
+				"p3": "Z czasem kanał stał się dla mnie odskocznią od codziennej rutyny i obowiązków. Pokazuję na nim postępy prac, wykończenia, zajęcia wokół domu i w ogrodzie, majsterkowanie oraz rozwiązania i odkrycia, na które trafiam po drodze. To także przygoda i okazja, by od środka poznać, jak działają dziś media społecznościowe.",
+				"p4": "Większość filmów nagrywam przy okazji, tak by nie odrywać się zbytnio od samej pracy. Czasem wymaga to sporej gimnastyki: trzeba nagrać ujęcie mimo głośnych zabaw dzieci albo ich niezapowiedzianego wejścia w kadr akurat wtedy, gdy tata potrzebuje chwili spokoju, żeby coś stworzyć."
+			}
 		},
 		"contact": {
 			"title": "Kontakt",
-			"lead": "Napisz do mnie."
+			"lead": "Masz pytanie albo propozycję? Odezwij się w najwygodniejszy dla siebie sposób."
 		}
 	},
-	"placeholder": "Treść w przygotowaniu.",
 	"youtube": {
-		"cta": "Przejdź do kanału"
+		"cta": "Zobacz kanał „Dom z Bala”"
 	},
 	"contact": {
 		"email": "E-mail",
+		"phone": "Tel.",
 		"vcard": "Zapisz kontakt w telefonie",
 		"vcardHint": "Plik vCard (.vcf)"
 	},
 	"photo": {
-		"mensa": "Zdjęcie związane z Mensą"
+		"house": {
+			"alt": "Drewniany dom z bala klejonego z balkonem i zadaszonym gankiem, w słoneczny dzień",
+			"caption": "Nasz dom z bala klejonego."
+		},
+		"club": {
+			"alt": "Zdjęcie grupowe biegaczy KS Gepard Kępno w żółto-czarnych strojach klubowych, z medalami na szyi",
+			"caption": "Drużyna KS Gepard Kępno."
+		},
+		"clubLogo": "Logo KS Gepard Kępno",
+		"podium": {
+			"alt": "Marek Krzak na podium w żółtym stroju klubowym, z medalem i pucharem",
+			"caption": "Na podium VII Maratonu Leszno."
+		},
+		"marathon": {
+			"alt": "Marek Krzak w koszulce KS Gepard Kępno wbiega na metę z szeroko rozłożonymi rękami",
+			"caption": "Meta mojego pierwszego maratonu: 33. PKO Wrocław Maraton, 2015."
+		},
+		"mensaCard": "Legitymacja członkowska Mensy Polska wystawiona na Marka Krzaka",
+		"portrait": "Marek Krzak"
 	},
 	"error": {
 		"notFound": "Nie ma takiej strony.",
@@ -173,11 +188,48 @@
 		"loaded": "Strona załadowała się w {ms} ms · {kb} KB",
 		"prerendered": "Strona była gotowa, zanim kliknięto: 0 ms · {kb} KB"
 	},
-	"timeline": {
-		"label": "Oś czasu",
-		"sample": "Przykładowe dane"
+	"certificates": {
+		"heading": "Certyfikaty",
+		"open": "Powiększ certyfikat: {name}",
+		"alt": "Certyfikat: {name}",
+		"qualifications": "Uprawnienia",
+		"diploma": "Dyplom"
 	},
-	"notFound": {
-		"title": "Nie ma takiej strony"
+	"certificate": {
+		"prana": {
+			"basic": "Praktyczny Kurs Podstawowy Uzdrawiania Pranicznego"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – I stopień",
+			"level2": "Reiki Usui Shiki Ryoho – II stopień"
+		},
+		"running": {
+			"instructor": "Instruktor rekreacji ruchowej – bieganie (Polska Akademia Kultury i Sportu)"
+		},
+		"technician": {
+			"diploma": "Dyplom potwierdzający kwalifikacje zawodowe: technik ekonomista"
+		},
+		"engineer": {
+			"diploma": "Dyplom ukończenia studiów inżynierskich: informatyka, Politechnika Wrocławska"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno na Facebooku"
+	},
+	"running": {
+		"records": {
+			"heading": "Rekordy życiowe",
+			"halfMarathon": "półmaraton",
+			"marathon": "maraton"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Działy strony",
+			"education": "Technikum, politechnika i Mensa",
+			"sport": "KS Gepard Kępno i bieganie",
+			"growth": "Prana i reiki",
+			"youtube": "Kanał „Dom z Bala”"
+		}
 	}
 }

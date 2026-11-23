@@ -1,53 +1,61 @@
-import { gzipSync } from 'node:zlib';
-import { ALL_PAGES, BASE, expect, test, url } from './fixtures.ts';
+import { expect, test, url } from './fixtures.ts';
 
-/** Budgets. Raising one should be a conscious decision. */
-const BUDGET = {
-	/** gzip size of any page's HTML, including inlined CSS and script */
-	htmlGzip: 9 * 1024,
-	/** inline JavaScript per page (minified, uncompressed) */
-	inlineJs: 4 * 1024
-};
+/** Budgets on the local test server (no network latency), with room for slow CI machines. */
+const BUDGET = { lcp: 500, cls: 0.01 };
 
-test(`every page: 200, right language, HTML under ${BUDGET.htmlGzip / 1024} KB gzip`, async ({
-	request
-}) => {
-	for (const path of ALL_PAGES) {
-		const response = await request.get(path);
-		expect(response.status(), path).toBe(200);
-		const html = await response.body();
-		const lang = path.slice(BASE.length).split('/')[1];
-		expect(html.toString(), path).toContain(`<html lang="${lang}"`);
-		expect(gzipSync(html).length, path).toBeLessThan(BUDGET.htmlGzip);
-	}
-	for (const path of [url('/'), url('/404.html')]) {
-		expect(gzipSync(await (await request.get(path)).body()).length, path).toBeLessThan(
-			BUDGET.htmlGzip
-		);
-	}
-});
+/** One page per layout; the build spec checks the HTML of every page. */
+const SAMPLES = [
+	'/pl/',
+	'/pl/o-mnie/',
+	'/pl/edukacja/mensa/',
+	'/pl/sport/bieganie/',
+	'/ar/growth/reiki/',
+	'/zh/contact/'
+];
 
-test('a page loads only its HTML and images: no JS, CSS, fonts or third parties', async ({
-	page
-}) => {
+test('pages load only HTML and images, fast and without layout shifts', async ({ page }) => {
 	const extra: string[] = [];
 	page.on('request', (r) => {
 		const thirdParty = new URL(r.url()).host !== 'localhost:4174';
-		if (thirdParty || ['script', 'stylesheet', 'font'].includes(r.resourceType())) {
+		// "ping": the analytics beacon, which the test build sends to the test server
+		if (thirdParty || !['document', 'image', 'ping'].includes(r.resourceType())) {
 			extra.push(`${r.resourceType()} ${r.url()}`);
 		}
 	});
-	for (const path of ['/pl/', '/pl/edukacja/mensa/', '/ar/contact/', '/zh/sport/running/']) {
-		await page.goto(url(path), { waitUntil: 'load' });
-	}
-	expect(extra).toEqual([]);
-	expect(await page.content()).not.toContain('@font-face');
 
-	const inline = await page.$$eval('script:not([type])', (s) =>
-		s.map((x) => x.textContent!.length)
-	);
-	expect(inline).toHaveLength(1);
-	expect(inline[0]).toBeLessThan(BUDGET.inlineJs);
+	for (const path of SAMPLES) {
+		await page.goto(url(path), { waitUntil: 'load' });
+		const { lcp, cls } = await page.evaluate(
+			() =>
+				new Promise<{ lcp: number; cls: number }>((resolve) => {
+					let lcp = 0;
+					let cls = 0;
+					new PerformanceObserver((list) => {
+						for (const e of list.getEntries()) lcp = e.startTime;
+					}).observe({ type: 'largest-contentful-paint', buffered: true });
+					new PerformanceObserver((list) => {
+						for (const e of list.getEntries() as unknown as { value: number }[]) cls += e.value;
+					}).observe({ type: 'layout-shift', buffered: true });
+					setTimeout(() => resolve({ lcp, cls }), 100);
+				})
+		);
+		expect(lcp, `${path}: LCP`).toBeGreaterThan(0);
+		expect(lcp, `${path}: LCP`).toBeLessThan(BUDGET.lcp);
+		expect(cls, `${path}: CLS`).toBeLessThan(BUDGET.cls);
+	}
+	expect(extra, 'no scripts, styles, fonts or third parties').toEqual([]);
+});
+
+test('the first photo is AVIF, sized up front and loaded with high priority', async ({ page }) => {
+	await page.goto(url('/pl/sport/bieganie/'));
+	const img = page.locator('main picture img').first();
+	await expect(img).toHaveAttribute('width', /\d+/);
+	await expect(img).toHaveAttribute('height', /\d+/);
+	await expect(img).toHaveAttribute('fetchpriority', 'high');
+	await expect(img).not.toHaveAttribute('loading', 'lazy');
+	expect(await img.evaluate((i: HTMLImageElement) => i.currentSrc)).toMatch(/\.avif$/);
+	// Photos further down wait until they are scrolled to
+	await expect(page.locator('main picture img').last()).toHaveAttribute('loading', 'lazy');
 });
 
 test('footer shows the measured load time', async ({ page }) => {
@@ -77,11 +85,22 @@ test('Speculation Rules prerender on hover; view transitions respect reduced mot
 	);
 });
 
-test('photo is served as AVIF with fixed dimensions (no layout shift)', async ({ page }) => {
-	await page.goto(url('/pl/edukacja/mensa/'));
-	const img = page.locator('picture img');
-	await expect(img).toHaveAttribute('width', /\d+/);
-	await expect(img).toHaveAttribute('height', /\d+/);
-	await expect(img).toHaveAttribute('fetchpriority', 'high');
-	expect(await img.evaluate((i: HTMLImageElement) => i.currentSrc)).toMatch(/\.avif$/);
+test('CSP blocks a script injected into the page', async ({ page, consoleErrors }) => {
+	await page.goto(url('/en/'));
+	const ran = await page.evaluate(() => {
+		const w = window as unknown as { injected?: boolean };
+		const script = document.createElement('script');
+		script.textContent = 'window.injected = true';
+		document.head.append(script);
+		return w.injected === true;
+	});
+	expect(ran).toBe(false);
+
+	// The browser reports exactly this violation; it is expected, so it is not a test error
+	const isCsp = (e: string) => e.includes('Content Security Policy');
+	expect(consoleErrors.filter(isCsp)).toHaveLength(1);
+	consoleErrors.splice(0, consoleErrors.length, ...consoleErrors.filter((e) => !isCsp(e)));
+
+	// The page's own scripts still run: site.js fills in the footer
+	await expect(page.locator('[data-perf-short]')).not.toBeEmpty();
 });

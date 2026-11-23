@@ -1,40 +1,41 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { page } from '$app/state';
-	import { TIMELINES } from '#lib/content/timeline.ts';
 	import { navLabel, pageLead, pageTitle } from '#lib/i18n/index.ts';
-	import { toLocale } from '#lib/i18n/config.ts';
 	import { NAVIGATION, type PageId } from '#lib/i18n/routes.ts';
-	import { m } from '#lib/paraglide/messages.js';
-	import Timeline from './Timeline.svelte';
 
-	let { id, children }: { id: PageId; children?: Snippet } = $props();
+	interface Props {
+		id: PageId;
+		/** Image next to the title, e.g. a club logo; the page sets its size. */
+		logo?: Snippet;
+		/** Shown right under the lead, e.g. a link button with class "cta". */
+		actions?: Snippet;
+		children: Snippet;
+	}
 
-	const locale = $derived(toLocale(page.params.lang));
+	let { id, logo, actions, children }: Props = $props();
+
 	const group = $derived(
 		NAVIGATION.find((item) => item.kind === 'group' && item.children.includes(id))
 	);
-	const timeline = $derived(TIMELINES[id]);
 </script>
 
 <article class="page">
-	<header>
+	<header class:with-logo={logo}>
+		{#if logo}
+			<!-- Next to the eyebrow and title; the lead runs below at full width -->
+			<div class="logo" style:grid-row={group ? 'span 2' : undefined}>{@render logo()}</div>
+		{/if}
 		{#if group}
 			<p class="eyebrow">{navLabel(group.id)}</p>
 		{/if}
 		<h1>{pageTitle(id)}</h1>
 		<p class="lead">{pageLead(id)}</p>
+		{#if actions}
+			<div class="actions">{@render actions()}</div>
+		{/if}
 	</header>
 
-	{#if children}
-		{@render children()}
-	{/if}
-
-	{#if timeline}
-		<Timeline entries={timeline} {locale} />
-	{:else if !children}
-		<p class="placeholder">{m.placeholder()}</p>
-	{/if}
+	{@render children()}
 </article>
 
 <style>
@@ -48,6 +49,23 @@
 		gap: 1rem;
 		padding-block-end: 2.5rem;
 		border-block-end: 1px solid var(--line);
+	}
+
+	header.with-logo {
+		grid-template-columns: auto 1fr;
+		column-gap: clamp(1rem, 3vw, 1.5rem);
+	}
+
+	.with-logo > :not(.logo, .eyebrow, h1) {
+		grid-column: 1 / -1;
+	}
+
+	.logo {
+		align-self: center;
+	}
+
+	.with-logo h1 {
+		align-self: center;
 	}
 
 	.eyebrow {
@@ -71,9 +89,5 @@
 		max-inline-size: 52ch;
 		color: var(--muted);
 		font-size: 1.0625rem;
-	}
-
-	.placeholder {
-		color: var(--g-6);
 	}
 </style>

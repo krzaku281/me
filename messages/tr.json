@@ -1,0 +1,235 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Yazılımcı, koşucu ve sonsuz bir kaşif. Web siteme hoş geldin."
+	},
+	"ui": {
+		"skip": "İçeriğe geç",
+		"mainNav": "Ana menü",
+		"menu": "Menü",
+		"language": "Dil",
+		"home": "Ana sayfa",
+		"close": "Kapat"
+	},
+	"nav": {
+		"home": "Başlangıç",
+		"about": "Hakkımda",
+		"education": "Eğitim",
+		"technician": "Teknisyen",
+		"engineer": "Mühendis",
+		"master": "Yüksek lisans",
+		"mensa": "Mensa",
+		"sport": "Spor",
+		"club": "Kulüp",
+		"running": "Koşu",
+		"growth": "Gelişim",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"youtube": "YouTube",
+		"contact": "İletişim"
+	},
+	"page": {
+		"home": {
+			"title": "Başlangıç",
+			"lead": "Yazılımcı, koşucu ve sonsuz bir kaşif. Web siteme hoş geldin.",
+			"intro": "Etrafa bir göz at ve bu sitenin ne kadar hızlı çalıştığını gör. Her sayfa neredeyse anında açılır ve yüklenme süresini ekranın altında görebilirsin."
+		},
+		"about": {
+			"title": "Hakkımda",
+			"lead": "Yazılımcı, koşucu, eş ve baba. Dünyayı bütün derinliğiyle merak ediyorum.",
+			"body": {
+				"p1": "Mesleğim yazılımcılık, ama ilgi alanlarım bilgisayar ekranının çok ötesine uzanıyor. Kendimi en çok Rönesans insanı idealine yakın hissediyorum: gerçekliğin pek çok yönü ilgimi çekiyor ve teknolojiden spora, manevi gelişime kadar birçok alanda kendime yol bulabiliyorum.",
+				"p2": "Kim olduğumu büyük ölçüde hikâyem belirledi. Birçok milenyum kuşağı üyesi gibi ben de aile evinden bazı zorluklar getirdim ve yetişkin hayatımda bunlarla yüzleşmem gerekti. Beni kendim üzerinde çalışmaya iten de bu zorluklar oldu. Bu deneyimler olmasaydı, büyük ihtimalle gelişimde bu kadar ilerleyemezdim, kendimi ve etrafımdaki dünyayı bu kadar iyi anlayamazdım.",
+				"p3": "Bir eşim ve iki oğlum var. Aile benim için her gün bir okul: eşimden ve oğullarımdan çok şey öğreniyorum ve birlikte hepimizin kendini iyi hissettiği bir yuva kurduk. Birbirimize kanat olmaya çalışıyoruz, böylece her birimiz elinden geldiğince yükseğe uçabilsin.",
+				"p4": "Bu sitede eğitim, spor, kişisel gelişim ve kütük ev yapımı yolculuğumu bulacaksın. İyi okumalar."
+			}
+		},
+		"technician": {
+			"title": "Teknisyen",
+			"lead": "Kępno'daki Ekonomi Teknik Lisesi ve ekonomi teknisyeni unvanı.",
+			"facts": {
+				"school": "1 No'lu Okul Kompleksi, Kępno",
+				"title": "ekonomi teknisyeni"
+			},
+			"body": {
+				"p1": "Lise seçimi tamamen benim kararım değildi. O zaman hangi yöne gitmek istediğimi henüz bilmiyordum, bu yüzden anne babamı dinleyip teknik lise seçtim. Bu tür bir okul bana aynı anda iki şey veriyordu: üniversiteye giden yolu açan mezuniyet sınavı (matura) ve gerçek bir meslek. Yalnızca genel bilgi yerine, iş bulmayı kolaylaştıran pratik becerilerle mezun olabilirdim. Geriye dönüp baktığımda bunun mantıklı bir karar olduğunu düşünüyorum.",
+				"p2": "Kępno'daki 1 No'lu Okul Kompleksi'ne bağlı Ekonomi Teknik Lisesi, o dönemde bölgenin en prestijli programı olarak görülüyordu. Öğretim düzeyi yüksekti, öğretmenler titiz ve özverilerdi. Bu, öğrencilerin başarılarında görülüyordu: birçoğu ulusal yarışmalara ve olimpiyatlara katılıyordu. Ben de katıldım ve Ticaret ve Yönetim Bilgi ve Becerileri Turnuvası'nda finalist oldum.",
+				"p3": "Dört yıllık eğitim, bana ekonomi teknisyeni unvanını veren meslek sınavıyla sona erdi. Turnuva finalisti olduğum için sınavın yazılı bölümünden muaf tutuldum. Matura sınavını da en iyi üniversitelerin kapıları bana açılacak kadar iyi geçirdim. Diplomanın ötesinde, okul bana düzenli çalışmayı öğretti ve titiz hazırlığın sonuç getirdiğini gösterdi. Bu alışkanlık, eğitimimin sonraki her aşamasında benimle kaldı."
+			}
+		},
+		"engineer": {
+			"title": "Mühendis",
+			"lead": "Wrocław Teknik Üniversitesi'nde bilgisayar bilimi ve mühendislik unvanı.",
+			"facts": {
+				"field": "bilgisayar bilimi"
+			},
+			"body": {
+				"p1": "Bilgisayar bilimine giden yol kolay olmadı. Onu bulmadan önce iki başka bölüm denedim, ama hiçbiri bana uymadı. Belirleyici olan arkadaşım Dawid oldu. Yollarımız ortaokuldan teknik liseye kadar sık sık kesişmişti. Bilgisayar biliminin benim düşünme şeklime göre olduğunu bana o anlattı. Bu yolculuktan galip çıkmak için dört yıl boyunca çok çalışmam gerekeceği konusunda beni uyardı. Ama sonunda sevdiğim işi yapacağıma ve işimin bana mutluluk vereceğine söz verdi.",
+				"p2": "Onun tahmini gerçek oldu. Dört yıl boyunca tamamen derslere odaklandım. Zamanında bitirmek ve mümkün olduğunca çok bilgi ve beceri kazanmak istiyordum. Böylece iş piyasasına genç, uzmanlaşmış bir usta olarak girip yüksek kalitede işler üretmeye hazır olacaktım. Ama benim zanaatım modern bir zanaat çıktı: programlama.",
+				"p3": "Wrocław Teknik Üniversitesi bana sözün tam anlamıyla mühendis olmak için geniş bir alan verdi. Birinci sınıftaki mantık profesörünü iyi hatırlıyorum, bize hep mühendisin bir yaratıcı olduğunu söylerdi. Bu kelime Latince ingenium sözcüğünden gelir. Bu, buluş gücü ve yaratıcı yetenek demektir ve profesör bizden yaratıcı olmamızı beklerdi. Okurken pek çok parlak zekâyla tanıştım, ama çıta yüksekti: benimle başlayan yaklaşık yüz kişiden yalnızca on küsur kişi bitirme sınavına zamanında ulaştı. Bitirme çalışmam bir programlama projesiydi, yani teorik bir çalışma yerine çalışan bir yazılım.",
+				"p4": "Eğitimim beni yazılımcılığa çok iyi hazırladı. Üniversitede edindiğim temeller iş piyasasına güvenle girmemi ve orada sağlam bir yer edinmemi sağladı. Bu sayede çok karmaşık uygulamalar üzerinde uluslararası projelerde çalıştım ve bu projelerde önemli teknik roller üstlendim."
+			}
+		},
+		"master": {
+			"title": "Yüksek lisans",
+			"lead": "İkinci kademe eğitim, şu anda devam ediyor.",
+			"body": {
+				"p1": "Şu anda yüksek lisans yapıyorum. Bu aşamanın açıklaması, bitirdiğimde burada yer alacak."
+			}
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Mensa Polska üyeliği, üçüncü denemede kazanıldı.",
+			"facts": {
+				"role": "dernek üyesi"
+			},
+			"body": {
+				"p1": "Benim için Mensa üyeliği, bana test sonucunun kendisinden daha fazlasını öğreten bir hikâyeyle bağlantılı. Ne yediğimizin düşünme becerimizi ne kadar etkilediğini bana gösterdi.",
+				"p2": "Mensa'ya ancak üçüncü denemede girebildim ve belki de böyle olması gerekiyordu. Teste ilk kez üniversite yıllarında, 2011 civarında girdim. Eşiğe çok az kalmıştı, ama bu, uzun yıllar yeniden denemeyi bırakmam için yetti. Buna ancak 2021'de, oldukça sıra dışı bir diyetteyken döndüm. Ama bu kez test ilk denemeden daha kötü geçti.",
+				"p3": "Bu deneyim beni düşündürdü. Aslında ne yememiz gerektiğini araştırmaya başladım ve sonraki yıllarda beslenme şeklimi tamamen değiştirdim, neredeyse öbür uca geçtim. 2025'te teste üçüncü kez girdim ve bu sefer rahatça başardım. Bunu bilimsel bir kanıt saymıyorum, ama kendi örneğimde beslenmenin zihnimizin çalışmasını gerçekten etkileyebileceğine ikna oldum.",
+				"p4": "Böyle bir başarının kolayca övünme nedeni gibi görünebileceğini biliyorum. Okul yıllarımda muhtemelen öyle olurdu, çünkü egom o zaman çok daha büyüktü. Zamanla kendi hayatıma yakından bakmak ve her yeni deneyimden ders almak, onu belirgin biçimde küçültmeme yardım etti. Benim için Mensa üyeliği her şeyden önce bu yolculuğun bir hatırası ve her gün kendimize nasıl baktığımıza ne kadar çok şeyin bağlı olduğunun bir hatırlatması."
+			}
+		},
+		"club": {
+			"title": "Kulüp",
+			"lead": "KS Gepard Kępno: Kępno'dan bir koşu takımı, 2015'te kuruldu.",
+			"body": {
+				"p1": "Kulübümüzün tarihi, koşunun Polonya'da gerçek bir patlama yaşadığı döneme dayanıyor. Arkadaş grubumuz da bu dalgaya kapıldı ve 21 Haziran 2015'te kendi yerel kulübümüzü kurmaya karar verdik. Birlikte koşmaktan keyif aldığımız ve kendi sınırlarımızı zorladığımız bir topluluk yaratmak istedik. KS Gepard Kępno böyle doğdu. Adı dört kişi birlikte bulduk: Rafał, Dominik, Damian ve ben.",
+				"p2": "Kurucuların her biri kulübün yürümesi ve zamana dayanması için kendinden bir şey kattı. Yıllar içinde takım doğal olarak değişti ve aynı heyecanı taşıyan birçok koşucu bize katıldı. Kişilikleri ve bağlılıkları kulübün büyümesine yardımcı oldu. Yarışlara birlikte katılıyoruz, birbirimizi motive ediyoruz ve tekrar tekrar kişisel rekorlarımızı geliştiriyoruz. Takım sıralamalarında da birçok kez birinci olduk.",
+				"p3": "Tüm üyelerimiz sayesinde koşmak ve tutkularımızı geliştirmek için harika bir yer yarattık. Seviyesi ne olursa olsun herkes burada kendini evinde hissedebilir, grubun geri kalanı tarafından anlaşıldığını hisseder ve her zaman desteğe güvenebilir. Bir sorun ya da soru çıktığında, deneyimimizi seve seve paylaşır ve kişisel koşu hedeflerimize ulaşmak için birbirimize yardım ederiz. Kulüp 2015'ten beri kesintisiz faaliyet gösteriyor ve on küsur koşucusu var."
+			}
+		},
+		"running": {
+			"title": "Koşu",
+			"lead": "İki haftalık antrenmandan sonra yarı maratona, oradan yeni kişisel rekorlara.",
+			"body": {
+				"p1": "Okul yıllarında çok sportif biriydim. Bölge atletizm yarışmalarında, çoğunlukla 100 metre ve uzun atlamada kazandığım madalyalar bunu gösteriyor. Okuldan sonra ise hareket etmeyi özlemeye başladım. Mühendis olduğumda koşu tam da çok popülerdi, ben de bu dalgaya kapıldım.",
+				"p2": "İlk yarışım, bölgede iyi bilinen bir yarı maraton olan Cross Ostrzeszowski'ydi. Sadece iki haftalık antrenmandan sonra koştum. Evet, bu bir hata değil. Yarıştan önce kelimenin tam anlamıyla her şeyden endişe ediyordum: profesyonel gibi giyinmiş miyim, tempoyu tutabilir miyim, hiç başarabilir miyim. Bu yüzden hemen koşu ayakkabısı, nabız ölçen bir saat ve koşu kıyafeti aldım ve bu sayede başlangıç çizgisinde kendimden emin hissettim. Bitişte saat 1:43:25'i gösteriyordu. Bu kadar kısa bir hazırlık için harika bir sonuçtu. Heyecanım azalmadı. Beş ay antrenman yaptıktan sonra hayatımın ilk maratonunu koştum ve 3:08:48 ile bitirdim. Bu ilk sonuç hâlâ kişisel rekorum, yani hâlâ hedefleyebileceğim bir şey var.",
+				"p3": "Hızlı ilerleme getiren ilk sezondan sonra iyi düşünülmüş bir antrenman planım yoktu ve uzun süre aynı yerde saydım. Bu yüzden bir antrenörle çalışmaya karar verdim. Bu iş birliği 2020'de 5 ve 10 kilometrede yeni kişisel rekorlar getirdi.",
+				"p4": "Kişisel işlerin koşu tutkumun önüne geçmesi gereken, antrenmanların arka plana düştüğü daha uzun dönemler de oldu.",
+				"p5": "Antrenman ilkelerini daha iyi anlamak istediğim için Polonya Kültür ve Spor Akademisi'nde bir kurs tamamladım ve koşu uzmanlığıyla rekreasyonel hareket eğitmeni oldum. Kurs bana bu spora tamamen yeni bir bakış kazandırdı. O zamandan beri hazırlıklarımı kendim planlıyorum, ayrıca koşu tutkusunu keşfeden oğlumun antrenmanlarını da yürüttüm."
+			}
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Częstochowa'daki Pranic Healing Merkezi'nde Pranic Healing.",
+			"body": {
+				"p1": "33 yaşıma girmeden kısa süre önce içimde kişisel gelişim ihtiyacı güçlü bir şekilde uyandı. Aslında bu ihtiyaç bütün hayatım boyunca benimleydi: hep yaşamın anlamını, nereden geldiğimizi ve nereye gittiğimizi sorardım. Cevapları din, ölüm ve insanlığın uzak geçmişi üzerine düşünerek aradım.",
+				"p2": "Bu ihtiyaç beni Częstochowa'daki Pranic Healing kurslarına götürdü. Bir yıl içinde farklı seviyelerde beş kurs tamamladım. Derin bir içsel değişim ve arınma zamanıydı ve gerçekliğe bakışımı belirgin biçimde değiştirdi. Katılımcılar kursun yapıldığı yerde kalıyordu, bu yüzden akşamları ana derslerden sonra ek uygulamalar, sohbetler ve deneyim paylaşımı için buluşurduk. Bu akşamlar enerjiyle çalışma anlayışımızı daha da derinleştirdi ve zihinlerimizi açtı.",
+				"p3": "Bu yoğun dönem, kişisel hayatımdaki birçok değişiklikle aynı zamana denk geldi ve beni bir süre yeni gruptan uzak tuttu.",
+				"p4": "Ancak beş yıl sonra geri dönmeye ve öğretmen Jerzy Opara ile yeniden buluşmaya hazırdım. Eski gruptan çok az kişinin kaldığı ortaya çıktı, çoğunlukla Częstochowa topluluğunu düzenleyen ve kuran çekirdek ekip. Katılımcıların çoğu benim için yeniydi.",
+				"p5": "Böyle her buluşma birçok ilginç insanı tanımak için bir fırsat. Aralardaki sohbetlerde izlenimlerimizi ve kendi gelişim yollarımıza dair farklı bakış açılarını paylaşıyoruz. Her seferinde orada kurulan dostlukların ne kadar değerli olabileceğini ve enerjiyle çalışmanın tamamen yeni yolları hakkında ne kadar çok şey duyulabileceğini görüyorum."
+			}
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Reiki yolculuğum: inisiyasyonlar ve enerjiyle çalışma.",
+			"body": {
+				"p1": "Reiki hikâyem biraz daha önce, bugün arkadaşım olan {link} ile tanışmamla başlıyor. Önce kişisel zorluklarımda, sonra aile zorluklarımda bana yardım etti. Ardından bir yıl boyunca onun yürüttüğü Manevi Gelişim Okulu'na katıldım.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "Bu sürenin sonunda daha ileri gitmeye hazır olduğumu hissettim ve gelişimimi derinleştirme ihtiyacı duydum. Usui Reiki inisiyasyonlarımı yapan Agnieszka oldu. Onun rehberliğinde enerjiyle çalışmamı ve bu konudaki anlayışımı derinleştirdim ve her yeni inisiyasyon içsel arınmanın yeni bir aşamasını açtı.",
+				"p3": "Birinci derece güçlü bir arınma getirdi. İnisiyasyondan sonraki ilk gece özellikle yoğundu, ama ardından gelen 21 günlük arınma dönemi de zorlayıcıydı. Beş ay sonra ikinci dereceyi aldım. Bu aşama açılma ve arınma sürecini daha da derinleştirdi, ancak bu sefer çok daha yumuşak geçti."
+			}
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "“Dom z Bala”: tutkallı lamine kütük bir evin yapımı ve ince işleri hakkında bir kanal.",
+			"body": {
+				"p1": "Kanalı, tutkallı lamine kütükten evimizin yapımı yüzünden, daha doğrusu buna hazırlık yüzünden açtım. Evi bir inşaat ekibi dikti, ama tasarıma ben katıldım ve ince işleri kendim yaptım. Hazırlık o kadar karmaşıktı ve internette güvenilir bilgi ve tavsiye o kadar azdı ki, zamanla öğrendiklerimi paylaşmaya karar verdim. Ahşap ev yaparken benzer sorunlarla karşılaşan başkalarına yardımı dokunabilir diye düşündüm.",
+				"p2": "İlk videolar aslında eşim için hazırlanmış raporlardı. O çocuklarla ilgilenirdi, ben de şantiyeden işlerin gidişatıyla ilgili en son haberlerle dönerdim.",
+				"p3": "Zamanla kanal, günlük rutinden ve sorumluluklardan benim için bir mola oldu. Orada işlerin ilerleyişini, ince işleri, ev çevresindeki ve bahçedeki işleri, kendin yap işlerini ve yolda bulduğum çözümleri ve keşifleri gösteriyorum. Aynı zamanda bir macera ve bugün sosyal medyanın nasıl çalıştığını içeriden öğrenme fırsatı.",
+				"p4": "Videoların çoğunu çalışırken çekiyorum, böylece çekim beni işten çok koparmıyor. Bazen bu epey becerikli olmayı gerektiriyor: çocukların gürültülü oyunlarına rağmen ya da babanın bir şey yapmak için biraz huzura ihtiyacı olduğu anda habersizce kadraja girmelerine rağmen bir çekim almak zorundayım."
+			}
+		},
+		"contact": {
+			"title": "İletişim",
+			"lead": "Aklında bir soru ya da öneri mi var? Sana en uygun yoldan ulaş."
+		}
+	},
+	"youtube": {
+		"cta": "“Dom z Bala” kanalını izle"
+	},
+	"contact": {
+		"email": "E-posta",
+		"phone": "Tel.",
+		"vcard": "Kişiyi telefonuna kaydet",
+		"vcardHint": "vCard dosyası (.vcf)"
+	},
+	"photo": {
+		"house": {
+			"alt": "Güneşli bir günde balkonlu ve çatılı verandalı, tutkallı lamine kütükten ahşap bir ev",
+			"caption": "Tutkallı lamine kütük evimiz."
+		},
+		"club": {
+			"alt": "Sarı-siyah kulüp formalı, boyunlarında madalyalar olan KS Gepard Kępno koşucularının grup fotoğrafı",
+			"caption": "KS Gepard Kępno takımı."
+		},
+		"clubLogo": "KS Gepard Kępno logosu",
+		"podium": {
+			"alt": "Marek Krzak sarı kulüp formasıyla podyumda, elinde madalya ve kupa",
+			"caption": "7. Leszno Maratonu'nda podyumda."
+		},
+		"marathon": {
+			"alt": "Marek Krzak, KS Gepard Kępno tişörtüyle kollarını iki yana açarak bitiş çizgisini geçiyor",
+			"caption": "İlk maratonumun bitişi: 33. PKO Wrocław Maratonu, 2015."
+		},
+		"mensaCard": "Marek Krzak adına düzenlenmiş Mensa Polska üyelik kartı",
+		"portrait": "Marek Krzak"
+	},
+	"error": {
+		"notFound": "Böyle bir sayfa yok.",
+		"generic": "Bir şeyler ters gitti.",
+		"back": "Ana sayfaya dön"
+	},
+	"redirect": {
+		"choose": "Bir dil seç"
+	},
+	"perf": {
+		"loaded": "Bu sayfa {ms} ms içinde yüklendi · {kb} KB",
+		"prerendered": "Bu sayfa sen tıklamadan önce hazırdı: 0 ms · {kb} KB"
+	},
+	"certificates": {
+		"heading": "Sertifikalar",
+		"open": "Sertifikayı büyüt: {name}",
+		"alt": "Sertifika: {name}",
+		"qualifications": "Yeterlilikler",
+		"diploma": "Diploma"
+	},
+	"certificate": {
+		"prana": {
+			"basic": "Pratik Temel Pranic Healing Kursu"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – Birinci Derece",
+			"level2": "Reiki Usui Shiki Ryoho – İkinci Derece"
+		},
+		"running": {
+			"instructor": "Rekreasyonel hareket eğitmeni – koşu (Polonya Kültür ve Spor Akademisi)"
+		},
+		"technician": {
+			"diploma": "Mesleki yeterliliği onaylayan diploma: ekonomi teknisyeni"
+		},
+		"engineer": {
+			"diploma": "Mühendislik diploması: bilgisayar bilimi, Wrocław Teknik Üniversitesi"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno Facebook'ta"
+	},
+	"running": {
+		"records": {
+			"heading": "Kişisel rekorlar",
+			"halfMarathon": "yarı maraton",
+			"marathon": "maraton"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Sitenin bölümleri",
+			"education": "Teknik lise, üniversite ve Mensa",
+			"sport": "KS Gepard Kępno ve koşu",
+			"growth": "Prana ve reiki",
+			"youtube": "“Dom z Bala” kanalı"
+		}
+	}
+}
