@@ -1,8 +1,28 @@
 import AxeBuilder from '@axe-core/playwright';
 import type { Page } from '@playwright/test';
-import { LOCALES, SAMPLE_PAGES, expect, test, url } from './fixtures.ts';
+import { LOCALES, expect, test, url } from './fixtures.ts';
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'];
+
+/**
+ * Every layout once in Polish, plus the scripts that change the layout or the fonts:
+ * right-to-left (ar), Chinese (zh) and Thai (th). Other pages reuse the same components.
+ */
+const PAGES = [
+	'/pl/',
+	'/pl/o-mnie/',
+	'/pl/edukacja/technik/',
+	'/pl/edukacja/magister/',
+	'/pl/edukacja/mensa/',
+	'/pl/sport/klub/',
+	'/pl/sport/bieganie/',
+	'/pl/rozwoj/reiki/',
+	'/pl/youtube/',
+	'/pl/kontakt/',
+	'/ar/sport/running/',
+	'/zh/about/',
+	'/th/growth/prana/'
+];
 
 const describe = (violations: Awaited<ReturnType<AxeBuilder['analyze']>>['violations']) =>
 	violations.flatMap((v) =>
@@ -11,22 +31,30 @@ const describe = (violations: Awaited<ReturnType<AxeBuilder['analyze']>>['violat
 
 /**
  * 1. Full WCAG 2.2 AA audit.
- * 2. Contrast again with every background flattened to the lightest grey the page uses:
- *    axe cannot measure text over gradients and would skip it.
+ * 2. Contrast again with every gradient background flattened to its lightest grey (#1a1a1a):
+ *    axe cannot measure text over gradients and would skip it. Gradient text (the titles)
+ *    is left alone and stays unmeasured.
  */
-async function audit(page: Page) {
-	const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+async function audit(page: Page, scope?: string) {
+	const axe = () => (scope ? new AxeBuilder({ page }).include(scope) : new AxeBuilder({ page }));
+	const { violations } = await axe().withTags(WCAG).analyze();
 	expect(describe(violations), 'WCAG violations').toEqual([]);
 
-	await page.addStyleTag({
-		content: `body, .bar, .vcard, .cta, .sub, .options, footer { background: #1a1a1a !important; backdrop-filter: none !important; }`
+	await page.evaluate(() => {
+		for (const el of document.querySelectorAll<HTMLElement>('body, body *')) {
+			const style = getComputedStyle(el);
+			if (style.backgroundClip === 'text') continue;
+			if (el === document.body || style.backgroundImage.includes('gradient')) {
+				el.style.setProperty('background', '#1a1a1a', 'important');
+			}
+			if (style.backdropFilter !== 'none') el.style.setProperty('backdrop-filter', 'none');
+		}
 	});
-	const contrast = await new AxeBuilder({ page })
+	const contrast = await axe()
 		.withRules(['color-contrast'])
 		.exclude('[aria-hidden="true"]') // decorative, e.g. the big "404"
 		.analyze();
 	expect(describe(contrast.violations), 'contrast on the lightest background').toEqual([]);
-	// Gradient headings stay "incomplete"; anything else unmeasured is a gap in this test
 	const unmeasured = contrast.incomplete
 		.flatMap((v) => v.nodes)
 		.filter((n) => !/h1/.test(n.target.join(' ')))
@@ -37,20 +65,25 @@ async function audit(page: Page) {
 test.describe('accessibility (axe, WCAG 2.2 AA)', () => {
 	test.use({ reducedMotion: 'reduce' }); // measure after fade-ins, not during
 
-	for (const path of SAMPLE_PAGES) {
+	for (const path of PAGES) {
 		test(path, async ({ page }) => {
-			await page.goto(path);
+			await page.goto(url(path));
 			await audit(page);
 		});
 	}
 
-	test('open menu dropdown and language menu', async ({ page }) => {
-		await page.goto(url('/en/'));
+	test('open menu dropdown, language menu and certificate viewer', async ({ page }) => {
+		await page.goto(url('/en/growth/reiki/'));
 		await page.locator('summary', { hasText: 'Education' }).focus();
 		await page.keyboard.press('Enter');
-		await audit(page);
+		// The rest of the page was audited above; an open list covers some of it
+		await audit(page, 'details[open]');
 		await page.locator('details.lang > summary').click();
-		await audit(page);
+		await audit(page, 'details[open]');
+		await page.keyboard.press('Escape');
+		await page.locator('button.thumb').first().click();
+		// The page behind the backdrop is inert; only the viewer counts
+		await audit(page, '.viewer:popover-open');
 	});
 
 	test('404 page and the language list on "/"', async ({ page }) => {

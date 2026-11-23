@@ -4,7 +4,7 @@
 	import site from '#lib/client/site.js?script';
 	import InlineScript from '#lib/components/InlineScript.svelte';
 	import Nav from '#lib/components/Nav.svelte';
-	import { educationOrgs } from '#lib/content/timeline.ts';
+	import { SCHOOLS } from '#lib/content/education.ts';
 	import { pageHref, pageLead, pageTitle } from '#lib/i18n/index.ts';
 	import { DEFAULT_LOCALE, LOCALES, OG_LOCALES, STORAGE_KEY, toLocale } from '#lib/i18n/config.ts';
 	import { ogImagePath, pageIdFromRouteId } from '#lib/i18n/routes.ts';
@@ -57,9 +57,9 @@
 			email: `mailto:${SITE.email}`,
 			...(SITE.phone ? { telephone: SITE.phone } : {}),
 			image: absolute(resolve('apple-touch-icon.png')),
-			sameAs: [SITE.youtube],
-			alumniOf: educationOrgs().map((name) => ({ '@type': 'EducationalOrganization', name })),
-			memberOf: [{ '@type': 'Organization', name: 'Mensa' }]
+			sameAs: [SITE.youtube, SITE.linkedin, SITE.facebook],
+			alumniOf: SCHOOLS.map((name) => ({ '@type': 'EducationalOrganization', name })),
+			memberOf: [{ '@type': 'Organization', name: 'Mensa Polska' }]
 		}).replace(/</g, '\\u003c')
 	);
 </script>

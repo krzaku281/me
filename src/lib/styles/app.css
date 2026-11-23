@@ -78,6 +78,36 @@ p {
 	text-wrap: pretty;
 }
 
+/* Body text of a page: paragraphs with even spacing */
+.prose {
+	display: grid;
+	gap: 1.25em;
+}
+
+/* Small uppercase heading of a page section, e.g. "Certificates" */
+.section-title {
+	color: var(--g-6);
+	font-size: 0.75rem;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+/* Link styled as a button, e.g. to the YouTube channel (in the page header's `actions`) */
+.cta {
+	display: inline-block;
+	padding: 0.75rem 1.25rem;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: linear-gradient(var(--g-3), var(--g-2));
+	text-decoration: none;
+	box-shadow: var(--shadow);
+	transition: border-color 0.2s var(--ease);
+}
+
+.cta:hover {
+	border-color: var(--g-6);
+}
+
 a {
 	color: var(--strong);
 	text-decoration-line: underline;
@@ -102,7 +132,7 @@ a:hover {
 	color: var(--g-0);
 }
 
-/* Arabic, Hebrew etc. have no good monospace fonts: use the system sans-serif there.
+/* Arabic, Persian and Urdu have no good monospace fonts: use the system sans-serif there.
    font-family is repeated so it also applies to RTL snippets inside LTR pages
    (language names in the menu), not only to whole RTL pages. */
 [dir='rtl'] {
@@ -145,9 +175,27 @@ a:hover {
 	font-family: var(--font);
 }
 
-/* Letter spacing is a Latin habit (uppercase labels). In Arabic it breaks the joined letters
-   apart, in Hebrew it just looks wrong, in Hindi and Bengali it breaks the headstroke
-   line joining the letters. !important: component styles are more specific. */
+/* Korean and Thai: same idea, with their system fonts. */
+:lang(ko) {
+	--font:
+		ui-monospace, 'SF Mono', 'Cascadia Mono', 'Segoe UI Mono', Menlo, Consolas, 'Liberation Mono',
+		'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
+	font-family: var(--font);
+	/* Korean wraps between words, not inside them */
+	word-break: keep-all;
+}
+
+:lang(th) {
+	--font:
+		ui-monospace, 'SF Mono', 'Cascadia Mono', 'Segoe UI Mono', Menlo, Consolas, 'Liberation Mono',
+		'Thonburi', 'Leelawadee UI', 'Noto Sans Thai', 'Tahoma', sans-serif;
+	font-family: var(--font);
+}
+
+/* Letter spacing is a Latin habit (uppercase labels). In Arabic script it breaks the joined
+   letters apart, in Hindi and Bengali it breaks the headstroke line joining the letters,
+   and in Thai it pulls the vowel marks away from their consonants.
+   !important: component styles are more specific. */
 [dir='rtl'],
 [dir='rtl'] *,
 :lang(ar),
@@ -157,7 +205,9 @@ a:hover {
 :lang(hi),
 :lang(hi) *,
 :lang(bn),
-:lang(bn) * {
+:lang(bn) *,
+:lang(th),
+:lang(th) * {
 	letter-spacing: 0 !important;
 }
 

@@ -1,5 +1,5 @@
 /**
- * Personal data used across the site. Replace the placeholders.
+ * Personal data used across the site.
  * Plain TS with no imports, so vite.config.ts can load it too.
  */
 export const SITE = {
@@ -8,14 +8,16 @@ export const SITE = {
 	familyName: 'Krzak',
 	email: 'krzakmarek88@gmail.com',
 	/** Optional, e.g. '+48 600 000 000'. Empty = not shown in the vCard. */
-	phone: '' as string,
+	phone: '+48 790 611 418' as string,
+	linkedin: 'https://www.linkedin.com/in/marek-krzak-997716130',
 	youtube: 'https://www.youtube.com/@marekkrzak',
+	facebook: 'https://www.facebook.com/p/Marek-Krzak-100011994646393/',
 
 	/**
 	 * Public origin, used for absolute URLs (canonical, sitemap, Open Graph).
 	 * The GitHub Actions build overrides it with SITE_ORIGIN.
 	 */
-	origin: 'https://marekkrzak.github.io',
+	origin: 'https://krzaku281.github.io',
 
 	/**
 	 * GoatCounter endpoint, e.g. 'https://YOURCODE.goatcounter.com/count'.

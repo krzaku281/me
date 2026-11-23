@@ -33,12 +33,17 @@ function inlineScripts(): Plugin {
 			const { code, errors } = minifySync(sourceFile, readFileSync(file, 'utf8'), {});
 			if (errors.length) throw new Error(`${file}: ${errors.map((e) => e.message).join('\n')}`);
 			if (code.includes('</script')) throw new Error(`${file} must not contain "</script"`);
-			return `export default ${JSON.stringify(code.trim())};`;
+			// Empty map: this module is a string, not the script itself. Coverage of the script
+			// comes from the browser (e2e/coverage-config.ts), not from this wrapper.
+			return { code: `export default ${JSON.stringify(code.trim())};`, map: { mappings: '' } };
 		}
 	};
 }
 
 export default defineConfig({
+	// Source maps let the e2e coverage map the prerendered server code back to src/
+	// (see e2e/coverage-config.ts). Test builds only: the site does not ship them.
+	build: { sourcemap: process.env.COVERAGE === '1' },
 	define: {
 		__BASE_PATH__: JSON.stringify(base),
 		__GOATCOUNTER__: JSON.stringify(goatcounter)
@@ -50,8 +55,7 @@ export default defineConfig({
 			compilerOptions: {
 				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
 				runes: ({ filename }) =>
-					filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
-				experimental: { async: true }
+					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 			// BUILD_DIR lets the e2e tests build into a separate folder (see package.json).
 			adapter: adapter({
@@ -76,8 +80,7 @@ export default defineConfig({
 					...ogImagePaths()
 				],
 				handleHttpError: 'fail'
-			},
-			experimental: { remoteFunctions: true, forkPreloads: true }
+			}
 		}),
 
 		paraglideVitePlugin({

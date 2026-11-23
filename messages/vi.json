@@ -1,0 +1,235 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"site": {
+		"description": "Lập trình viên, người chạy bộ và nhà khám phá không mệt mỏi. Chào mừng bạn đến với trang web của tôi."
+	},
+	"ui": {
+		"skip": "Chuyển đến nội dung",
+		"mainNav": "Menu chính",
+		"menu": "Menu",
+		"language": "Ngôn ngữ",
+		"home": "Trang chủ",
+		"close": "Đóng"
+	},
+	"nav": {
+		"home": "Trang chủ",
+		"about": "Về tôi",
+		"education": "Học vấn",
+		"technician": "Kỹ thuật viên",
+		"engineer": "Kỹ sư",
+		"master": "Thạc sĩ",
+		"mensa": "Mensa",
+		"sport": "Thể thao",
+		"club": "Câu lạc bộ",
+		"running": "Chạy bộ",
+		"growth": "Phát triển bản thân",
+		"prana": "Prana",
+		"reiki": "Reiki",
+		"youtube": "YouTube",
+		"contact": "Liên hệ"
+	},
+	"page": {
+		"home": {
+			"title": "Trang chủ",
+			"lead": "Lập trình viên, người chạy bộ và nhà khám phá không mệt mỏi. Chào mừng bạn đến với trang web của tôi.",
+			"intro": "Hãy xem thử trang web này nhanh đến mức nào. Mỗi trang mở gần như ngay lập tức, và bạn có thể thấy thời gian tải ở cuối màn hình."
+		},
+		"about": {
+			"title": "Về tôi",
+			"lead": "Lập trình viên, người chạy bộ, người chồng và người cha, tò mò về thế giới trong mọi chiều sâu của nó.",
+			"body": {
+				"p1": "Nghề của tôi là lập trình viên, nhưng sở thích của tôi vượt xa màn hình máy tính. Tôi thấy mình gần nhất với hình mẫu con người thời Phục hưng: nhiều mặt của cuộc sống làm tôi tò mò, và tôi có thể tìm được chỗ đứng trong nhiều lĩnh vực, từ công nghệ, thể thao đến phát triển tinh thần.",
+				"p2": "Câu chuyện của tôi có ảnh hưởng lớn đến con người tôi hôm nay. Giống nhiều người thuộc thế hệ millennial, tôi mang theo từ gia đình những khó khăn mà khi trưởng thành tôi phải đối mặt. Chính những khó khăn đó đã thúc đẩy tôi làm việc với bản thân. Nếu không có những trải nghiệm ấy, có lẽ tôi đã không tiến xa như vậy và sẽ không hiểu bản thân và thế giới xung quanh rõ đến thế.",
+				"p3": "Tôi là chồng và là cha của hai cậu con trai. Gia đình là ngôi trường của tôi mỗi ngày: tôi học được nhiều từ vợ và các con, và cùng nhau chúng tôi xây dựng một mái nhà nơi mọi người cảm thấy dễ chịu bên nhau. Chúng tôi cố gắng tiếp thêm sức mạnh cho nhau, để mỗi người có thể bay cao hết khả năng của mình.",
+				"p4": "Trên trang web này bạn sẽ thấy hành trình của tôi qua học vấn, thể thao, phát triển bản thân và việc xây một ngôi nhà gỗ khối. Chúc bạn đọc vui."
+			}
+		},
+		"technician": {
+			"title": "Kỹ thuật viên",
+			"lead": "Trường Trung cấp Kinh tế ở Kępno và danh hiệu kỹ thuật viên kinh tế.",
+			"facts": {
+				"school": "Cụm trường số 1, Kępno",
+				"title": "kỹ thuật viên kinh tế"
+			},
+			"body": {
+				"p1": "Việc chọn trường trung học không hoàn toàn là quyết định của tôi. Lúc đó tôi chưa biết mình muốn đi theo hướng nào, nên tôi nghe lời bố mẹ và chọn trường kỹ thuật. Loại trường này cho tôi cùng lúc hai thứ: kỳ thi tốt nghiệp matura, tấm vé mở đường vào đại học, và một nghề thực sự. Thay vì chỉ có kiến thức chung, tôi có thể ra trường với kỹ năng thực tế giúp dễ tìm việc hơn. Nhìn lại, tôi nghĩ đó là một quyết định hợp lý.",
+				"p2": "Hồi đó, Trường Trung cấp Kinh tế thuộc Cụm trường số 1 ở Kępno được xem là chương trình danh giá nhất trong vùng. Chất lượng giảng dạy cao, và các thầy cô nghiêm khắc và tận tâm. Bạn có thể thấy điều đó qua thành tích của học sinh: nhiều bạn tham gia các cuộc thi và olympiad cấp quốc gia. Tôi cũng tham gia và lọt vào vòng chung kết của Cuộc thi Kiến thức và Kỹ năng Thương mại và Quản lý.",
+				"p3": "Bốn năm học kết thúc bằng kỳ thi nghề, và nhờ đó tôi nhận được danh hiệu kỹ thuật viên kinh tế. Nhờ lọt vào chung kết cuộc thi, tôi được miễn phần thi viết của kỳ thi này. Tôi cũng thi matura đủ tốt để các trường đại học hàng đầu mở cửa cho tôi. Ngoài tấm bằng, trường đã dạy tôi làm việc có hệ thống và cho tôi thấy rằng chuẩn bị kỹ sẽ đem lại kết quả. Thói quen này theo tôi qua mọi giai đoạn học tập về sau."
+			}
+		},
+		"engineer": {
+			"title": "Kỹ sư",
+			"lead": "Ngành tin học tại Đại học Khoa học và Công nghệ Wrocław và danh hiệu kỹ sư.",
+			"facts": {
+				"field": "tin học"
+			},
+			"body": {
+				"p1": "Con đường đến với tin học không dễ dàng. Trước khi tìm được nó, tôi đã thử hai ngành khác, nhưng không ngành nào hợp với tôi. Người quyết định là bạn tôi, Dawid. Đường chúng tôi thường đi cùng nhau, từ cấp hai đến trường kỹ thuật. Cậu ấy thuyết phục tôi rằng tin học sinh ra là dành cho cách nghĩ của tôi. Cậu ấy cảnh báo rằng trong bốn năm tôi sẽ phải làm việc rất vất vả để đi hết hành trình này như một người chiến thắng. Nhưng cậu ấy hứa rằng cuối cùng tôi sẽ làm điều mình thích, và công việc sẽ mang lại niềm vui cho tôi.",
+				"p2": "Lời dự đoán của cậu ấy đã thành sự thật. Suốt bốn năm tôi hoàn toàn tập trung vào việc học. Tôi muốn tốt nghiệp đúng hạn và có được càng nhiều kiến thức và kỹ năng càng tốt, để bước vào thị trường lao động như một người thợ trẻ có chuyên môn, sẵn sàng làm ra những sản phẩm chất lượng cao. Tuy nhiên, nghề thủ công của tôi hóa ra là một nghề hiện đại: lập trình.",
+				"p3": "Đại học Khoa học và Công nghệ Wrocław cho tôi nhiều không gian để trở thành kỹ sư theo đúng nghĩa của từ này. Tôi nhớ rõ giáo sư môn logic năm thứ nhất, người luôn nói với chúng tôi rằng kỹ sư là người sáng tạo. Từ này bắt nguồn từ tiếng Latin ingenium, nghĩa là sự khéo léo và tài năng sáng tạo, và giáo sư mong chúng tôi sáng tạo. Trong những năm học, tôi gặp nhiều bộ óc xuất sắc, nhưng mức yêu cầu rất cao: trong khoảng một trăm người bắt đầu cùng tôi, chỉ khoảng mười mấy người đến kỳ thi cuối đúng hạn. Đồ án tốt nghiệp của tôi là một dự án lập trình, nghĩa là một phần mềm chạy được thay vì một bài nghiên cứu lý thuyết.",
+				"p4": "Việc học đã chuẩn bị cho tôi rất tốt để làm lập trình viên. Nền tảng tôi có được ở trường đại học giúp tôi tự tin bước vào thị trường lao động và xây dựng vị trí vững chắc ở đó. Nhờ vậy, tôi đã tham gia các dự án quốc tế về những ứng dụng rất phức tạp và đảm nhận những vai trò kỹ thuật quan trọng trong đó."
+			}
+		},
+		"master": {
+			"title": "Thạc sĩ",
+			"lead": "Chương trình học bậc hai, hiện đang học.",
+			"body": {
+				"p1": "Hiện tôi đang học thạc sĩ. Phần mô tả giai đoạn này sẽ xuất hiện ở đây khi tôi hoàn thành."
+			}
+		},
+		"mensa": {
+			"title": "Mensa",
+			"lead": "Tư cách thành viên Mensa Polska, đạt được ở lần thi thứ ba.",
+			"facts": {
+				"role": "thành viên hội"
+			},
+			"body": {
+				"p1": "Với tôi, việc là thành viên Mensa gắn với một câu chuyện dạy tôi nhiều hơn chính kết quả bài kiểm tra. Nó cho tôi thấy những gì chúng ta ăn ảnh hưởng nhiều thế nào đến khả năng tư duy.",
+				"p2": "Tôi chỉ vào được Mensa ở lần thứ ba, và có lẽ mọi chuyện vốn nên như vậy. Lần đầu tôi làm bài kiểm tra là trong thời gian học đại học, khoảng năm 2011. Tôi chỉ thiếu một chút so với ngưỡng, nhưng thế là đủ để tôi bỏ ý định thử lại trong nhiều năm. Tôi chỉ quay lại với nó vào năm 2021, khi tôi đang theo một chế độ ăn khá đặc biệt. Nhưng lần này bài kiểm tra lại tệ hơn lần đầu.",
+				"p3": "Trải nghiệm đó làm tôi suy nghĩ. Tôi bắt đầu tìm hiểu xem thật ra chúng ta nên ăn gì, và trong những năm sau tôi thay đổi hoàn toàn cách ăn, gần như chuyển sang thái cực ngược lại. Năm 2025 tôi làm bài kiểm tra lần thứ ba, và lần này tôi đạt điểm cao hơn ngưỡng. Tôi không coi đây là bằng chứng khoa học, nhưng từ chính trường hợp của mình, tôi tin rằng chế độ ăn thực sự có thể ảnh hưởng đến cách trí óc chúng ta hoạt động.",
+				"p4": "Tôi biết một danh hiệu như vậy dễ bị xem là lý do để khoe khoang. Thời đi học có lẽ đúng là vậy, vì khi đó cái tôi của tôi lớn hơn nhiều. Theo thời gian, việc quan sát kỹ cuộc sống của mình và rút bài học từ mỗi trải nghiệm mới đã giúp tôi thu nhỏ nó lại rõ rệt. Với tôi, tư cách thành viên Mensa trước hết là một kỷ niệm về hành trình đó và lời nhắc rằng rất nhiều điều phụ thuộc vào cách chúng ta chăm sóc bản thân mỗi ngày."
+			}
+		},
+		"club": {
+			"title": "Câu lạc bộ",
+			"lead": "KS Gepard Kępno: đội chạy bộ ở Kępno, thành lập năm 2015.",
+			"body": {
+				"p1": "Lịch sử câu lạc bộ của chúng tôi bắt đầu từ thời chạy bộ bùng nổ thực sự ở Ba Lan. Nhóm bạn của chúng tôi cũng bị cuốn theo làn sóng này, và vào ngày 21 tháng 6 năm 2015, chúng tôi quyết định lập câu lạc bộ riêng ở địa phương. Chúng tôi muốn tạo ra một cộng đồng nơi mọi người cùng vui với việc chạy và đẩy xa giới hạn của chính mình. KS Gepard Kępno ra đời như thế. Bốn người chúng tôi cùng nghĩ ra cái tên: Rafał, Dominik, Damian và tôi.",
+				"p2": "Mỗi người sáng lập đóng góp một điều riêng để câu lạc bộ vận hành được và tồn tại lâu dài. Qua các năm, đội hình thay đổi một cách tự nhiên, và nhiều người chạy cũng đầy nhiệt huyết đã gia nhập. Tính cách và sự tận tâm của họ giúp câu lạc bộ lớn mạnh. Chúng tôi cùng nhau thi đấu, động viên nhau và liên tục lập kỷ lục cá nhân mới. Chúng tôi cũng nhiều lần giành chiến thắng ở bảng xếp hạng đồng đội.",
+				"p3": "Nhờ tất cả các thành viên, chúng tôi đã tạo ra một nơi tuyệt vời để chạy bộ và nuôi dưỡng đam mê. Ai cũng có thể cảm thấy như ở nhà, dù trình độ ra sao, cảm thấy được cả nhóm thấu hiểu và luôn có thể trông cậy vào sự hỗ trợ. Khi có vấn đề hay câu hỏi, chúng tôi sẵn lòng chia sẻ kinh nghiệm và giúp nhau đạt mục tiêu chạy bộ cá nhân. Câu lạc bộ hoạt động liên tục từ năm 2015 và có hơn chục người chạy."
+			}
+		},
+		"running": {
+			"title": "Chạy bộ",
+			"lead": "Từ nửa marathon sau hai tuần tập đến những kỷ lục cá nhân mới.",
+			"body": {
+				"p1": "Hồi đi học, tôi rất thích thể thao. Những tấm huy chương từ các cuộc thi điền kinh cấp vùng cho thấy điều đó, chủ yếu ở nội dung chạy 100 mét và nhảy xa. Sau khi ra trường, tôi bắt đầu thiếu vận động. Khi tôi nhận bằng kỹ sư, chạy bộ đang cực kỳ phổ biến, nên tôi cũng bị cuốn theo làn sóng này.",
+				"p2": "Cuộc đua đầu tiên của tôi là Cross Ostrzeszowski, một giải nửa marathon nổi tiếng trong vùng. Tôi chạy giải này chỉ sau hai tuần tập luyện. Đúng vậy, không phải nhầm đâu. Trước giờ xuất phát, tôi lo lắng về mọi thứ: tôi ăn mặc có giống dân chuyên nghiệp không, tôi có giữ được tốc độ không, và liệu tôi có làm được không. Vì thế tôi nhanh chóng mua giày chạy, đồng hồ đo nhịp tim và quần áo chạy, nhờ vậy ở vạch xuất phát tôi cảm thấy tự tin. Ở vạch đích, đồng hồ chỉ 1:43:25, một kết quả tuyệt vời cho thời gian chuẩn bị ngắn như thế. Nhiệt huyết của tôi không giảm. Sau năm tháng tập luyện, tôi chạy marathon đầu tiên trong đời và hoàn thành với thời gian 3:08:48. Kết quả lần đầu này đến nay vẫn là kỷ lục cá nhân của tôi, nên tôi vẫn còn mục tiêu để hướng tới.",
+				"p3": "Sau mùa đầu tiên tiến bộ nhanh, tôi không có kế hoạch tập luyện được suy nghĩ kỹ, và tôi bị kẹt lại trong thời gian dài. Vì thế tôi quyết định làm việc với một huấn luyện viên. Sự hợp tác này mang lại những kỷ lục cá nhân mới ở cự ly 5 và 10 ki-lô-mét vào năm 2020.",
+				"p4": "Cũng có những giai đoạn dài hơn khi việc riêng phải đặt trước đam mê chạy bộ, và việc tập luyện trở nên ít quan trọng hơn.",
+				"p5": "Vì muốn hiểu rõ hơn các nguyên tắc tập luyện, tôi đã học một khóa tại Học viện Văn hóa và Thể thao Ba Lan và trở thành huấn luyện viên vận động giải trí, chuyên về chạy bộ. Khóa học cho tôi một cái nhìn hoàn toàn mới về môn thể thao này. Từ đó tôi tự lên kế hoạch chuẩn bị cho mình, và tôi cũng đã huấn luyện con trai tôi, cậu bé cũng khám phá ra đam mê chạy bộ."
+			}
+		},
+		"prana": {
+			"title": "Prana",
+			"lead": "Pranic Healing tại Trung tâm Pranic Healing ở Częstochowa.",
+			"body": {
+				"p1": "Không lâu trước khi tôi tròn 33 tuổi, nhu cầu phát triển bản thân trỗi dậy mạnh mẽ trong tôi. Thật ra nhu cầu đó đã ở bên tôi suốt cả cuộc đời: tôi luôn tự hỏi về ý nghĩa của sự sống, chúng ta từ đâu đến và đi về đâu. Tôi tìm câu trả lời bằng cách suy ngẫm về tôn giáo, cái chết và lịch sử xa xưa của loài người.",
+				"p2": "Nhu cầu này đưa tôi đến các khóa Pranic Healing ở Częstochowa. Trong một năm tôi hoàn thành năm khóa ở các cấp độ khác nhau. Đó là thời gian của sự thay đổi và thanh lọc nội tâm sâu sắc, và nó rõ ràng đã thay đổi cách tôi nhìn thực tại. Các học viên ngủ lại tại chỗ, nên buổi tối, sau các buổi học chính, chúng tôi gặp nhau để luyện tập thêm, trò chuyện và chia sẻ kinh nghiệm. Những buổi tối ấy còn làm sâu sắc thêm hiểu biết của chúng tôi về việc làm việc với năng lượng và mở rộng tâm trí chúng tôi.",
+				"p3": "Giai đoạn căng thẳng này trùng với nhiều thay đổi trong đời sống riêng của tôi, khiến tôi xa nhóm mới quen một thời gian.",
+				"p4": "Chỉ sau năm năm tôi mới sẵn sàng quay lại và gặp lại thầy hướng dẫn, Jerzy Opara. Hóa ra từ nhóm cũ chỉ còn lại vài người, chủ yếu là nhóm nòng cốt tổ chức và xây dựng cộng đồng ở Częstochowa. Phần lớn học viên là người mới với tôi.",
+				"p5": "Mỗi buổi gặp như vậy là cơ hội để làm quen với nhiều người thú vị. Trong những cuộc trò chuyện lúc nghỉ giải lao, chúng tôi chia sẻ cảm nhận và những cách nhìn khác nhau về con đường phát triển của mỗi người. Lần nào tôi cũng thấy những tình bạn kết nối ở đó có thể quý giá thế nào, và có thể nghe được bao nhiêu điều về những cách làm việc với năng lượng hoàn toàn mới."
+			}
+		},
+		"reiki": {
+			"title": "Reiki",
+			"lead": "Con đường của tôi với reiki: các lần điểm đạo và làm việc với năng lượng.",
+			"body": {
+				"p1": "Câu chuyện của tôi với reiki bắt đầu sớm hơn một chút, khi tôi gặp {link}, người ngày nay là bạn của tôi. Lúc đầu chị giúp tôi vượt qua những khó khăn cá nhân, sau đó là cả khó khăn gia đình. Rồi trong một năm, tôi theo học Trường Phát triển Tinh thần do chị điều hành.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "Sau thời gian đó, tôi cảm thấy mình sẵn sàng đi tiếp, và tôi có nhu cầu làm sâu sắc thêm sự phát triển của mình. Chính Agnieszka đã thực hiện các lần điểm đạo Reiki Usui cho tôi. Dưới sự hướng dẫn của chị, tôi làm sâu sắc việc làm việc với năng lượng và hiểu biết về nó, và mỗi lần điểm đạo mới mở ra một giai đoạn thanh lọc nội tâm mới.",
+				"p3": "Cấp độ thứ nhất mang lại sự thanh lọc mạnh mẽ. Đêm đầu tiên sau lần điểm đạo đặc biệt dữ dội, nhưng cả giai đoạn thanh lọc 21 ngày theo sau cũng rất vất vả. Năm tháng sau, tôi nhận cấp độ thứ hai. Giai đoạn này làm sâu sắc thêm quá trình mở và thanh lọc, dù lần này nhẹ nhàng hơn nhiều."
+			}
+		},
+		"youtube": {
+			"title": "YouTube",
+			"lead": "“Dom z Bala”, kênh về việc xây dựng và hoàn thiện ngôi nhà gỗ khối ghép.",
+			"body": {
+				"p1": "Tôi lập kênh này vì việc xây ngôi nhà gỗ khối ghép của chúng tôi, chính xác hơn là vì giai đoạn chuẩn bị. Một đội thợ đã dựng nhà, nhưng tôi tham gia thiết kế và tự làm phần hoàn thiện. Việc chuẩn bị rất phức tạp, còn thông tin và lời khuyên đáng tin trên mạng lại quá ít, nên dần dần tôi quyết định chia sẻ những gì mình học được. Tôi nghĩ nó có thể giúp những người khác gặp vấn đề tương tự khi xây nhà gỗ.",
+				"p2": "Những video đầu tiên thật ra là báo cáo cho vợ tôi. Cô ấy chăm sóc các con, còn tôi từ công trường về với những tin mới nhất về tiến độ.",
+				"p3": "Theo thời gian, kênh trở thành nơi tôi thoát khỏi nhịp sống đơn điệu và nghĩa vụ hằng ngày. Trên đó tôi chia sẻ tiến độ công việc, phần hoàn thiện, việc quanh nhà và ngoài vườn, đồ tự làm, cùng những giải pháp và phát hiện tôi gặp trên đường. Đó cũng là một cuộc phiêu lưu và cơ hội để tìm hiểu từ bên trong mạng xã hội ngày nay hoạt động ra sao.",
+				"p4": "Tôi quay phần lớn video trong lúc làm việc, để việc quay không kéo tôi rời công việc quá nhiều. Đôi khi việc này cần xoay xở khá nhiều: tôi phải quay được cảnh dù các con chơi ầm ĩ, hay chúng bất ngờ bước vào khung hình đúng lúc bố cần một chút yên tĩnh để làm ra thứ gì đó."
+			}
+		},
+		"contact": {
+			"title": "Liên hệ",
+			"lead": "Bạn có câu hỏi hay đề xuất? Hãy liên lạc theo cách thuận tiện nhất với bạn."
+		}
+	},
+	"youtube": {
+		"cta": "Xem kênh “Dom z Bala”"
+	},
+	"contact": {
+		"email": "Email",
+		"phone": "ĐT",
+		"vcard": "Lưu liên hệ vào điện thoại",
+		"vcardHint": "Tệp vCard (.vcf)"
+	},
+	"photo": {
+		"house": {
+			"alt": "Ngôi nhà gỗ khối ghép có ban công và hiên có mái che vào một ngày nắng",
+			"caption": "Ngôi nhà gỗ khối ghép của chúng tôi."
+		},
+		"club": {
+			"alt": "Ảnh nhóm các vận động viên chạy của KS Gepard Kępno trong đồng phục vàng đen của câu lạc bộ, đeo huy chương trên cổ",
+			"caption": "Đội KS Gepard Kępno."
+		},
+		"clubLogo": "Logo KS Gepard Kępno",
+		"podium": {
+			"alt": "Marek Krzak trên bục nhận giải trong đồng phục câu lạc bộ màu vàng, cầm huy chương và cúp",
+			"caption": "Trên bục nhận giải tại Marathon Leszno lần thứ 7."
+		},
+		"marathon": {
+			"alt": "Marek Krzak trong áo KS Gepard Kępno chạy qua vạch đích với hai tay dang rộng",
+			"caption": "Vạch đích marathon đầu tiên của tôi: PKO Wrocław Marathon lần thứ 33, năm 2015."
+		},
+		"mensaCard": "Thẻ thành viên Mensa Polska cấp cho Marek Krzak",
+		"portrait": "Marek Krzak"
+	},
+	"error": {
+		"notFound": "Không có trang này.",
+		"generic": "Đã có lỗi xảy ra.",
+		"back": "Quay lại trang chủ"
+	},
+	"redirect": {
+		"choose": "Chọn ngôn ngữ"
+	},
+	"perf": {
+		"loaded": "Trang này tải xong trong {ms} ms · {kb} KB",
+		"prerendered": "Trang này đã sẵn sàng trước khi bạn nhấp: 0 ms · {kb} KB"
+	},
+	"certificates": {
+		"heading": "Chứng chỉ",
+		"open": "Phóng to chứng chỉ: {name}",
+		"alt": "Chứng chỉ: {name}",
+		"qualifications": "Chứng nhận nghề",
+		"diploma": "Bằng tốt nghiệp"
+	},
+	"certificate": {
+		"prana": {
+			"basic": "Khóa thực hành Pranic Healing cơ bản"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – Cấp độ thứ nhất",
+			"level2": "Reiki Usui Shiki Ryoho – Cấp độ thứ hai"
+		},
+		"running": {
+			"instructor": "Huấn luyện viên vận động giải trí – chạy bộ (Học viện Văn hóa và Thể thao Ba Lan)"
+		},
+		"technician": {
+			"diploma": "Bằng xác nhận trình độ nghề: kỹ thuật viên kinh tế"
+		},
+		"engineer": {
+			"diploma": "Bằng kỹ sư: tin học, Đại học Khoa học và Công nghệ Wrocław"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno trên Facebook"
+	},
+	"running": {
+		"records": {
+			"heading": "Kỷ lục cá nhân",
+			"halfMarathon": "nửa marathon",
+			"marathon": "marathon"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Các mục của trang web",
+			"education": "Trường kỹ thuật, đại học và Mensa",
+			"sport": "KS Gepard Kępno và chạy bộ",
+			"growth": "Prana và reiki",
+			"youtube": "Kênh “Dom z Bala”"
+		}
+	}
+}

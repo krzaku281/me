@@ -7,7 +7,6 @@
 		"node": ">=26.13.0"
 	},
 	"imports": {
-		"#lib": "./src/lib/index.js",
 		"#lib/*": "./src/lib/*"
 	},
 	"scripts": {
@@ -21,7 +20,7 @@
 		"lint": "prettier --check . && eslint . && knip --exports --files",
 		"format": "prettier --write .",
 		"clean:branches": "node scripts/clean-stale-branches.js",
-		"build:test": "BASE_PATH=/me SITE_ORIGIN=https://example.test GOATCOUNTER_URL=http://localhost:4174/gc/count BUILD_DIR=build-test vite build",
+		"build:test": "rm -rf coverage-reports/build && COVERAGE=1 NODE_V8_COVERAGE=coverage-reports/build BASE_PATH=/me SITE_ORIGIN=https://example.test GOATCOUNTER_URL=http://localhost:4174/gc/count BUILD_DIR=build-test vite build",
 		"test:e2e": "yarn run build:test && playwright test",
 		"test": "yarn run check && yarn run lint && yarn run test:e2e"
 	},
@@ -32,9 +31,11 @@
 		"@fontsource/noto-sans-arabic": "5.3.0",
 		"@fontsource/noto-sans-bengali": "5.3.0",
 		"@fontsource/noto-sans-devanagari": "5.3.0",
-		"@fontsource/noto-sans-hebrew": "5.3.0",
 		"@fontsource/noto-sans-jp": "5.3.1",
+		"@fontsource/noto-sans-kr": "5.3.1",
+		"@fontsource/noto-sans-mono": "5.3.0",
 		"@fontsource/noto-sans-sc": "5.3.1",
+		"@fontsource/noto-sans-thai": "5.3.0",
 		"@inlang/paraglide-js": "3.2.2",
 		"@playwright/test": "1.65.0",
 		"@sveltejs/adapter-static": "4.0.1",

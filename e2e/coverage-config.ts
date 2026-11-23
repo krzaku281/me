@@ -5,7 +5,14 @@ import type { CoverageReportOptions } from 'monocart-coverage-reports';
 
 export const coverageOutputDir = resolve('coverage-reports/e2e');
 
-const inlineScripts = ['site', 'redirect'].map((name) => {
+/**
+ * V8 coverage of `yarn build:test` (NODE_V8_COVERAGE): the prerender runs the server code
+ * (routes, components, i18n, Open Graph images) once for every page, and the build spec
+ * checks what it produced. Only the bundled server output is kept from it.
+ */
+export const buildCoverageDir = resolve('coverage-reports/build');
+
+const inlineScripts = ['site', 'redirect', 'intro'].map((name) => {
 	const filePath = resolve(`src/lib/client/${name}.js`);
 	const sourceFile = relative(process.cwd(), filePath).replaceAll('\\', '/');
 	const { code, map } = minifySync(sourceFile, readFileSync(filePath, 'utf8'), {
@@ -14,6 +21,15 @@ const inlineScripts = ['site', 'redirect'].map((name) => {
 	if (!map) throw new Error(`Could not create source map for ${sourceFile}.`);
 	return { code: code.trim(), map };
 });
+
+const isOwnSource = (sourcePath: string) => {
+	const path = sourcePath.replaceAll('\\', '/');
+	return (
+		path.startsWith('src/') &&
+		!path.startsWith('src/lib/paraglide/') &&
+		/\.(js|ts|svelte)$/.test(path)
+	);
+};
 
 const coverageOptions: CoverageReportOptions = {
 	outputDir: coverageOutputDir,
@@ -24,13 +40,12 @@ const coverageOptions: CoverageReportOptions = {
 		const inlineScript = inlineScripts.find(({ code }) => entry.source?.trim() === code);
 		if (inlineScript) entry.sourceMap = inlineScript.map;
 	},
-	sourceFilter: (sourcePath) => {
-		const normalized = sourcePath.replaceAll('\\', '/');
-		return normalized.startsWith('src/');
-	},
-	outputFilter: (entry) => {
-		return entry.sourcePath.replaceAll('\\', '/').startsWith('src/lib/client/');
-	}
+	entryFilter: (entry) =>
+		entry.url.startsWith('http://localhost:4174/') ||
+		entry.url.includes('/.svelte-kit/output/server/'),
+	// Own sources only: no node_modules, no generated Paraglide messages
+	sourceFilter: (sourcePath) => isOwnSource(sourcePath),
+	outputFilter: (entry) => isOwnSource(entry.sourcePath)
 };
 
 export default coverageOptions;

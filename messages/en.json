@@ -1,15 +1,15 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"site": {
-		"description": "Personal page: education, sport, personal growth and contact."
+		"description": "Programmer, runner and eternal explorer. Welcome to my website."
 	},
 	"ui": {
 		"skip": "Skip to content",
 		"mainNav": "Main menu",
 		"menu": "Menu",
-		"closeMenu": "Close menu",
 		"language": "Language",
-		"home": "Home page"
+		"home": "Home page",
+		"close": "Close"
 	},
 	"nav": {
 		"home": "Start",
@@ -17,7 +17,7 @@
 		"education": "Education",
 		"technician": "Technician",
 		"engineer": "Engineer",
-		"master": "Master",
+		"master": "Master's",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Club",
@@ -25,146 +25,161 @@
 		"growth": "Growth",
 		"prana": "Prana",
 		"reiki": "Reiki",
-		"journeyman": "Journeyman",
 		"youtube": "YouTube",
 		"contact": "Contact"
 	},
 	"page": {
 		"home": {
 			"title": "Start",
-			"lead": "Welcome to my page."
+			"lead": "Programmer, runner and eternal explorer. Welcome to my website.",
+			"intro": "Look around and see how fast this website is. Every page opens almost instantly, and you can see its loading time at the bottom of the screen."
 		},
 		"about": {
 			"title": "About me",
-			"lead": "A few words about me."
+			"lead": "Programmer, runner, husband and dad, curious about the world in all its depth.",
+			"body": {
+				"p1": "I am a programmer by profession, but my interests go far beyond the computer screen. I am closest to the ideal of a Renaissance man: many sides of reality interest me, and I can find my way in many fields, from technology and sport to spiritual growth.",
+				"p2": "My story has had a big influence on who I am. Like many millennials, I carried difficulties from my family home that I had to face as an adult. These difficulties were what pushed me to work on myself. Without those experiences, I probably would not have come so far in my growth, and I would not understand myself and the world around me so well.",
+				"p3": "I am a husband and the father of two boys. My family is a school for me every day: I learn a lot from my wife and my sons, and together we have built a home where we feel good with each other. We try to give each other wings, so that each of us can rise as high as we are able.",
+				"p4": "On this website you will find my path through education, sport, personal growth and building a log house. Enjoy reading."
+			}
 		},
 		"technician": {
 			"title": "Technician",
-			"lead": "Technician diploma: secondary school and a first trade.",
-			"timeline": {
-				"school": {
-					"title": "Electronics technician",
-					"text": "Electronics track, first microcontroller projects."
-				},
-				"exams": {
-					"title": "Vocational exam and final exams"
-				}
+			"lead": "The Economics Technical School in Kępno and the title of economics technician.",
+			"facts": {
+				"school": "School Complex No. 1, Kępno",
+				"title": "economics technician"
+			},
+			"body": {
+				"p1": "Choosing a secondary school was not fully my own decision. At that time I did not yet know which direction I wanted to take, so I listened to my parents and chose a technical school. This kind of school gave me two things at once: the matura, the final exam that opens the way to university, and a real profession. Instead of only general knowledge, I could leave with practical skills that make it easier to find a job. Looking back, I think it was a sensible decision.",
+				"p2": "At the time, the Economics Technical School at Upper Secondary School Complex No. 1 in Kępno was seen as the most prestigious programme in the region. It offered a high level of teaching and demanding, dedicated teachers. You could see this in the students' results: many of them took part in national competitions and olympiads. I took part in them too and became a finalist of the Tournament of Commercial and Managerial Knowledge and Skills.",
+				"p3": "Four years of study ended with the vocational exam, which gave me the title of economics technician. As a finalist of the tournament, I did not have to take the written part of the exam. I also passed the matura well enough that the best universities were open to me. Beyond the diploma, the school taught me to work systematically and showed me that careful preparation leads to results. This habit stayed with me at every later stage of my education."
 			}
 		},
 		"engineer": {
 			"title": "Engineer",
-			"lead": "Engineering degree: first-cycle studies.",
-			"timeline": {
-				"degree": {
-					"title": "BEng in Computer Science",
-					"text": "Specialisation: distributed systems."
-				},
-				"internship": {
-					"title": "Internship at a software company"
-				},
-				"thesisDefense": {
-					"title": "Engineering thesis defence"
-				}
+			"lead": "Computer science at Wrocław University of Science and Technology and the title of engineer.",
+			"facts": {
+				"field": "computer science"
+			},
+			"body": {
+				"p1": "The road to computer science was not easy. Before I found it, I tried two other degree programmes, but neither of them was right for me. The deciding factor was my friend Dawid. Our paths had often run together, from lower secondary school through the technical school. He convinced me that computer science was made for the way I think. He warned me that for four years I would have to work very hard to come out of this journey a winner. But he promised that in the end I would be doing what I like, and that my work would give me joy.",
+				"p2": "His prediction came true. For four years I was fully focused on studying. I wanted to finish on time and gain as much knowledge and as many skills as possible, so that I could enter the job market as a young, specialised craftsman, ready to create things of high quality. My craft, however, turned out to be a modern one: programming.",
+				"p3": "Wrocław University of Science and Technology gave me plenty of space to become an engineer in the full sense of the word. I clearly remember the logic professor in my first year, who kept telling us that an engineer is a creator. The word comes from the Latin ingenium, which means ingenuity and creative talent, and the professor expected us to be creative. During my studies I met many brilliant minds, but the bar was high: of the roughly one hundred people who started with me, only a dozen or so reached the final exam on time. My final thesis was a programming project, which means working software instead of a theoretical paper.",
+				"p4": "My studies prepared me very well for working as a programmer. The foundations I built at the university let me enter the job market with confidence and build a strong position there. Thanks to this, I took part in international projects on very complex applications and played important technical roles in them."
 			}
 		},
 		"master": {
-			"title": "Master",
-			"lead": "Master’s degree: second-cycle studies.",
-			"timeline": {
-				"studies": {
-					"title": "Master's studies",
-					"text": "Thesis on web application performance."
-				},
-				"graduation": {
-					"title": "MSc in Engineering"
-				}
+			"title": "Master's",
+			"lead": "Second-cycle studies, currently in progress.",
+			"body": {
+				"p1": "I am currently studying for my master's degree. A description of this stage will appear here when I finish it."
 			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Membership in Mensa.",
-			"timeline": {
-				"admission": {
-					"title": "Test and admission to Mensa"
-				},
-				"gathering": {
-					"title": "Members’ gathering"
-				}
+			"lead": "Membership of Mensa Polska, gained on the third attempt.",
+			"facts": {
+				"role": "member"
+			},
+			"body": {
+				"p1": "For me, Mensa membership is connected with a story that taught me more than the test result itself. It showed me how much what we eat affects how well we think.",
+				"p2": "I got into Mensa only on my third try, and maybe that is how it was meant to be. I took the test for the first time during my studies, around 2011. I missed the threshold by only a little, but that was enough for me to give up the idea of trying again for many years. I came back to it only in 2021, when I was on a rather unusual diet. This time, however, the test went worse than on my first attempt.",
+				"p3": "That experience made me think. I started to look into what we should really eat, and over the next years I completely changed the way I eat, moving almost to the opposite extreme. In 2025 I took the test for the third time, and this time I qualified with room to spare. I do not treat this as scientific proof, but my own example convinced me that diet can really affect how our mind works.",
+				"p4": "I know that this kind of distinction can easily look like a reason to show off. In my school years that would probably have been true, because my ego was much bigger then. Over time, looking closely at my own life and learning from each new experience helped me make it much smaller. For me, Mensa membership is above all a souvenir of that journey and a reminder of how much depends on how we take care of ourselves every day."
 			}
 		},
 		"club": {
 			"title": "Club",
-			"lead": "My sports club."
+			"lead": "KS Gepard Kępno: a running team from Kępno, founded in 2015.",
+			"body": {
+				"p1": "The history of our club goes back to the time when running was having a real boom in Poland. Our group of friends was carried away by this wave too, and on 21 June 2015 we decided to start our own local club. We wanted to create a community where we enjoy running together and push the limits of what we can do. That is how KS Gepard Kępno was born. The four of us came up with the name: Rafał, Dominik, Damian and me.",
+				"p2": "Each of the founders brought something of their own to get the club going and to help it last. Over the years the team naturally changed, and many equally enthusiastic runners joined us. Their personalities and commitment helped the club grow. We race together, motivate each other and set new personal bests again and again. We have also won team rankings many times.",
+				"p3": "Thanks to all our members, we have created a great place for running and developing a passion. Everyone can feel at home here, whatever their level, feels understood by the rest of the group and can always count on support. When a problem or a question comes up, we are happy to share our experience and help each other reach personal running goals. The club has been active without a break since 2015 and has more than a dozen runners."
+			}
 		},
 		"running": {
 			"title": "Running",
-			"lead": "Training, races and routes."
+			"lead": "From a half marathon after two weeks of training to new personal bests.",
+			"body": {
+				"p1": "At school I was very sporty. The medals I won at regional athletics competitions show this, mainly in the 100 metres and the long jump. After school, however, I began to miss physical activity. When I got my engineering degree, running happened to be extremely popular, so I was carried away by this wave too.",
+				"p2": "My first race was Cross Ostrzeszowski, a half marathon that is well known in the region. I ran it after only two weeks of training. Yes, that is not a mistake. Before the start I was worried about literally everything: whether I was dressed like a professional, whether I could keep the pace, and whether I would manage at all. So I quickly bought running shoes, a heart rate watch and running clothes, and thanks to that I felt confident at the start. At the finish the clock showed 1:43:25, a great result for such short preparation. My enthusiasm did not fade. After five months of training I ran the first marathon of my life and finished it in 3:08:48. This debut result is still my personal best, so I still have something to aim for.",
+				"p3": "After a first season of fast progress, I did not have a well-planned training programme, and I got stuck for a long time. So I decided to work with a coach. This cooperation brought new personal bests over 5 and 10 kilometres in 2020.",
+				"p4": "There were also longer periods when personal matters had to come before my passion for running, and training became less important.",
+				"p5": "Because I wanted to understand the principles of training better, I completed a course at the Polish Academy of Culture and Sport and became a recreational exercise instructor, specialising in running. The course gave me a completely new view of the sport. Since then I have planned my own preparation, and I have also coached my son, who discovered a passion for running too."
+			}
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Working with prana energy.",
-			"timeline": {
-				"basicCourse": {
-					"title": "Basic prana course"
-				},
-				"advancedCourse": {
-					"title": "Advanced course",
-					"text": "Regular practice and workshops."
-				}
+			"lead": "Pranic Healing at the Pranic Healing Centre in Częstochowa.",
+			"body": {
+				"p1": "Shortly before I turned 33, a strong need for personal growth woke up in me. In fact, it had been with me all my life: I always asked myself about the meaning of life, where we come from and where we are going. I looked for answers by thinking about religion, death and the distant history of humankind.",
+				"p2": "This need took me to Pranic Healing courses in Częstochowa. Within one year I completed five courses at different levels. It was a time of deep inner change and cleansing, and it clearly changed the way I see reality. The participants stayed overnight, so in the evenings, after the main classes, we met for extra practice, conversations and sharing experiences. Those evenings deepened our understanding of working with energy even more and opened our minds.",
+				"p3": "This intense period came at the same time as many changes in my personal life, which kept me away from the new group for some time.",
+				"p4": "Only after five years was I ready to come back and meet the teacher, Jerzy Opara, again. It turned out that only a few people from the old group were still there, mainly the core team who organise and build the community in Częstochowa. Most of the participants were new to me.",
+				"p5": "Every meeting like this is a chance to get to know many interesting people. In conversations during the breaks, we share impressions and different views on our own paths of growth. Each time I see how valuable the friendships made there can be, and how much you can hear about completely new ways of working with energy."
 			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Reiki practice.",
-			"timeline": {
-				"levelOne": {
-					"title": "Reiki level I"
-				},
-				"levelTwo": {
-					"title": "Reiki level II"
-				},
-				"master": {
-					"title": "Master level"
-				}
-			}
-		},
-		"journeyman": {
-			"title": "Journeyman",
-			"lead": "Journeyman's certificate in a craft.",
-			"timeline": {
-				"apprenticeship": {
-					"title": "Apprenticeship with a master craftsman"
-				},
-				"exam": {
-					"title": "Journeyman’s examination"
-				}
+			"lead": "My path with reiki: initiations and working with energy.",
+			"body": {
+				"p1": "My story with reiki starts a little earlier, when I met {link}, who is now my friend. At first she helped me with personal difficulties, and later also with family ones. After that, for one year, I attended the School of Spiritual Development that she runs.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "After that time I felt ready to go further, and I felt the need to deepen my growth. It was Agnieszka who gave me my initiations into Usui Reiki. With her guidance I deepened my work with energy and my understanding of it, and each new initiation opened a new stage of inner cleansing.",
+				"p3": "The first degree brought a strong cleansing. The first night after the initiation was especially intense, but the whole 21-day cleansing period that follows it was also demanding. Five months later I received the second degree. This stage deepened the process of opening and cleansing even more, although this time it was much gentler."
 			}
 		},
 		"youtube": {
 			"title": "YouTube",
-			"lead": "I run a YouTube channel."
+			"lead": "“Dom z Bala”, a channel about building and finishing a glued laminated log house.",
+			"body": {
+				"p1": "I started the channel because of building our glued laminated log house, or more exactly, because of preparing for it. A building crew put up the house, but I took part in the design and did the finishing work myself. The preparation was so complex, and there was so little reliable information and advice online, that over time I decided to share what I had learned. I thought it could help other people who face similar problems when building a wooden house.",
+				"p2": "The first videos were really reports for my wife. She was looking after the children, and I came back from the building site with the latest news about the progress.",
+				"p3": "Over time the channel became a break from my everyday routine and duties. On it I show the progress of the work, the finishing, jobs around the house and in the garden, DIY, and the solutions and discoveries I find along the way. It is also an adventure and a chance to learn from the inside how social media works today.",
+				"p4": "I record most videos while I work, so that filming does not take me away from the work too much. Sometimes this takes a lot of juggling: I have to get a shot despite the children's loud games, or despite them suddenly walking into the frame just when dad needs a moment of peace to make something."
+			}
 		},
 		"contact": {
 			"title": "Contact",
-			"lead": "Get in touch."
+			"lead": "Have a question or a proposal? Get in touch in the way that suits you best."
 		}
 	},
-	"placeholder": "Content coming soon.",
 	"youtube": {
-		"cta": "Go to the channel"
+		"cta": "Watch the “Dom z Bala” channel"
 	},
 	"contact": {
 		"email": "Email",
-		"vcard": "Save contact to your phone",
+		"phone": "Phone",
+		"vcard": "Save the contact on your phone",
 		"vcardHint": "vCard file (.vcf)"
 	},
 	"photo": {
-		"mensa": "Photo related to Mensa"
+		"house": {
+			"alt": "A wooden glued laminated log house with a balcony and a covered porch on a sunny day",
+			"caption": "Our glued laminated log house."
+		},
+		"club": {
+			"alt": "Group photo of KS Gepard Kępno runners in yellow and black club kit, with medals around their necks",
+			"caption": "The KS Gepard Kępno team."
+		},
+		"clubLogo": "KS Gepard Kępno logo",
+		"podium": {
+			"alt": "Marek Krzak on the podium in yellow club kit, with a medal and a trophy",
+			"caption": "On the podium at the 7th Leszno Marathon."
+		},
+		"marathon": {
+			"alt": "Marek Krzak in a KS Gepard Kępno shirt running across the finish line with his arms spread wide",
+			"caption": "The finish of my first marathon: the 33rd PKO Wrocław Marathon, 2015."
+		},
+		"mensaCard": "Mensa Polska membership card issued to Marek Krzak",
+		"portrait": "Marek Krzak"
 	},
 	"error": {
 		"notFound": "This page does not exist.",
 		"generic": "Something went wrong.",
-		"back": "Back to the start page"
+		"back": "Back to the home page"
 	},
 	"redirect": {
 		"choose": "Choose a language"
@@ -173,11 +188,48 @@
 		"loaded": "This page loaded in {ms} ms · {kb} KB",
 		"prerendered": "This page was ready before you clicked: 0 ms · {kb} KB"
 	},
-	"timeline": {
-		"label": "Timeline",
-		"sample": "Sample data"
+	"certificates": {
+		"heading": "Certificates",
+		"open": "Enlarge certificate: {name}",
+		"alt": "Certificate: {name}",
+		"qualifications": "Qualifications",
+		"diploma": "Diploma"
 	},
-	"notFound": {
-		"title": "Page not found"
+	"certificate": {
+		"prana": {
+			"basic": "Practical Basic Pranic Healing Course"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – First Degree",
+			"level2": "Reiki Usui Shiki Ryoho – Second Degree"
+		},
+		"running": {
+			"instructor": "Recreational exercise instructor – running (Polish Academy of Culture and Sport)"
+		},
+		"technician": {
+			"diploma": "Diploma confirming vocational qualifications: economics technician"
+		},
+		"engineer": {
+			"diploma": "Engineering diploma: computer science, Wrocław University of Science and Technology"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno on Facebook"
+	},
+	"running": {
+		"records": {
+			"heading": "Personal bests",
+			"halfMarathon": "half marathon",
+			"marathon": "marathon"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Site sections",
+			"education": "Technical school, university and Mensa",
+			"sport": "KS Gepard Kępno and running",
+			"growth": "Prana and reiki",
+			"youtube": "The “Dom z Bala” channel"
+		}
 	}
 }

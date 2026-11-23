@@ -230,20 +230,30 @@
   resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-devanagari/-/noto-sans-devanagari-5.3.0.tgz#225fdd513facf8256200855160f0f1be722e7cb9"
   integrity sha512-7khYmipS/5KAUUmrO1DKir8yL8XI00d0+ZE9BqbS8XF1jzObv6CpPOk3UeYxF+Pvi8bx9bBvprBCOcbx/eQWTQ==
 
-"@fontsource/noto-sans-hebrew@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-hebrew/-/noto-sans-hebrew-5.3.0.tgz#d5816b6040227c60985a4991823cafbffad9885a"
-  integrity sha512-7owtzuw9D+ipt0g8mcBGOm7MS/mv/REKsjSwEUe749UUsrnG54TSmusNn7oxv2GxbUORAzADLQ8ggdtt7oKkpg==
-
 "@fontsource/noto-sans-jp@5.3.1":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-jp/-/noto-sans-jp-5.3.1.tgz#22c5aa0d86c73a5bf385ea43540ac4508246fca3"
   integrity sha512-9NNBB/M9PextLYVXGSfIaLZsPnrt5UDw8g2B6T0M775H2yb/oekApSjuS1XKOP7FPcMMEnTavR5rJGDM66qKtA==
 
+"@fontsource/noto-sans-kr@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-kr/-/noto-sans-kr-5.3.1.tgz#acdd086209d106e0fc3bc4fc1916a73d9d9886f1"
+  integrity sha512-aKnPug5P6zBHaiLbGEVNyBQesyOeEUYl6C3Xedb00xO3iAHJZPQs2JOsPNVqHanKSVe1fTVmTPuYIao4noImXw==
+
+"@fontsource/noto-sans-mono@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-mono/-/noto-sans-mono-5.3.0.tgz#dbc8dc83a86c378dcb7bf98a5d12640fdc5073f1"
+  integrity sha512-DPZ+/Ng9HP5UKiALCKtoeGfA7zJzEjHFB/18OU/c3+4I9zZ3eMVAuFZb0SqzT89Yj7KNhJFYnYjyDaVKhdRuUg==
+
 "@fontsource/noto-sans-sc@5.3.1":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-sc/-/noto-sans-sc-5.3.1.tgz#a98f72ca63738cc4d7e525295b2e143222e743dd"
   integrity sha512-YxZ/VWAWo9FWzH08Q6fGTzIW6vYNP2TMhUFCnfhlimbhdXnWrxJLrzX3KWt2FKnV0s8XiM5vjpGHQiyFRlTj0w==
+
+"@fontsource/noto-sans-thai@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-thai/-/noto-sans-thai-5.3.0.tgz#38be9801c7c26adf6a4c7654a71006b16aebe6ed"
+  integrity sha512-ngqUyvDukkZUHypQbUJvUdAeYa2aYZsyeDTsdqMudf7GK2F2TK19OZ5kbo+37qsBtkNpmAMhEObQnWnzPqzKUw==
 
 "@humanfs/core@^0.19.2":
   version "0.19.2"

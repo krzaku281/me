@@ -49,8 +49,6 @@
 		border-radius: var(--radius);
 		background: var(--g-3);
 		box-shadow: var(--shadow);
-		/* Monochrome look, matching the site */
-		filter: grayscale(1) contrast(1.05);
 	}
 
 	figcaption {

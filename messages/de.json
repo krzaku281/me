@@ -1,15 +1,15 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"site": {
-		"description": "Visitenkarte: Bildung, Sport, persönliche Entwicklung und Kontakt."
+		"description": "Programmierer, Läufer und ewiger Entdecker. Willkommen auf meiner Website."
 	},
 	"ui": {
 		"skip": "Zum Inhalt springen",
 		"mainNav": "Hauptmenü",
 		"menu": "Menü",
-		"closeMenu": "Menü schließen",
 		"language": "Sprache",
-		"home": "Startseite"
+		"home": "Startseite",
+		"close": "Schließen"
 	},
 	"nav": {
 		"home": "Start",
@@ -25,141 +25,156 @@
 		"growth": "Entwicklung",
 		"prana": "Prana",
 		"reiki": "Reiki",
-		"journeyman": "Geselle",
 		"youtube": "YouTube",
 		"contact": "Kontakt"
 	},
 	"page": {
 		"home": {
 			"title": "Start",
-			"lead": "Willkommen auf meiner Seite."
+			"lead": "Programmierer, Läufer und ewiger Entdecker. Willkommen auf meiner Website.",
+			"intro": "Sieh dich um und finde heraus, wie schnell diese Website ist. Jede Unterseite öffnet sich fast sofort, und die Ladezeit siehst du unten am Bildschirm."
 		},
 		"about": {
 			"title": "Über mich",
-			"lead": "Ein paar Worte über mich."
+			"lead": "Programmierer, Läufer, Ehemann und Papa, neugierig auf die ganze Tiefe der Welt.",
+			"body": {
+				"p1": "Von Beruf bin ich Programmierer, aber meine Interessen reichen weit über den Computerbildschirm hinaus. Am nächsten bin ich dem Ideal des Renaissance-Menschen: Viele Seiten der Wirklichkeit interessieren mich, und ich finde mich in vielen Bereichen zurecht, von der Technik über den Sport bis zur spirituellen Entwicklung.",
+				"p2": "Meine Geschichte hat stark geprägt, wer ich bin. Wie viele Millennials habe ich aus meinem Elternhaus Schwierigkeiten mitgenommen, denen ich mich als Erwachsener stellen musste. Genau sie haben mich dazu gebracht, an mir zu arbeiten. Ohne diese Erfahrungen wäre ich in meiner Entwicklung wahrscheinlich nicht so weit gekommen, und ich würde mich selbst und die Welt um mich herum nicht so gut verstehen.",
+				"p3": "Ich bin Ehemann und Vater von zwei Jungs. Meine Familie ist für mich jeden Tag eine Schule: Ich lerne viel von meiner Frau und meinen Söhnen, und gemeinsam haben wir ein Zuhause geschaffen, in dem wir uns miteinander wohlfühlen. Wir versuchen, uns gegenseitig Flügel zu geben, damit jeder von uns so hoch fliegen kann, wie er es vermag.",
+				"p4": "Auf dieser Website findest du meinen Weg durch Ausbildung, Sport, persönliche Entwicklung und den Bau eines Blockhauses. Viel Spaß beim Lesen."
+			}
 		},
 		"technician": {
 			"title": "Techniker",
-			"lead": "Technikerabschluss: Schule und ein erster Beruf.",
-			"timeline": {
-				"school": {
-					"title": "Elektroniktechniker",
-					"text": "Fachrichtung Elektronik, erste Projekte mit Mikrocontrollern."
-				},
-				"exams": {
-					"title": "Berufsprüfung und Abitur"
-				}
+			"lead": "Die Wirtschaftsfachschule in Kępno und der Titel Wirtschaftstechniker.",
+			"facts": {
+				"school": "Schulzentrum Nr. 1 in Kępno",
+				"title": "Wirtschaftstechniker"
+			},
+			"body": {
+				"p1": "Die Wahl der weiterführenden Schule war nicht ganz meine eigene Entscheidung. Ich wusste damals noch nicht, in welche Richtung ich gehen wollte, also habe ich auf meine Eltern gehört und mich für eine Fachschule entschieden. Diese Schule gab mir zwei Dinge auf einmal: die Matura, die polnische Abschlussprüfung, die den Weg an die Universität öffnet, und einen richtigen Beruf. Statt nur Allgemeinwissen konnte ich praktische Fähigkeiten mitnehmen, mit denen man leichter einen Job findet. Rückblickend halte ich das für eine vernünftige Entscheidung.",
+				"p2": "Die Wirtschaftsfachschule im Schulzentrum Nr. 1 in Kępno galt damals als der angesehenste Bildungsgang in der Region. Dazu gehörten ein hohes Unterrichtsniveau und anspruchsvolle, engagierte Lehrer. Das sah man an den Ergebnissen der Schüler: Viele von ihnen nahmen an landesweiten Wettbewerben und Olympiaden teil. Auch ich war dabei und wurde Finalist beim Turnier für Handels- und Managementwissen und -fähigkeiten.",
+				"p3": "Den Abschluss der vier Lernjahre bildete die Berufsprüfung, mit der ich den Titel Wirtschaftstechniker erhielt. Als Finalist des Turniers musste ich den schriftlichen Teil der Prüfung nicht ablegen. Auch die Matura bestand ich so gut, dass mir die besten Universitäten offenstanden. Neben dem Zeugnis hat mir die Schule beigebracht, systematisch zu arbeiten, und mir gezeigt, dass sorgfältige Vorbereitung zu Ergebnissen führt. Diese Gewohnheit hat mich in jeder weiteren Phase meiner Ausbildung begleitet."
 			}
 		},
 		"engineer": {
 			"title": "Ingenieur",
-			"lead": "Ingenieurabschluss: Bachelorstudium.",
-			"timeline": {
-				"degree": {
-					"title": "Bachelorstudium Informatik",
-					"text": "Schwerpunkt: verteilte Systeme."
-				},
-				"internship": {
-					"title": "Praktikum in einem Softwareunternehmen"
-				},
-				"thesisDefense": {
-					"title": "Verteidigung der Bachelorarbeit"
-				}
+			"lead": "Informatik an der Technischen Universität Wrocław und der Titel Ingenieur.",
+			"facts": {
+				"field": "Informatik"
+			},
+			"body": {
+				"p1": "Der Weg zur Informatik war nicht einfach. Bevor ich sie fand, hatte ich zwei andere Studiengänge ausprobiert, aber keiner passte zu mir. Den Ausschlag gab mein Freund Dawid. Unsere Wege hatten sich oft gekreuzt, von der Mittelstufe bis zur Fachschule. Er überzeugte mich, dass die Informatik wie für meine Art zu denken gemacht ist. Er warnte mich, dass ich vier Jahre lang sehr hart arbeiten müsste, um als Sieger aus dieser Reise hervorzugehen. Aber er versprach mir, dass ich am Ende tun würde, was ich gern mache, und dass mir die Arbeit Freude bereiten würde.",
+				"p2": "Seine Vorhersage hat sich bewahrheitet. Vier Jahre lang war ich ganz aufs Studium konzentriert. Ich wollte pünktlich fertig werden und dabei so viel Wissen und so viele Fähigkeiten wie möglich sammeln, um als junger, spezialisierter Handwerker in den Arbeitsmarkt einzusteigen, bereit, hochwertige Dinge zu schaffen. Mein Handwerk entpuppte sich allerdings als ein modernes: das Programmieren.",
+				"p3": "Die Technische Universität Wrocław bot mir viel Raum, um im vollen Sinne des Wortes Ingenieur zu werden. Ich erinnere mich gut an den Logikprofessor im ersten Jahr, der uns immer wieder sagte, ein Ingenieur sei ein Schöpfer. Das Wort stammt vom lateinischen ingenium, das Einfallsreichtum und schöpferisches Talent bedeutet, und der Professor erwartete von uns, dass wir kreativ sind. Im Studium habe ich viele brillante Köpfe getroffen, aber die Messlatte lag hoch: Von den etwa hundert Leuten, die mit mir angefangen hatten, kamen nur ein Dutzend oder so rechtzeitig zur Abschlussprüfung. Meine Abschlussarbeit war ein Programmierprojekt, also eine funktionierende Software statt einer theoretischen Abhandlung.",
+				"p4": "Das Studium hat mich sehr gut auf die Arbeit als Programmierer vorbereitet. Mit den Grundlagen von der Universität konnte ich selbstbewusst in den Arbeitsmarkt einsteigen und dort eine starke Position aufbauen. Dadurch habe ich an internationalen Projekten für sehr komplexe Anwendungen mitgearbeitet und darin wichtige technische Rollen übernommen."
 			}
 		},
 		"master": {
 			"title": "Master",
-			"lead": "Masterabschluss: Masterstudium.",
-			"timeline": {
-				"studies": {
-					"title": "Masterstudium",
-					"text": "Abschlussarbeit über die Performance von Webanwendungen."
-				},
-				"graduation": {
-					"title": "Master of Science"
-				}
+			"lead": "Masterstudium, derzeit noch im Gange.",
+			"body": {
+				"p1": "Ich studiere gerade für meinen Master-Abschluss. Eine Beschreibung dieses Abschnitts erscheint hier, wenn ich damit fertig bin."
 			}
 		},
 		"mensa": {
 			"title": "Mensa",
-			"lead": "Mitgliedschaft bei Mensa.",
-			"timeline": {
-				"admission": {
-					"title": "Test und Aufnahme in Mensa"
-				},
-				"gathering": {
-					"title": "Teilnahme am Mitgliedertreffen"
-				}
+			"lead": "Mitgliedschaft bei Mensa Polska, erreicht im dritten Anlauf.",
+			"facts": {
+				"role": "Mitglied des Vereins"
+			},
+			"body": {
+				"p1": "Für mich ist die Mitgliedschaft bei Mensa mit einer Geschichte verbunden, die mir mehr beigebracht hat als das Testergebnis selbst. Sie hat mir gezeigt, wie sehr das, was wir essen, beeinflusst, wie gut wir denken.",
+				"p2": "Ich wurde erst im dritten Versuch bei Mensa aufgenommen, und vielleicht sollte es genau so sein. Den Test habe ich zum ersten Mal während des Studiums gemacht, etwa 2011. Ich verfehlte die Grenze nur knapp, aber das reichte, um den Gedanken an einen neuen Versuch für viele Jahre aufzugeben. Erst 2021 kam ich darauf zurück, als ich mich ziemlich ungewöhnlich ernährte. Diesmal lief der Test allerdings schlechter als beim ersten Mal.",
+				"p3": "Diese Erfahrung hat mich nachdenklich gemacht. Ich fing an zu erforschen, was wir eigentlich essen sollten, und in den folgenden Jahren habe ich meine Ernährung völlig umgestellt, fast ins genaue Gegenteil. 2025 habe ich den Test zum dritten Mal gemacht, und diesmal habe ich die Grenze deutlich übertroffen. Ich sehe das nicht als wissenschaftlichen Beweis, aber an meinem eigenen Beispiel habe ich erlebt, dass die Ernährung wirklich beeinflussen kann, wie unser Geist arbeitet.",
+				"p4": "Ich weiß, dass man eine solche Auszeichnung leicht als Grund zum Angeben sehen kann. In meiner Schulzeit wäre das wahrscheinlich so gewesen, denn mein Ego war damals viel größer. Mit der Zeit haben mir der genaue Blick auf mein eigenes Leben und das Lernen aus jeder neuen Erfahrung geholfen, es deutlich kleiner zu machen. Die Mitgliedschaft bei Mensa ist für mich vor allem ein Andenken an diesen Weg und eine Erinnerung daran, wie viel davon abhängt, wie wir uns jeden Tag um uns selbst kümmern."
 			}
 		},
 		"club": {
 			"title": "Verein",
-			"lead": "Mein Sportverein."
+			"lead": "KS Gepard Kępno: ein Laufteam aus Kępno, gegründet 2015.",
+			"body": {
+				"p1": "Die Geschichte unseres Vereins reicht in die Zeit zurück, als das Laufen in Polen einen echten Boom erlebte. Auch unsere Freundesgruppe ließ sich von dieser Welle mitreißen, und am 21. Juni 2015 beschlossen wir, einen eigenen, lokalen Verein zu gründen. Wir wollten eine Gemeinschaft schaffen, in der wir gemeinsam Freude am Laufen haben und die Grenzen unserer Möglichkeiten verschieben. So entstand KS Gepard Kępno. Den Namen haben wir uns zu viert ausgedacht: Rafał, Dominik, Damian und ich.",
+				"p2": "Jeder der Gründer hat etwas Eigenes eingebracht, um den Verein in Schwung zu bringen und dafür zu sorgen, dass er Bestand hat. Im Lauf der Jahre hat sich das Team ganz natürlich verändert, und viele ebenso begeisterte Läufer sind dazugekommen. Mit ihrer Persönlichkeit und ihrem Einsatz haben sie den Verein weitergebracht. Wir starten gemeinsam bei Wettkämpfen, motivieren einander und verbessern immer wieder unsere persönlichen Bestzeiten. Außerdem haben wir viele Male Mannschaftswertungen gewonnen.",
+				"p3": "Dank all unserer Mitglieder haben wir einen großartigen Ort zum Laufen und zum Entwickeln einer Leidenschaft geschaffen. Hier kann sich jeder zu Hause fühlen, egal auf welchem Niveau, fühlt sich vom Rest der Gruppe verstanden und kann immer mit Unterstützung rechnen. Wenn ein Problem oder eine Frage auftaucht, teilen wir gern unsere Erfahrung und helfen uns gegenseitig, persönliche Laufziele zu erreichen. Der Verein ist seit 2015 ohne Unterbrechung aktiv und hat mehr als ein Dutzend Läufer."
+			}
 		},
 		"running": {
 			"title": "Laufen",
-			"lead": "Training, Wettkämpfe und Strecken."
+			"lead": "Vom Halbmarathon nach zwei Wochen Training bis zu neuen persönlichen Bestzeiten.",
+			"body": {
+				"p1": "In meiner Schulzeit war ich sehr sportlich. Das zeigen die Medaillen von regionalen Leichtathletikwettkämpfen, vor allem über 100 Meter und im Weitsprung. Nach der Schule fehlte mir dann aber die Bewegung. Als ich meinen Ingenieurtitel bekam, war das Laufen gerade extrem beliebt, und so ließ auch ich mich von dieser Welle mitreißen.",
+				"p2": "Mein erster Wettkampf war der Cross Ostrzeszowski, ein in der Region bekannter Halbmarathon. Ich bin ihn nach nur zwei Wochen Training gelaufen. Ja, das ist kein Fehler. Vor dem Start hatte ich vor wirklich allem Angst: ob ich wie ein Profi angezogen bin, ob ich das Tempo halten kann und ob ich es überhaupt schaffe. Also habe ich schnell Laufschuhe, eine Pulsuhr und Laufkleidung gekauft, und dadurch fühlte ich mich am Start sicher. Im Ziel zeigte die Uhr 1:43:25, für eine so kurze Vorbereitung ein großartiges Ergebnis. Meine Begeisterung ließ nicht nach. Nach fünf Monaten Training lief ich meinen ersten Marathon und kam nach 3:08:48 ins Ziel. Diese Zeit vom Debüt ist bis heute meine Bestzeit, ich habe also noch etwas, woran ich arbeiten kann.",
+				"p3": "Nach einer ersten Saison mit schnellen Fortschritten fehlte mir ein durchdachter Trainingsplan, und ich bin für längere Zeit nicht weitergekommen. Deshalb habe ich mich entschieden, mit einem Trainer zu arbeiten. Diese Zusammenarbeit brachte 2020 neue persönliche Bestzeiten über 5 und 10 Kilometer.",
+				"p4": "Es gab auch längere Phasen, in denen persönliche Angelegenheiten Vorrang vor meiner Leidenschaft fürs Laufen haben mussten und das Training in den Hintergrund trat.",
+				"p5": "Weil ich die Prinzipien des Trainings besser verstehen wollte, habe ich einen Kurs an der Polnischen Akademie für Kultur und Sport abgeschlossen und bin Instruktor für Bewegungsrekreation mit Schwerpunkt Laufen geworden. Der Kurs hat mir einen ganz neuen Blick auf diesen Sport gegeben. Seitdem plane ich meine Vorbereitung selbst, und ich habe auch meinen Sohn trainiert, der ebenfalls die Leidenschaft fürs Laufen entdeckt hat."
+			}
 		},
 		"prana": {
 			"title": "Prana",
-			"lead": "Arbeit mit Prana-Energie.",
-			"timeline": {
-				"basicCourse": {
-					"title": "Grundkurs Prana"
-				},
-				"advancedCourse": {
-					"title": "Fortgeschrittenenkurs",
-					"text": "Regelmäßige Praxis und Workshops."
-				}
+			"lead": "Pranic Healing im Pranic-Healing-Zentrum in Częstochowa.",
+			"body": {
+				"p1": "Kurz bevor ich 33 wurde, erwachte in mir stark das Bedürfnis nach persönlicher Entwicklung. Eigentlich hatte es mich mein ganzes Leben lang begleitet: Ich habe mich immer nach dem Sinn des Lebens gefragt, woher wir kommen und wohin wir gehen. Antworten suchte ich, indem ich über Religion, den Tod und die ferne Geschichte der Menschheit nachdachte.",
+				"p2": "Dieses Bedürfnis führte mich zu Pranic-Healing-Kursen in Częstochowa. Innerhalb eines Jahres habe ich fünf Kurse auf verschiedenen Stufen abgeschlossen. Es war eine Zeit tiefer innerer Veränderung und Reinigung, die meine Sicht auf die Wirklichkeit deutlich verändert hat. Die Teilnehmer übernachteten vor Ort, und so trafen wir uns abends nach dem Hauptprogramm zu zusätzlichen Übungen, Gesprächen und zum Austausch von Erfahrungen. Diese Abende vertieften unser Verständnis der Arbeit mit Energie noch weiter und öffneten unseren Geist.",
+				"p3": "Diese intensive Zeit fiel mit vielen Veränderungen in meinem Privatleben zusammen, die mich für eine Weile von der neuen Gruppe entfernten.",
+				"p4": "Erst nach fünf Jahren war ich bereit zurückzukehren und den Lehrer Jerzy Opara wiederzutreffen. Es stellte sich heraus, dass von der alten Gruppe nur wenige Leute übrig waren, vor allem das Kernteam, das die Gemeinschaft in Częstochowa organisiert und aufbaut. Die meisten Teilnehmer kannte ich nicht.",
+				"p5": "Jedes solche Treffen ist eine Gelegenheit, viele interessante Menschen kennenzulernen. In Gesprächen in den Pausen tauschen wir Eindrücke und unterschiedliche Sichtweisen auf unseren eigenen Entwicklungsweg aus. Jedes Mal sehe ich, wie wertvoll die dort geschlossenen Freundschaften sein können und wie viel man über ganz neue Arten der Arbeit mit Energie hören kann."
 			}
 		},
 		"reiki": {
 			"title": "Reiki",
-			"lead": "Reiki-Praxis.",
-			"timeline": {
-				"levelOne": {
-					"title": "Reiki 1. Grad"
-				},
-				"levelTwo": {
-					"title": "Reiki 2. Grad"
-				},
-				"master": {
-					"title": "Meistergrad"
-				}
-			}
-		},
-		"journeyman": {
-			"title": "Geselle",
-			"lead": "Gesellenbrief im Handwerk.",
-			"timeline": {
-				"apprenticeship": {
-					"title": "Ausbildung bei einem Meister"
-				},
-				"exam": {
-					"title": "Gesellenprüfung"
-				}
+			"lead": "Mein Weg mit Reiki: Einweihungen und die Arbeit mit Energie.",
+			"body": {
+				"p1": "Meine Geschichte mit Reiki beginnt etwas früher, mit der Begegnung mit {link}, die heute meine Freundin ist. Zuerst half sie mir bei persönlichen Schwierigkeiten, später auch bei familiären. Danach besuchte ich ein Jahr lang die von ihr geleitete Schule für spirituelle Entwicklung.",
+				"p1Link": "Agnieszka Panderska",
+				"p2": "Nach dieser Zeit spürte ich, dass ich bereit war, weiterzugehen, und ich hatte das Bedürfnis, meine Entwicklung zu vertiefen. Es war Agnieszka, die mir meine Einweihungen in Usui-Reiki gegeben hat. Unter ihrer Anleitung habe ich meine Arbeit mit Energie und mein Verständnis davon vertieft, und jede neue Einweihung eröffnete eine neue Phase der inneren Reinigung.",
+				"p3": "Der erste Grad brachte eine starke Reinigung. Besonders intensiv war die erste Nacht nach der Einweihung, aber auch die ganze 21-tägige Reinigungszeit, die darauf folgt, war anspruchsvoll. Fünf Monate später erhielt ich den zweiten Grad. Diese Phase vertiefte den Prozess der Öffnung und Reinigung noch weiter, auch wenn sie diesmal viel sanfter verlief."
 			}
 		},
 		"youtube": {
 			"title": "YouTube",
-			"lead": "Ich betreibe einen YouTube-Kanal."
+			"lead": "„Dom z Bala“, ein Kanal über den Bau und Ausbau eines Blockhauses aus Brettschichtholz.",
+			"body": {
+				"p1": "Zu dem Kanal hat mich der Bau unseres Blockhauses aus Brettschichtholz inspiriert, genauer gesagt die Vorbereitung darauf. Das Haus hat eine Baufirma gebaut, aber ich war an der Planung beteiligt und habe den Ausbau selbst gemacht. Die Vorbereitung war so komplex, und im Internet gab es so wenig verlässliche Informationen und Tipps, dass ich mit der Zeit beschloss, mein Wissen weiterzugeben. Ich dachte, es könnte anderen helfen, die beim Bau eines Holzhauses vor ähnlichen Problemen stehen.",
+				"p2": "Die ersten Videos waren eigentlich Berichte für meine Frau. Sie kümmerte sich um die Kinder, und ich kam von der Baustelle mit den neuesten Nachrichten über den Fortschritt zurück.",
+				"p3": "Mit der Zeit wurde der Kanal für mich zu einer Auszeit vom Alltag und von den Pflichten. Dort zeige ich den Fortschritt der Arbeiten, den Ausbau, Arbeiten rund ums Haus und im Garten, Heimwerken sowie Lösungen und Entdeckungen, auf die ich unterwegs stoße. Es ist auch ein Abenteuer und eine Gelegenheit, von innen kennenzulernen, wie soziale Medien heute funktionieren.",
+				"p4": "Die meisten Videos nehme ich nebenbei während der Arbeit auf, damit das Filmen mich nicht zu sehr von der Arbeit abhält. Manchmal erfordert das viel Geschick: Ich muss eine Aufnahme hinbekommen, trotz lauter Spiele der Kinder oder trotz ihres plötzlichen Auftauchens im Bild, genau dann, wenn Papa einen Moment Ruhe braucht, um etwas zu bauen."
+			}
 		},
 		"contact": {
 			"title": "Kontakt",
-			"lead": "Schreib mir."
+			"lead": "Du hast eine Frage oder einen Vorschlag? Melde dich so, wie es dir am besten passt."
 		}
 	},
-	"placeholder": "Inhalt folgt.",
 	"youtube": {
-		"cta": "Zum Kanal"
+		"cta": "Kanal „Dom z Bala“ ansehen"
 	},
 	"contact": {
 		"email": "E-Mail",
+		"phone": "Tel.",
 		"vcard": "Kontakt im Handy speichern",
 		"vcardHint": "vCard-Datei (.vcf)"
 	},
 	"photo": {
-		"mensa": "Foto zum Thema Mensa"
+		"house": {
+			"alt": "Ein Blockhaus aus Brettschichtholz mit Balkon und überdachter Veranda an einem sonnigen Tag",
+			"caption": "Unser Blockhaus aus Brettschichtholz."
+		},
+		"club": {
+			"alt": "Gruppenfoto der Läufer von KS Gepard Kępno in gelb-schwarzer Vereinskleidung, mit Medaillen um den Hals",
+			"caption": "Das Team von KS Gepard Kępno."
+		},
+		"clubLogo": "Logo von KS Gepard Kępno",
+		"podium": {
+			"alt": "Marek Krzak auf dem Podium in gelber Vereinskleidung, mit einer Medaille und einem Pokal",
+			"caption": "Auf dem Podium beim 7. Marathon in Leszno."
+		},
+		"marathon": {
+			"alt": "Marek Krzak im Trikot von KS Gepard Kępno läuft mit weit ausgebreiteten Armen über die Ziellinie",
+			"caption": "Das Ziel meines ersten Marathons: der 33. PKO Wrocław Marathon, 2015."
+		},
+		"mensaCard": "Mitgliedsausweis von Mensa Polska, ausgestellt auf Marek Krzak",
+		"portrait": "Marek Krzak"
 	},
 	"error": {
 		"notFound": "Diese Seite gibt es nicht.",
@@ -173,11 +188,48 @@
 		"loaded": "Diese Seite wurde in {ms} ms geladen · {kb} KB",
 		"prerendered": "Die Seite war fertig, bevor du geklickt hast: 0 ms · {kb} KB"
 	},
-	"timeline": {
-		"label": "Zeitleiste",
-		"sample": "Beispieldaten"
+	"certificates": {
+		"heading": "Zertifikate",
+		"open": "Zertifikat vergrößern: {name}",
+		"alt": "Zertifikat: {name}",
+		"qualifications": "Qualifikationen",
+		"diploma": "Diplom"
 	},
-	"notFound": {
-		"title": "Seite nicht gefunden"
+	"certificate": {
+		"prana": {
+			"basic": "Praktischer Grundkurs in Pranic Healing"
+		},
+		"reiki": {
+			"level1": "Reiki Usui Shiki Ryoho – Erster Grad",
+			"level2": "Reiki Usui Shiki Ryoho – Zweiter Grad"
+		},
+		"running": {
+			"instructor": "Instruktor für Bewegungsrekreation – Laufen (Polnische Akademie für Kultur und Sport)"
+		},
+		"technician": {
+			"diploma": "Diplom über die beruflichen Qualifikationen: Wirtschaftstechniker"
+		},
+		"engineer": {
+			"diploma": "Ingenieurdiplom: Informatik, Technische Universität Wrocław"
+		}
+	},
+	"club": {
+		"cta": "KS Gepard Kępno auf Facebook"
+	},
+	"running": {
+		"records": {
+			"heading": "Persönliche Bestzeiten",
+			"halfMarathon": "Halbmarathon",
+			"marathon": "Marathon"
+		}
+	},
+	"about": {
+		"sections": {
+			"label": "Bereiche der Website",
+			"education": "Fachschule, Universität und Mensa",
+			"sport": "KS Gepard Kępno und Laufen",
+			"growth": "Prana und Reiki",
+			"youtube": "Der Kanal „Dom z Bala“"
+		}
 	}
 }
