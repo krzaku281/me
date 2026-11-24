@@ -102,7 +102,7 @@ jobs:
           path: yarn-audit.json
           retention-days: 7
 
-  test:
+  test-chromium:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -114,9 +114,12 @@ jobs:
           cache: yarn
 
       - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: node node_modules/playwright/cli.js install --with-deps chromium webkit
 
-      - run: yarn run test:e2e
+      - run: node node_modules/playwright/cli.js install chromium
+
+      - run: yarn run build:test
+
+      - run: node node_modules/playwright/cli.js test --project=build --project=desktop --project=mobile
 
       - name: Upload E2E coverage
         if: always() && hashFiles('coverage-reports/e2e/lcov.info') != ''
@@ -129,7 +132,39 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: playwright-report
+          name: playwright-report-chromium
+          path: playwright-report
+          retention-days: 7
+
+  test-webkit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile --ignore-scripts
+
+      - run: node node_modules/playwright/cli.js install --with-deps webkit
+
+      - name: Build test site without coverage
+        run: yarn vite build
+        env:
+          BASE_PATH: /me
+          SITE_ORIGIN: https://example.test
+          GOATCOUNTER_URL: http://localhost:4174/gc/count
+          BUILD_DIR: build-test
+
+      - run: node node_modules/playwright/cli.js test --config=playwright.webkit.config.ts --project=webkit
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report-webkit
           path: playwright-report
           retention-days: 7
 
@@ -178,7 +213,7 @@ jobs:
 
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [test, lint, audit, build]
+    needs: [test-chromium, test-webkit, lint, audit, build]
     runs-on: ubuntu-latest
     permissions:
       pages: write
