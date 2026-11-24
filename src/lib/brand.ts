@@ -1,5 +1,5 @@
 /**
- * Site mark "Ręce Boga", vectorised from the original rece.png (no longer in the repo).
+ * Site mark "Ręce Boga".
  * Plain TS with no imports.
  *
  * Two drawings of the same symbol:

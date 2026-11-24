@@ -114,9 +114,31 @@ jobs:
           cache: yarn
 
       - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: node node_modules/playwright/cli.js install --with-deps chromium webkit
 
-      - run: yarn run test:e2e
+      - name: Build test site and install browsers in parallel
+        shell: bash
+        run: |
+          node node_modules/playwright/cli.js install --with-deps chromium webkit &
+          install_pid=$!
+
+          if yarn run build:test; then
+            build_status=0
+          else
+            build_status=$?
+          fi
+
+          if wait "$install_pid"; then
+            install_status=0
+          else
+            install_status=$?
+          fi
+
+          if [ "$build_status" -ne 0 ]; then
+            exit "$build_status"
+          fi
+          exit "$install_status"
+
+      - run: yarn run playwright test
 
       - name: Upload E2E coverage
         if: always() && hashFiles('coverage-reports/e2e/lcov.info') != ''
