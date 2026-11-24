@@ -1,7 +1,10 @@
 import { execFileSync } from 'node:child_process';
 
+const gitExecutable =
+	process.platform === 'win32' ? 'C:\\Program Files\\Git\\cmd\\git.exe' : '/usr/bin/git';
+
 function runGit(args, stdio = ['ignore', 'pipe', 'inherit']) {
-	return execFileSync('git', args, { encoding: 'utf8', stdio });
+	return execFileSync(gitExecutable, args, { encoding: 'utf8', stdio });
 }
 
 console.log('Pruning deleted remote branches from origin...');
