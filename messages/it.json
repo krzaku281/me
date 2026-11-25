@@ -17,7 +17,6 @@
 		"education": "Istruzione",
 		"technician": "Tecnico",
 		"engineer": "Ingegnere",
-		"master": "Magistrale",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Club",
@@ -68,13 +67,6 @@
 				"p2": "La sua previsione si è avverata. Per quattro anni sono stato completamente concentrato sullo studio. Volevo finire in tempo e acquisire il maggior numero possibile di conoscenze e competenze, per entrare nel mondo del lavoro come un giovane artigiano specializzato, pronto a creare cose di alto livello. Il mio mestiere, però, si è rivelato un mestiere moderno: la programmazione.",
 				"p3": "Il Politecnico di Breslavia mi ha dato molto spazio per diventare ingegnere nel senso pieno della parola. Ricordo bene il professore di logica del primo anno, che ci ripeteva che l’ingegnere è un creatore. La parola deriva dal latino ingenium, che significa ingegno e talento creativo, e il professore si aspettava che fossimo creativi. Durante gli studi ho conosciuto molte menti brillanti, ma l’asticella era alta: delle circa cento persone che avevano iniziato con me, una dozzina circa è arrivata in tempo all’esame finale. La mia tesi è stata un progetto di programmazione, cioè un software funzionante invece di un elaborato teorico.",
 				"p4": "Gli studi mi hanno preparato molto bene al lavoro di programmatore. Le basi acquisite al politecnico mi hanno permesso di entrare con sicurezza nel mondo del lavoro e di costruirmi una posizione solida. Grazie a questo ho partecipato a progetti internazionali su applicazioni molto complesse, svolgendovi ruoli tecnici importanti."
-			}
-		},
-		"master": {
-			"title": "Magistrale",
-			"lead": "Studi di secondo livello, attualmente in corso.",
-			"body": {
-				"p1": "Al momento sto studiando per la laurea magistrale. La descrizione di questa tappa comparirà qui quando l’avrò conclusa."
 			}
 		},
 		"mensa": {

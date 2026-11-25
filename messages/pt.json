@@ -17,7 +17,6 @@
 		"education": "Educação",
 		"technician": "Técnico",
 		"engineer": "Engenheiro",
-		"master": "Mestrado",
 		"mensa": "Mensa",
 		"sport": "Esporte",
 		"club": "Clube",
@@ -68,13 +67,6 @@
 				"p2": "A previsão dele se confirmou. Por quatro anos fiquei totalmente concentrado nos estudos. Eu queria terminar no prazo e adquirir o máximo possível de conhecimentos e habilidades, para entrar no mercado de trabalho como um jovem artesão especializado, pronto para criar coisas de alta qualidade. Meu ofício, porém, acabou sendo um ofício moderno: a programação.",
 				"p3": "A Universidade de Tecnologia de Breslávia me deu muito espaço para me tornar engenheiro no sentido pleno da palavra. Lembro bem do professor de lógica do primeiro ano, que repetia para nós que o engenheiro é um criador. A palavra vem do latim ingenium, que significa engenhosidade e talento criativo, e o professor esperava que fôssemos criativos. Durante a faculdade conheci muitas mentes brilhantes, mas a exigência era alta: das cerca de cem pessoas que começaram comigo, só umas doze chegaram ao exame final no prazo. Meu trabalho de conclusão foi um projeto de programação, ou seja, um software que funciona em vez de um trabalho teórico.",
 				"p4": "Os estudos me prepararam muito bem para o trabalho de programador. As bases adquiridas na universidade me permitiram entrar com segurança no mercado e construir nele uma posição forte. Graças a isso, participei de projetos internacionais com aplicações muito complexas e assumi neles papéis técnicos importantes."
-			}
-		},
-		"master": {
-			"title": "Mestrado",
-			"lead": "Estudos de pós-graduação, atualmente em andamento.",
-			"body": {
-				"p1": "No momento estou cursando o mestrado. A descrição desta etapa vai aparecer aqui quando eu terminar."
 			}
 		},
 		"mensa": {

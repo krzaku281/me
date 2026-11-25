@@ -17,7 +17,6 @@
 		"education": "Eğitim",
 		"technician": "Teknisyen",
 		"engineer": "Mühendis",
-		"master": "Yüksek lisans",
 		"mensa": "Mensa",
 		"sport": "Spor",
 		"club": "Kulüp",
@@ -68,13 +67,6 @@
 				"p2": "Onun tahmini gerçek oldu. Dört yıl boyunca tamamen derslere odaklandım. Zamanında bitirmek ve mümkün olduğunca çok bilgi ve beceri kazanmak istiyordum. Böylece iş piyasasına genç, uzmanlaşmış bir usta olarak girip yüksek kalitede işler üretmeye hazır olacaktım. Ama benim zanaatım modern bir zanaat çıktı: programlama.",
 				"p3": "Wrocław Teknik Üniversitesi bana sözün tam anlamıyla mühendis olmak için geniş bir alan verdi. Birinci sınıftaki mantık profesörünü iyi hatırlıyorum, bize hep mühendisin bir yaratıcı olduğunu söylerdi. Bu kelime Latince ingenium sözcüğünden gelir. Bu, buluş gücü ve yaratıcı yetenek demektir ve profesör bizden yaratıcı olmamızı beklerdi. Okurken pek çok parlak zekâyla tanıştım, ama çıta yüksekti: benimle başlayan yaklaşık yüz kişiden yalnızca on küsur kişi bitirme sınavına zamanında ulaştı. Bitirme çalışmam bir programlama projesiydi, yani teorik bir çalışma yerine çalışan bir yazılım.",
 				"p4": "Eğitimim beni yazılımcılığa çok iyi hazırladı. Üniversitede edindiğim temeller iş piyasasına güvenle girmemi ve orada sağlam bir yer edinmemi sağladı. Bu sayede çok karmaşık uygulamalar üzerinde uluslararası projelerde çalıştım ve bu projelerde önemli teknik roller üstlendim."
-			}
-		},
-		"master": {
-			"title": "Yüksek lisans",
-			"lead": "İkinci kademe eğitim, şu anda devam ediyor.",
-			"body": {
-				"p1": "Şu anda yüksek lisans yapıyorum. Bu aşamanın açıklaması, bitirdiğimde burada yer alacak."
 			}
 		},
 		"mensa": {

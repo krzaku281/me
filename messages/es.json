@@ -17,7 +17,6 @@
 		"education": "Educación",
 		"technician": "Técnico",
 		"engineer": "Ingeniero",
-		"master": "Máster",
 		"mensa": "Mensa",
 		"sport": "Deporte",
 		"club": "Club",
@@ -68,13 +67,6 @@
 				"p2": "Su predicción se cumplió. Durante cuatro años estuve totalmente concentrado en estudiar. Quería terminar a tiempo y reunir tantos conocimientos y habilidades como fuera posible, para entrar en el mercado laboral como un joven artesano especializado, listo para crear cosas de alto nivel. Mi oficio, sin embargo, resultó ser uno moderno: la programación.",
 				"p3": "La Universidad Politécnica de Breslavia me dio mucho espacio para convertirme en ingeniero en el sentido pleno de la palabra. Recuerdo bien al profesor de lógica de primer curso, que nos repetía que un ingeniero es un creador. La palabra viene del latín ingenium, que significa ingenio y talento creativo, y el profesor esperaba que fuéramos creativos. Durante la carrera conocí a muchas mentes brillantes, pero el listón estaba alto: de las cien personas más o menos que empezamos juntos, solo una docena llegó a tiempo al examen final. Mi trabajo de fin de carrera fue un proyecto de programación, es decir, un software que funciona en lugar de un trabajo teórico.",
 				"p4": "Los estudios me prepararon muy bien para trabajar como programador. Las bases que adquirí en la universidad me permitieron entrar con seguridad en el mercado laboral y construir en él una posición sólida. Gracias a eso, participé en proyectos internacionales sobre aplicaciones muy complejas y desempeñé en ellos funciones técnicas importantes."
-			}
-		},
-		"master": {
-			"title": "Máster",
-			"lead": "Estudios de segundo ciclo, actualmente en curso.",
-			"body": {
-				"p1": "Ahora mismo estoy estudiando un máster. La descripción de esta etapa aparecerá aquí cuando la termine."
 			}
 		},
 		"mensa": {

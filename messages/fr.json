@@ -17,7 +17,6 @@
 		"education": "Formation",
 		"technician": "Technicien",
 		"engineer": "Ingénieur",
-		"master": "Master",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Club",
@@ -68,13 +67,6 @@
 				"p2": "Sa prédiction s’est réalisée. Pendant quatre ans, j’ai été entièrement concentré sur mes études. Je voulais finir dans les temps et acquérir autant de connaissances et de compétences que possible, pour entrer sur le marché du travail comme un jeune artisan spécialisé, prêt à créer des choses de grande qualité. Mon métier s’est pourtant révélé être un métier moderne : la programmation.",
 				"p3": "L’École polytechnique de Wrocław m’a donné beaucoup d’espace pour devenir ingénieur au sens plein du terme. Je me souviens bien du professeur de logique de première année, qui nous répétait qu’un ingénieur est un créateur. Le mot vient du latin ingenium, qui signifie ingéniosité et talent créatif, et le professeur attendait de nous que nous soyons créatifs. Pendant mes études, j’ai rencontré beaucoup d’esprits brillants, mais la barre était haute : sur la centaine de personnes qui avaient commencé avec moi, une douzaine seulement sont arrivées à l’examen final dans les temps. Mon mémoire de fin d’études était un projet de programmation, c’est-à-dire un logiciel qui fonctionne plutôt qu’un travail théorique.",
 				"p4": "Mes études m’ont très bien préparé au métier de programmeur. Les bases acquises à l’université m’ont permis d’entrer avec assurance sur le marché du travail et d’y construire une position solide. Grâce à cela, j’ai participé à des projets internationaux sur des applications très complexes et j’y ai tenu des rôles techniques importants."
-			}
-		},
-		"master": {
-			"title": "Master",
-			"lead": "Études de deuxième cycle, actuellement en cours.",
-			"body": {
-				"p1": "Je suis actuellement en train de préparer mon master. La description de cette étape apparaîtra ici quand je l’aurai terminée."
 			}
 		},
 		"mensa": {

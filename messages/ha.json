@@ -17,7 +17,6 @@
 		"education": "Ilimi",
 		"technician": "Ƙwararren fasaha",
 		"engineer": "Injiniya",
-		"master": "Digiri na biyu",
 		"mensa": "Mensa",
 		"sport": "Wasanni",
 		"club": "Ƙungiya",
@@ -68,13 +67,6 @@
 				"p2": "Hasashensa ya zama gaskiya. Tsawon shekaru huɗu na mai da hankalina gaba ɗaya ga karatu. Na so in gama a kan lokaci kuma in samu ilimi da ƙwarewa gwargwadon iyawa, don in shiga kasuwar aiki a matsayin matashin ƙwararren mai sana'ar hannu, a shirye in ƙirƙiri abubuwa masu inganci. Sai dai sana'ata ta zama ta zamani: tsara manhaja.",
 				"p3": "Jami'ar Kimiyya da Fasaha ta Wrocław ta ba ni isasshen sarari in zama injiniya a ma'anar kalmar gaba ɗaya. Ina tuna da kyau farfesan ilimin dabaru na shekarar farko, wanda yake yawan gaya mana cewa injiniya mai ƙirƙira ne. Kalmar ta fito daga Latin ingenium, wato dabara da basirar ƙirƙira, kuma farfesan yana tsammanin mu zama masu ƙirƙira. A lokacin karatuna na haɗu da fitattun masu hankali da yawa, amma ma'aunin ya yi tsayi: daga cikin kusan mutum ɗari da muka fara tare, mutum goma sha kaɗan ne kawai suka kai jarrabawar ƙarshe a kan lokaci. Aikin kammala karatuna wani shiri ne na tsara manhaja, wato manhaja mai aiki maimakon takarda ta ra'ayi kaɗai.",
 				"p4": "Karatuna ya shirya ni sosai don aikin mai tsara manhaja. Tushen da na gina a jami'a ya ba ni damar shiga kasuwar aiki da ƙwarin gwiwa kuma na gina ƙwaƙƙwaran matsayi a cikinta. Saboda haka, na shiga ayyukan ƙasashen duniya kan manhajoji masu sarƙaƙiya sosai, kuma na taka muhimman matsayi na fasaha a cikinsu."
-			}
-		},
-		"master": {
-			"title": "Digiri na biyu",
-			"lead": "Karatun mataki na biyu, ana yi yanzu.",
-			"body": {
-				"p1": "A yanzu ina karatun digiri na biyu. Bayanin wannan mataki zai bayyana a nan idan na gama shi."
 			}
 		},
 		"mensa": {

@@ -17,7 +17,6 @@
 		"education": "Pendidikan",
 		"technician": "Teknisi",
 		"engineer": "Insinyur",
-		"master": "Magister",
 		"mensa": "Mensa",
 		"sport": "Olahraga",
 		"club": "Klub",
@@ -68,13 +67,6 @@
 				"p2": "Ramalannya terbukti benar. Selama empat tahun saya benar-benar fokus belajar. Saya ingin lulus tepat waktu dan mendapat pengetahuan serta keterampilan sebanyak mungkin, supaya bisa masuk ke dunia kerja sebagai pengrajin muda yang berspesialisasi dan siap membuat karya berkualitas tinggi. Namun, kerajinan saya ternyata kerajinan modern: pemrograman.",
 				"p3": "Universitas Sains dan Teknologi Wrocław memberi saya banyak ruang untuk menjadi insinyur dalam arti sebenarnya. Saya ingat jelas dosen logika di tahun pertama, yang terus mengatakan bahwa insinyur adalah pencipta. Kata ini berasal dari bahasa Latin ingenium, yang berarti kecerdikan dan bakat kreatif, dan dosen itu mengharapkan kami kreatif. Selama kuliah saya bertemu banyak orang cemerlang, tetapi standarnya tinggi: dari sekitar seratus orang yang mulai bersama saya, hanya sekitar selusin yang mencapai ujian akhir tepat waktu. Tugas akhir saya adalah proyek pemrograman, yaitu perangkat lunak yang berjalan, bukan makalah teoretis.",
 				"p4": "Kuliah saya mempersiapkan saya dengan sangat baik untuk bekerja sebagai programmer. Dasar-dasar yang saya peroleh di universitas membuat saya percaya diri masuk ke dunia kerja dan membangun posisi yang kuat di sana. Berkat itu, saya ikut dalam proyek internasional untuk aplikasi yang sangat kompleks dan memegang peran teknis yang penting di dalamnya."
-			}
-		},
-		"master": {
-			"title": "Magister",
-			"lead": "Studi jenjang kedua, sedang berjalan.",
-			"body": {
-				"p1": "Saat ini saya sedang menempuh studi magister. Deskripsi tahap ini akan muncul di sini setelah saya menyelesaikannya."
 			}
 		},
 		"mensa": {

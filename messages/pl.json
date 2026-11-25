@@ -17,7 +17,6 @@
 		"education": "Edukacja",
 		"technician": "Technik",
 		"engineer": "Inżynier",
-		"master": "Magister",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Klub",
@@ -68,13 +67,6 @@
 				"p2": "Jego przepowiednia się sprawdziła. Przez cztery lata byłem całkowicie skupiony na nauce. Chciałem skończyć studia w terminie i zdobyć przy tym jak najwięcej wiedzy i umiejętności, by wejść na rynek pracy jako młody, wyspecjalizowany rzemieślnik, gotowy tworzyć rzeczy na wysokim poziomie. Moim rzemiosłem stało się jednak rzemiosło nowoczesne: programowanie.",
 				"p3": "Politechnika Wrocławska dawała dużo przestrzeni, by stać się inżynierem w pełnym znaczeniu tego słowa. Dobrze pamiętam profesora logiki z pierwszego roku, który powtarzał nam, że inżynier to twórca. Słowo to wywodzi się od łacińskiego ingenium, czyli pomysłowości i talentu twórczego, a profesor oczekiwał od nas, że będziemy twórczy. W czasie studiów poznałem wiele wybitnych umysłów, ale poprzeczka wisiała wysoko: z około stu osób, które zaczynały ze mną studia, w terminie do egzaminu dyplomowego dotarło kilkanaście. Pracą dyplomową był projekt programistyczny, czyli działające oprogramowanie zamiast opracowania teoretycznego.",
 				"p4": "Studia dały mi bardzo solidne przygotowanie do pracy programisty. Podstawy zdobyte na politechnice pozwoliły mi pewnie wejść na rynek i zbudować na nim mocną pozycję. Dzięki temu brałem udział w międzynarodowych projektach przy bardzo złożonych aplikacjach i odgrywałem w nich ważne role techniczne."
-			}
-		},
-		"master": {
-			"title": "Magister",
-			"lead": "Studia drugiego stopnia, obecnie w trakcie.",
-			"body": {
-				"p1": "Obecnie jestem w trakcie studiów magisterskich. Opis tego etapu pojawi się tutaj, gdy go zakończę."
 			}
 		},
 		"mensa": {

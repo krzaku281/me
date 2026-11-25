@@ -17,7 +17,6 @@
 		"education": "Học vấn",
 		"technician": "Kỹ thuật viên",
 		"engineer": "Kỹ sư",
-		"master": "Thạc sĩ",
 		"mensa": "Mensa",
 		"sport": "Thể thao",
 		"club": "Câu lạc bộ",
@@ -68,13 +67,6 @@
 				"p2": "Lời dự đoán của cậu ấy đã thành sự thật. Suốt bốn năm tôi hoàn toàn tập trung vào việc học. Tôi muốn tốt nghiệp đúng hạn và có được càng nhiều kiến thức và kỹ năng càng tốt, để bước vào thị trường lao động như một người thợ trẻ có chuyên môn, sẵn sàng làm ra những sản phẩm chất lượng cao. Tuy nhiên, nghề thủ công của tôi hóa ra là một nghề hiện đại: lập trình.",
 				"p3": "Đại học Khoa học và Công nghệ Wrocław cho tôi nhiều không gian để trở thành kỹ sư theo đúng nghĩa của từ này. Tôi nhớ rõ giáo sư môn logic năm thứ nhất, người luôn nói với chúng tôi rằng kỹ sư là người sáng tạo. Từ này bắt nguồn từ tiếng Latin ingenium, nghĩa là sự khéo léo và tài năng sáng tạo, và giáo sư mong chúng tôi sáng tạo. Trong những năm học, tôi gặp nhiều bộ óc xuất sắc, nhưng mức yêu cầu rất cao: trong khoảng một trăm người bắt đầu cùng tôi, chỉ khoảng mười mấy người đến kỳ thi cuối đúng hạn. Đồ án tốt nghiệp của tôi là một dự án lập trình, nghĩa là một phần mềm chạy được thay vì một bài nghiên cứu lý thuyết.",
 				"p4": "Việc học đã chuẩn bị cho tôi rất tốt để làm lập trình viên. Nền tảng tôi có được ở trường đại học giúp tôi tự tin bước vào thị trường lao động và xây dựng vị trí vững chắc ở đó. Nhờ vậy, tôi đã tham gia các dự án quốc tế về những ứng dụng rất phức tạp và đảm nhận những vai trò kỹ thuật quan trọng trong đó."
-			}
-		},
-		"master": {
-			"title": "Thạc sĩ",
-			"lead": "Chương trình học bậc hai, hiện đang học.",
-			"body": {
-				"p1": "Hiện tôi đang học thạc sĩ. Phần mô tả giai đoạn này sẽ xuất hiện ở đây khi tôi hoàn thành."
 			}
 		},
 		"mensa": {
