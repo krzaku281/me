@@ -17,7 +17,6 @@
 		"education": "Education",
 		"technician": "Technician",
 		"engineer": "Engineer",
-		"master": "Master's",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Club",
@@ -68,13 +67,6 @@
 				"p2": "His prediction came true. For four years I was fully focused on studying. I wanted to finish on time and gain as much knowledge and as many skills as possible, so that I could enter the job market as a young, specialised craftsman, ready to create things of high quality. My craft, however, turned out to be a modern one: programming.",
 				"p3": "Wrocław University of Science and Technology gave me plenty of space to become an engineer in the full sense of the word. I clearly remember the logic professor in my first year, who kept telling us that an engineer is a creator. The word comes from the Latin ingenium, which means ingenuity and creative talent, and the professor expected us to be creative. During my studies I met many brilliant minds, but the bar was high: of the roughly one hundred people who started with me, only a dozen or so reached the final exam on time. My final thesis was a programming project, which means working software instead of a theoretical paper.",
 				"p4": "My studies prepared me very well for working as a programmer. The foundations I built at the university let me enter the job market with confidence and build a strong position there. Thanks to this, I took part in international projects on very complex applications and played important technical roles in them."
-			}
-		},
-		"master": {
-			"title": "Master's",
-			"lead": "Second-cycle studies, currently in progress.",
-			"body": {
-				"p1": "I am currently studying for my master's degree. A description of this stage will appear here when I finish it."
 			}
 		},
 		"mensa": {

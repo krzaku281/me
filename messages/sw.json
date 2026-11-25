@@ -17,7 +17,6 @@
 		"education": "Elimu",
 		"technician": "Fundi",
 		"engineer": "Mhandisi",
-		"master": "Uzamili",
 		"mensa": "Mensa",
 		"sport": "Michezo",
 		"club": "Klabu",
@@ -68,13 +67,6 @@
 				"p2": "Utabiri wake ulitimia. Kwa miaka minne nilijikita kabisa katika masomo. Nilitaka kumaliza kwa wakati na kupata maarifa na ujuzi mwingi iwezekanavyo, ili niingie kwenye soko la ajira kama fundi stadi kijana aliyebobea, tayari kutengeneza vitu vya ubora wa juu. Hata hivyo, ufundi wangu ulikuwa ufundi wa kisasa: kuandika programu.",
 				"p3": "Chuo Kikuu cha Sayansi na Teknolojia cha Wrocław kilinipa nafasi nyingi ya kuwa mhandisi kwa maana kamili ya neno hilo. Ninakumbuka wazi profesa wa mantiki wa mwaka wa kwanza, aliyetukumbusha kila mara kwamba mhandisi ni mbunifu. Neno hili linatokana na Kilatini ingenium, yaani ubunifu na kipaji cha uumbaji, na profesa alitarajia tuwe wabunifu. Wakati wa masomo nilikutana na akili nyingi bora, lakini kiwango kilikuwa cha juu: kati ya watu takriban mia moja walioanza nami, ni watu kumi na kadhaa tu waliofika kwenye mtihani wa mwisho kwa wakati. Tasnifu yangu ya mwisho ilikuwa mradi wa programu, yaani programu inayofanya kazi badala ya andiko la nadharia.",
 				"p4": "Masomo yangu yalinitayarisha vizuri sana kwa kazi ya mtengenezaji wa programu. Misingi niliyoipata chuoni ilinifanya niingie sokoni kwa kujiamini na kujenga nafasi imara huko. Kwa sababu hiyo, nilishiriki katika miradi ya kimataifa ya programu tata sana na nikatekeleza majukumu muhimu ya kiufundi."
-			}
-		},
-		"master": {
-			"title": "Uzamili",
-			"lead": "Masomo ya ngazi ya pili, yanayoendelea sasa.",
-			"body": {
-				"p1": "Kwa sasa nasoma shahada ya uzamili. Maelezo ya hatua hii yataonekana hapa nitakapoimaliza."
 			}
 		},
 		"mensa": {

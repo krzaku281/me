@@ -12,7 +12,6 @@ const PAGES = [
 	'/pl/',
 	'/pl/o-mnie/',
 	'/pl/edukacja/technik/',
-	'/pl/edukacja/magister/',
 	'/pl/edukacja/mensa/',
 	'/pl/sport/klub/',
 	'/pl/sport/bieganie/',

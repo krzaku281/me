@@ -17,7 +17,6 @@
 		"education": "Bildung",
 		"technician": "Techniker",
 		"engineer": "Ingenieur",
-		"master": "Master",
 		"mensa": "Mensa",
 		"sport": "Sport",
 		"club": "Verein",
@@ -68,13 +67,6 @@
 				"p2": "Seine Vorhersage hat sich bewahrheitet. Vier Jahre lang war ich ganz aufs Studium konzentriert. Ich wollte pünktlich fertig werden und dabei so viel Wissen und so viele Fähigkeiten wie möglich sammeln, um als junger, spezialisierter Handwerker in den Arbeitsmarkt einzusteigen, bereit, hochwertige Dinge zu schaffen. Mein Handwerk entpuppte sich allerdings als ein modernes: das Programmieren.",
 				"p3": "Die Technische Universität Wrocław bot mir viel Raum, um im vollen Sinne des Wortes Ingenieur zu werden. Ich erinnere mich gut an den Logikprofessor im ersten Jahr, der uns immer wieder sagte, ein Ingenieur sei ein Schöpfer. Das Wort stammt vom lateinischen ingenium, das Einfallsreichtum und schöpferisches Talent bedeutet, und der Professor erwartete von uns, dass wir kreativ sind. Im Studium habe ich viele brillante Köpfe getroffen, aber die Messlatte lag hoch: Von den etwa hundert Leuten, die mit mir angefangen hatten, kamen nur ein Dutzend oder so rechtzeitig zur Abschlussprüfung. Meine Abschlussarbeit war ein Programmierprojekt, also eine funktionierende Software statt einer theoretischen Abhandlung.",
 				"p4": "Das Studium hat mich sehr gut auf die Arbeit als Programmierer vorbereitet. Mit den Grundlagen von der Universität konnte ich selbstbewusst in den Arbeitsmarkt einsteigen und dort eine starke Position aufbauen. Dadurch habe ich an internationalen Projekten für sehr komplexe Anwendungen mitgearbeitet und darin wichtige technische Rollen übernommen."
-			}
-		},
-		"master": {
-			"title": "Master",
-			"lead": "Masterstudium, derzeit noch im Gange.",
-			"body": {
-				"p1": "Ich studiere gerade für meinen Master-Abschluss. Eine Beschreibung dieses Abschnitts erscheint hier, wenn ich damit fertig bin."
 			}
 		},
 		"mensa": {

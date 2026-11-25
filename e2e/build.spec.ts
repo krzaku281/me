@@ -200,5 +200,7 @@ test('server: unknown paths are 404, paths outside the site are rejected', async
 	expect((await request.get(url('/pl/nie-ma/'))).status()).toBe(404);
 	// Internal, untranslated paths are 404 too, so each page has exactly one URL
 	expect((await request.get(url('/pl/education/engineer/'))).status()).toBe(404);
+	expect((await request.get(url('/pl/edukacja/magister/'))).status()).toBe(404);
+	expect((await request.get(url('/en/education/master/'))).status()).toBe(404);
 	expect((await request.get(url('/%5c..%5ce2e%5cserver.js'))).status()).toBe(404);
 });

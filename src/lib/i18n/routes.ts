@@ -97,22 +97,6 @@ const SITE_MAP = [
 					it: 'ingegnere'
 				}
 			},
-			{
-				id: 'master',
-				slug: {
-					pl: 'magister',
-					en: 'master',
-					de: 'master',
-					es: 'master',
-					pt: 'mestre',
-					fr: 'master',
-					id: 'magister',
-					vi: 'thac-si',
-					tr: 'yuksek-lisans',
-					sw: 'uzamili',
-					it: 'laurea-magistrale'
-				}
-			},
 			{ id: 'mensa', slug: same('mensa') }
 		]
 	},
