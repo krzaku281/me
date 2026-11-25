@@ -175,7 +175,11 @@ test('vCard is valid and small', async ({ request }) => {
 	expect(body.trimEnd().endsWith('END:VCARD')).toBe(true);
 	expect(body).toContain(`FN:${SITE.name}`);
 	expect(body).toContain(`N:${SITE.familyName};${SITE.givenName};;;`);
-	expect(body).toContain(`TEL;TYPE=CELL:${SITE.phone}`);
+	if (SITE.phone) {
+		expect(body).toContain(`TEL;TYPE=CELL:${SITE.phone}`);
+	} else {
+		expect(body).not.toMatch(/^TEL(?:;|:)/m);
+	}
 	expect(body).toContain('PHOTO;ENCODING=b;TYPE=PNG:');
 	expect(
 		body.split('\r\n').every((l) => Buffer.byteLength(l) <= 75),
