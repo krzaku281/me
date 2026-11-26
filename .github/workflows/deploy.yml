@@ -56,7 +56,19 @@ jobs:
 
       - run: yarn install --frozen-lockfile --ignore-scripts
 
-      - run: node node_modules/playwright/cli.js install --with-deps chromium webkit
+      - name: Cache optimized image variants
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/imagetools
+          key: ${{ runner.os }}-imagetools-${{ hashFiles('yarn.lock') }}-${{ github.job }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-imagetools-${{ hashFiles('yarn.lock') }}-
+
+      - name: Install WebKit with system dependencies
+        run: node node_modules/playwright/cli.js install --with-deps webkit
+
+      - name: Install Chromium headless shell
+        run: node node_modules/playwright/cli.js install --only-shell chromium
 
       - run: yarn run test:e2e
 
@@ -104,6 +116,14 @@ jobs:
           cache: yarn
 
       - run: yarn install --frozen-lockfile --ignore-scripts
+
+      - name: Cache optimized image variants
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/imagetools
+          key: ${{ runner.os }}-imagetools-${{ hashFiles('yarn.lock') }}-${{ github.job }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-imagetools-${{ hashFiles('yarn.lock') }}-
 
       - id: pages
         uses: actions/configure-pages@v5
