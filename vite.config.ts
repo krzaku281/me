@@ -67,6 +67,7 @@ export default defineConfig({
 			// Put all CSS straight into the HTML: no render-blocking stylesheet request.
 			inlineStyleThreshold: Infinity,
 			prerender: {
+				concurrency: 4,
 				entries: [
 					'/',
 					'/404.html',
