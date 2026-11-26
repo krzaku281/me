@@ -64,7 +64,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-imagetools-${{ hashFiles('yarn.lock') }}-
 
-      - run: node node_modules/playwright/cli.js install --with-deps chromium webkit
+      - run: node node_modules/playwright/cli.js install --with-deps --only-shell chromium webkit
 
       - run: yarn run test:e2e
 

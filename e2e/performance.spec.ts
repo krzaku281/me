@@ -30,13 +30,30 @@ test('pages load only HTML and images, fast and without layout shifts', async ({
 				new Promise<{ lcp: number; cls: number }>((resolve) => {
 					let lcp = 0;
 					let cls = 0;
-					new PerformanceObserver((list) => {
+					let settleTimer: number | undefined;
+					let finished = false;
+					const lcpObserver = new PerformanceObserver((list) => {
 						for (const e of list.getEntries()) lcp = e.startTime;
-					}).observe({ type: 'largest-contentful-paint', buffered: true });
-					new PerformanceObserver((list) => {
+						if (lcp > 0 && settleTimer === undefined) {
+							settleTimer = window.setTimeout(finish, 100);
+						}
+					});
+					const clsObserver = new PerformanceObserver((list) => {
 						for (const e of list.getEntries() as unknown as { value: number }[]) cls += e.value;
-					}).observe({ type: 'layout-shift', buffered: true });
-					setTimeout(() => resolve({ lcp, cls }), 100);
+					});
+
+					function finish() {
+						if (finished) return;
+						finished = true;
+						lcpObserver.disconnect();
+						clsObserver.disconnect();
+						if (settleTimer !== undefined) clearTimeout(settleTimer);
+						resolve({ lcp, cls });
+					}
+
+					lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
+					clsObserver.observe({ type: 'layout-shift', buffered: true });
+					window.setTimeout(finish, 1000);
 				})
 		);
 		expect(lcp, `${path}: LCP`).toBeGreaterThan(0);
