@@ -2005,10 +2005,10 @@ minimatch@^11.0.1, minimatch@^11.0.5:
     "@isaacs/nonrecursive-glob-match" "^1.1.0"
     brace-expansion "^5.0.12"
 
-monocart-coverage-reports@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/monocart-coverage-reports/-/monocart-coverage-reports-3.2.1.tgz#e64ec152004fc06d2b56724f663a42842f54f90f"
-  integrity sha512-iOsx8vvP4bZkmzS1v/hW7CTZNSm7PNDRdZgLdTc+WMFD2nH3TiT1oNqJBp424v9ZUpTQwgidIN5O09Cf34QMpA==
+monocart-coverage-reports@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/monocart-coverage-reports/-/monocart-coverage-reports-3.3.0.tgz#f410167e136917665d12a5e65d6fcfdabd718fe0"
+  integrity sha512-6w4M1+W/VL/Zf84EoHO8hfZ7zAjQnux+GWI4eolUF8HA9L5+EPdAMv3itNVGjugJqpb/pO70AIQx4NHtlQMI7g==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.6.0"
     acorn "^8.19.0"
@@ -2023,15 +2023,15 @@ monocart-coverage-reports@3.2.1:
     istanbul-lib-report "^3.0.1"
     istanbul-reports "^3.2.0"
     lz-utils "^2.1.1"
-    monocart-locator "^1.0.6"
+    monocart-locator "^2.0.0"
     node-stream-zip "^1.16.0"
-    ws "^8.22.1"
+    ws "^8.23.0"
     yazl "^3.3.1"
 
-monocart-locator@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/monocart-locator/-/monocart-locator-1.0.6.tgz#407bc17489bdad397b1b5d8dc8ff4e4ff6bc6b91"
-  integrity sha512-P4DCDxeOhy59KexF3yx/kD7y64HVxHO0lskxjxAML9kTOvQnD2jTpZWFQFEFyyABx32at3t77mWLKftFfk1wHQ==
+monocart-locator@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/monocart-locator/-/monocart-locator-2.0.0.tgz#9ae9011083fbb0e0e22be647c25194f431cf31cf"
+  integrity sha512-2T/XzDj1VKcgQdxV6J+F77sei90GOWee8zdEcx4UmXh3oLUXl1p5MQ7R4dXQdUJRVyQdQ8zADTvyBHGroWDrAw==
 
 mri@^1.1.0:
   version "1.2.0"
@@ -2680,10 +2680,10 @@ word-wrap@^1.2.5:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.5.tgz#d2c45c6dd4fbce621a66f136cbe328afd0410b34"
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
-ws@^8.22.1:
-  version "8.23.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.23.0.tgz#e1af4314ad9d4cfde4684d08a9f09b322830e84e"
-  integrity sha512-wCkmX8QMOrKjgO8HW2WyDbTSGeqkocxgDzS9iR79rEAexty6/2qzilx3Ag8Tqf9ykop3irLKle0MtVn5qjVnoQ==
+ws@^8.23.0:
+  version "8.23.1"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.23.1.tgz#7e32c1948f0a77872fa2fd0580970683986b5fdc"
+  integrity sha512-1rzWDSN0NOi3tpwgHsQExjWRoKUGtjCkJ2gZRaaRtzhYLboMytOI9pj9PU7yCgY37auqdd4OyLofZDbkeuZmPA==
 
 yaml@^1.10.2:
   version "1.10.3"
